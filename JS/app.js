@@ -3,6 +3,6 @@
 */
 var myCarousel = document.querySelector('#carouselExampleCaptions')
 var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 2000,
+  interval: 6000,  //==============reduci tiempo de velocidad -cynthia
   wrap: true
 });

@@ -19,6 +19,7 @@ html {
   box-sizing: border-box;
   /*1rem = 10px*/
   font-size: 62.5%;
+  
 }
 *,
 *:before,
@@ -29,30 +30,32 @@ html {
 .enlaces {
   text-decoration: none;
   color: black;
+   margin-right: 20px; /*agregue esto . cynthia*/
+}
+.imgLogo{
+  max-width: 100px; /*agregue esto . cynthia*/
+  height: auto;
+  margin-top: 20px;  /*agregue esto . cynthia*/
 }
 
 
-/*  === Carrusel  ====*/
-.carousel-item {
-  width: 70%;
-  max-height: 300px;
-  float: none;
-  margin: auto;
-}
+  /* === Carrusel  ==== */
+/* ajustar el tamaño de la imagen del carrusel -cynthia*/
 .carousel-inner img {
-  max-height: 300px;
-  /* margin: auto; */
-}
-.carousel-inner{
-  margin: auto;
-  object-fit: fill;
-  object-position: center;
-  background-position: center;
-}
-.carousel-inner.active {
-  margin: auto;
-}
+  margin: auto; 
+  max-height: 300px; 
 
+}
+ /* ajusta el tamaño del carrusel, se agrego para evitar que al momento de cambiar de imagen se sobrepongan dos imagenes ina sobre otra -cynthia */
+.carousel-inner{
+  max-height: 300px; 
+}
+/* se agrega backgroud de la caption para que no se pierda el color de las letras -cynthia*/
+.carousel-caption{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1px;
+  
+}
 
 /*  === Header (Logo|Enlaces|CuadroDeBusqueda|iconoBolsa|iconoPerfil) ===*/
 .headerNavBar {
