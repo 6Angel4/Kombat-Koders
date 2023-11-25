@@ -188,3 +188,12 @@ p {
   padding: 0;
   /*Agregue esto . Miguel*/
 }
+
+.iconos-redes{/*Formato iconos *Mario*/
+  font-size: 3vmax;/*Tamaño de iconos?*/
+}
+
+.iconos-redes:hover{
+  color: black;
+  text-shadow: 0 0 5px white;
+}
