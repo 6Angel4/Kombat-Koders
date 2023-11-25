@@ -1,0 +1,71 @@
+/*
+    Esta es nuestra hoja de estilos
+*/
+
+/*  === Variables ===*/
+:root {
+  --colorNaranjaHeader: #fdc35a;
+  --colorNaranjaFondoTextos: #ffd486;
+  --colorNaranjaFooterYBotones: #f68035;
+  --colorNaranjaFondoBarraListas: #fdc35a;
+  --colorNaranjaFondoFormularios: #f5b27f;
+  --colorVerdeFondo: #008f7a;
+  --fuenteTextoTitulos: "Montserrat", sans-serif;
+  --fuenteTextoCuerpo: "Hind", sans-serif;
+}
+/*  === Globales y Generales ===*/
+html {
+  /*Border ni padding no afectan el ancho*/
+  box-sizing: border-box;
+  /*1rem = 10px*/
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  /*inherit, hereda del elemento padre*/
+  box-sizing: inherit;
+}
+.enlaces {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*  === Carrusel  ====*/
+.carousel-item {
+  width: 70%;
+  max-height: 300px;
+  float: none;
+  margin: auto;
+}
+.carousel-inner img {
+  max-height: 300px;
+  /* margin: auto; */
+}
+.carousel-inner{
+  margin: auto;
+  object-fit: fill;
+  object-position: center;
+  background-position: center;
+}
+.carousel-inner.active {
+  margin: auto;
+}
+
+
+/*  === Header (Logo|Enlaces|CuadroDeBusqueda|iconoBolsa|iconoPerfil) ===*/
+.headerNavBar {
+  display: flex;
+  flex-direction: row;
+  /*Centrado VERTICAL*/
+  align-items: center;
+  /*Color*/
+  background-color: var(--colorNaranjaFondoBarraListas);
+}
+.divNavBarLogo {
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+  margin: 0 auto;
+}
