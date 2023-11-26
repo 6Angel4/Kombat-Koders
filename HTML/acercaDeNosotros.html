@@ -18,9 +18,15 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-     <!--Iconos flaticon *MARIO-->
-     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css'>
-     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!--Iconos flaticon *MARIO-->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    /> -->
     <!--Font - Hind-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,25 +52,74 @@
 
   <body>
     <!--Inicia header-->
-    <header class="headerNavBar">
-      <div class="divNavBarLogo">
+    <header class="header">
+      <div class="divNavLogo">
         <img
           src="../SRC/img/logo.png"
           class="imgLogo"
           alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras"
         />
       </div>
-      <div class="divNavBarNav">
-        <nav class="navNavBar">
-          <div>
-            <a href="" class="enlaces">Inicio</a>
-            <a href="" class="enlaces">Contacto</a>
-            <a href="" class="enlaces">Productos</a>
-            <a href="" class="enlaces">Nosotros</a>
-            <a href="" class="enlaces">Bolsa</a>
-            <a href="" class="enlaces"><i class="fi fi-rr-user"></i></a><!--ICONOS-->
-          </div>
+      <div class="divNav">
+        <nav class="nav">
+          <a href="" class="enlaces">Inicio</a>
+          <a href="" class="enlaces">Contacto</a>
+          <a href="" class="enlaces">Productos</a>
+          <a href="" class="enlaces">Nosotros</a>
+          <a href="" class="enlaces">Bolsa</a>
+          <!-- <a href="" class="enlaces"><i class="fi fi-rr-user"></i></a -->
+          <!--ICONOS-->
         </nav>
+      </div>
+      <div class="divBusqueda">
+        <!-- Caja de búsqueda usando un input de tipo text -->
+        <input
+          type="text"
+          class="search"
+          placeholder="Buscar..."
+          id="cajaBusqueda"
+        />
+      </div>
+      <div class="iconos">
+        <a href="#" class="enlaces enlaceCarrito">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-shopping-bag"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"
+            />
+            <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+          </svg>
+        </a>
+
+        <a href="" class="enlaces enlaceUsuario">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-user"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          </svg>
+        </a>
       </div>
     </header>
     <!--Fin header-->
@@ -348,10 +403,18 @@
         <!--Barra de iconos de redes *Mario-->
         <div class="footerDivNavBar">
           <nav class="navNavBar">
-            <a href="" class="iconos-redes enlaces"><i class="fi fi-brands-facebook"></i></a>
-            <a href="" class="iconos-redes enlaces"><i class="fi fi-brands-instagram"></i></a>
-            <a href="" class="iconos-redes enlaces"><i class="fi fi-brands-twitter-alt-circle"></i></a>
-            <a href="" class="iconos-redes enlaces"><i class="fi fi-brands-tik-tok"></i></a>
+            <a href="" class="iconos-redes enlaces"
+              ><i class="fi fi-brands-facebook"></i
+            ></a>
+            <a href="" class="iconos-redes enlaces"
+              ><i class="fi fi-brands-instagram"></i
+            ></a>
+            <a href="" class="iconos-redes enlaces"
+              ><i class="fi fi-brands-twitter-alt-circle"></i
+            ></a>
+            <a href="" class="iconos-redes enlaces"
+              ><i class="fi fi-brands-tik-tok"></i
+            ></a>
           </nav>
         </div>
 

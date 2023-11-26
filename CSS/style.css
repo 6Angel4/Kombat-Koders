@@ -29,7 +29,7 @@ h2,
 h3 {
   /*agregue esto . Miguel*/
   font-family: var(--fuenteTextoTitulos);
-  font-weight: 700;
+  font-weight: 700; /*700-bold*/
   font-size: 3rem;
   padding: 0;
   margin: 0;
@@ -44,6 +44,7 @@ p {
   font-size: 1.5rem;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .enlaces {
@@ -70,21 +71,24 @@ p {
   /*Agregue esto . Miguel*/
 }
 
-.headerNavBar {
-  /*Agreue esto . Miguel*/
+.header {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-around;
   background-color: var(--colorNaranjaFondoBarraListas);
+  max-height: 10rem;
   margin-bottom: 2rem;
-  /*Agreue esto . Miguel*/
 }
-
+.divNavLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 25rem;
+  max-height: 15rem;
+}
 .imgLogo {
-  max-width: 100px; /*agregue esto . cynthia*/
-  height: auto;
-  margin-top: 20px; /*agregue esto . cynthia*/
+  max-width: 50%;
 }
 
 /* === Carrusel  ==== */
@@ -125,7 +129,7 @@ p {
 }
 
 /*Agregue esto . Miguel*/
-.sectionValores{
+.sectionValores {
   text-align: center;
 }
 .sectionValoresSuperior {
@@ -140,10 +144,10 @@ p {
   margin: 2rem 0;
   gap: 2rem;
 }
-.valorResponsabilidad{
+.valorResponsabilidad {
   grid-column: 2/3;
 }
-.valorTransparencia{
+.valorTransparencia {
   grid-column: 4/5;
 }
 /*Agregue esto . Miguel*/
@@ -189,11 +193,12 @@ p {
   /*Agregue esto . Miguel*/
 }
 
-.iconos-redes{/*Formato iconos *Mario*/
-  font-size: 3vmax;/*Tamaño de iconos?*/
+.iconos-redes {
+  /*Formato iconos *Mario*/
+  font-size: 3vmax; /*Tamaño de iconos?*/
 }
 
-.iconos-redes:hover{
+.iconos-redes:hover {
   color: black;
   text-shadow: 0 0 5px white;
 }
