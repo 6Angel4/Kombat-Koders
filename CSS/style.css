@@ -80,15 +80,17 @@ p {
   max-height: 10rem;
   margin-bottom: 2rem;
 }
-.divNavLogo {
+
+.enlaceImagen {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-width: 25rem;
   max-height: 15rem;
+  background-color: blue;
 }
+
 .imgLogo {
-  max-width: 50%;
+  max-width: 30%;
 }
 .cajaBusqueda {
 }
@@ -96,7 +98,7 @@ p {
 .contenedorMaestro {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 0.5fr 1fr;
 }
 /*No tocar (Mejoralito[Aspirina])*/
 .principal,
@@ -130,6 +132,8 @@ p {
   margin: 2rem 0;
   background-color: var(--colorNaranjaFondoTextos);
   text-align: center;
+  max-height: 25rem;
+  padding: 2rem;
   /*Agregue esto . Miguel*/
 }
 .divMision {
@@ -144,6 +148,9 @@ p {
 }
 
 /*Agregue esto . Miguel*/
+.contenedorValores {
+  margin: 2rem 0;
+}
 .sectionValores {
   text-align: center;
 }
