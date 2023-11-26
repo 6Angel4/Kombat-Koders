@@ -43,14 +43,16 @@ p {
   font-weight: 400;
   font-size: 1.5rem;
   padding: 0;
-  margin: 0;
-  text-align: center;
+  margin: 0rem 5rem; /* Separé el texto de los bordes - Alex*/
+  justify-content: center; /* Centre el texto acerca de nuestra plataforma - Alex*/
+  align-items: center; /* Centre el texto acerca de nuestra plataforma - Alex*/
+  text-align: center; /* Centre el texto acerca de nuestra plataforma - Alex*/
 }
 
 .enlaces {
   /*Agregue esto . Miguel*/
-  font-family: var(--fuenteTextoCuerpo);
-  font-weight: 400;
+  font-family: var(--fuenteTextoTitulos);/* Cambie la fuente para la navbar a Montserrat - Alex*/
+  font-weight: 700; /* Cambie el peso de la fuente de 400 a 700 - Alex*/
   font-size: 2rem;
   text-decoration: none;
   color: black;
@@ -88,7 +90,9 @@ p {
   max-height: 15rem;
 }
 .imgLogo {
-  max-width: 50%;
+  max-width: 100px; /*agregue esto . cynthia*/
+  height: auto;
+  margin: 20px 400px 20px 0px; /*agregue esto . cynthia*/ /* Se cambio margin-top por margin asignando 20px top y bottom y 0px left y right - Alex */
 }
 
 /* === Carrusel  ==== */
@@ -121,11 +125,17 @@ p {
   padding: 2rem 0;
   grid-column: 1/2;
   grid-row: 1/3;
+  justify-content: center; /* Centre el texto acerca de nuestra plataforma - Alex*/
+  align-items: center; /* Centre el texto acerca de nuestra plataforma - Alex*/
+  text-align: center; /* Centre el texto acerca de nuestra plataforma - Alex*/
 }
 .divVision {
   padding: 2rem 0;
   grid-column: 2/3;
   grid-row: 1/3;
+  justify-content: center; /* Centre el texto acerca de nuestra plataforma - Alex*/
+  align-items: center; /* Centre el texto acerca de nuestra plataforma - Alex*/
+  text-align: center; /* Centre el texto acerca de nuestra plataforma - Alex*/
 }
 
 /*Agregue esto . Miguel*/
