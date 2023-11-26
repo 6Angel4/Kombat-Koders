@@ -90,6 +90,21 @@ p {
 .imgLogo {
   max-width: 50%;
 }
+.cajaBusqueda {
+}
+
+.contenedorMaestro {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+/*No tocar (Mejoralito[Aspirina])*/
+.principal,
+.sectionMisionVision,
+.contenedorValores {
+  grid-column: 2/3;
+}
+/*No tocar (Mejoralito[Aspirina])*/
 
 /* === Carrusel  ==== */
 /* ajustar el tamaño de la imagen del carrusel -cynthia*/
@@ -153,44 +168,12 @@ p {
 /*Agregue esto . Miguel*/
 
 .footer {
-  /*Agregue esto . Miguel*/
-  background-color: var(--colorNaranjaFooterYBotones);
-  margin: 0;
-  padding: 0;
-}
-.footerDivNavBarLogo {
-  /*Agregue esto . Miguel*/
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 1.5rem;
-}
-.footerImgLogo {
-  /*Agregue esto . Miguel*/
-  max-width: 25%;
-  padding: 0;
-}
-.footerDivNavBar {
-  /*Agregue esto Miguel*/
-  margin-top: 2rem;
-  padding: 0;
-  text-align: center;
-}
-.direccion {
-  text-align: center;
-  font-size: 2rem;
-  font-family: var(--fuenteTextoCuerpo);
-  font-weight: 400;
-}
-.derechosReservados {
-  /*Agregue esto . Miguel*/
-  text-align: center;
-  font-family: var(--fuenteTextoCuerpo);
-  font-weight: 400;
-  font-size: 2rem;
-  margin: 0;
-  padding: 0;
-  /*Agregue esto . Miguel*/
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--colorNaranjaFooterYBotones);
+  max-height: 20rem;
+  
 }
 
 .iconos-redes {
