@@ -1,7 +1,3 @@
-/*
-    Esta es nuestra hoja de estilos
-*/
-
 /*  === Variables ===*/
 :root {
   --colorNaranjaHeader: #fdc35a;
@@ -20,52 +16,184 @@ html {
   /*1rem = 10px*/
   font-size: 62.5%;
 }
+
 *,
 *:before,
 *:after {
   /*inherit, hereda del elemento padre*/
   box-sizing: inherit;
 }
+
+h1,
+h2,
+h3 {
+  /*agregue esto . Miguel*/
+  font-family: var(--fuenteTextoTitulos);
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  /*agregue esto . Miguel*/
+}
+
+p {
+  /*agregue esto . Miguel*/
+  font-family: var(--fuenteTextoCuerpo);
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
 .enlaces {
+  /*Agregue esto . Miguel*/
+  font-family: var(--fuenteTextoCuerpo);
+  font-weight: 400;
+  font-size: 2rem;
   text-decoration: none;
   color: black;
+  cursor: pointer;
+  /*Agregue esto . Miguel*/
+  margin-right: 20px; /*agregue esto . cynthia*/
 }
 
-
-/*  === Carrusel  ====*/
-.carousel-item {
-  width: 70%;
-  max-height: 300px;
-  float: none;
-  margin: auto;
-}
-.carousel-inner img {
-  max-height: 300px;
-  /* margin: auto; */
-}
-.carousel-inner{
-  margin: auto;
-  object-fit: fill;
-  object-position: center;
-  background-position: center;
-}
-.carousel-inner.active {
-  margin: auto;
+.enlaces:hover {
+  /*Agregue esto . Miguel*/
+  color: white;
+  /*Agregue esto . Miguel*/
 }
 
+.enlaces:last-child {
+  /*Agregue esto . Miguel*/
+  margin: 0;
+  /*Agregue esto . Miguel*/
+}
 
-/*  === Header (Logo|Enlaces|CuadroDeBusqueda|iconoBolsa|iconoPerfil) ===*/
 .headerNavBar {
+  /*Agreue esto . Miguel*/
   display: flex;
   flex-direction: row;
-  /*Centrado VERTICAL*/
   align-items: center;
-  /*Color*/
+  justify-content: space-around;
   background-color: var(--colorNaranjaFondoBarraListas);
+  margin-bottom: 2rem;
+  /*Agreue esto . Miguel*/
 }
-.divNavBarLogo {
-  width: 10rem;
-  height: 10rem;
-  background-color: red;
-  margin: 0 auto;
+
+.imgLogo {
+  max-width: 100px; /*agregue esto . cynthia*/
+  height: auto;
+  margin-top: 20px; /*agregue esto . cynthia*/
+}
+
+/* === Carrusel  ==== */
+/* ajustar el tamaño de la imagen del carrusel -cynthia*/
+.carousel-inner img {
+  margin: auto;
+  max-height: 300px;
+}
+/* ajusta el tamaño del carrusel, se agrego para evitar que al momento de cambiar de imagen se sobrepongan dos imagenes ina sobre otra -cynthia */
+.carousel-inner {
+  max-height: 300px;
+}
+/* se agrega backgroud de la caption para que no se pierda el color de las letras -cynthia*/
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1px;
+}
+
+.sectionMisionVision {
+  /*Agregue esto . Miguel*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+  background-color: var(--colorNaranjaFondoTextos);
+  text-align: center;
+  /*Agregue esto . Miguel*/
+}
+.divMision {
+  padding: 2rem 0;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.divVision {
+  padding: 2rem 0;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+/*Agregue esto . Miguel*/
+.sectionValores{
+  text-align: center;
+}
+.sectionValoresSuperior {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0;
+  gap: 2rem;
+}
+.sectionValoresInferior {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 2rem 0;
+  gap: 2rem;
+}
+.valorResponsabilidad{
+  grid-column: 2/3;
+}
+.valorTransparencia{
+  grid-column: 4/5;
+}
+/*Agregue esto . Miguel*/
+
+.footer {
+  /*Agregue esto . Miguel*/
+  background-color: var(--colorNaranjaFooterYBotones);
+  margin: 0;
+  padding: 0;
+}
+.footerDivNavBarLogo {
+  /*Agregue esto . Miguel*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+.footerImgLogo {
+  /*Agregue esto . Miguel*/
+  max-width: 25%;
+  padding: 0;
+}
+.footerDivNavBar {
+  /*Agregue esto Miguel*/
+  margin-top: 2rem;
+  padding: 0;
+  text-align: center;
+}
+.direccion {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--fuenteTextoCuerpo);
+  font-weight: 400;
+}
+.derechosReservados {
+  /*Agregue esto . Miguel*/
+  text-align: center;
+  font-family: var(--fuenteTextoCuerpo);
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  /*Agregue esto . Miguel*/
+}
+
+.iconos-redes{/*Formato iconos *Mario*/
+  font-size: 3vmax;/*Tamaño de iconos?*/
+}
+
+.iconos-redes:hover{
+  color: black;
+  text-shadow: 0 0 5px white;
 }

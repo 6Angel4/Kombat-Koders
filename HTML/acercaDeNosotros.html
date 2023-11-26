@@ -18,6 +18,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+     <!--Iconos flaticon *MARIO-->
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <!--Font - Hind-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,11 +43,13 @@
     <link rel="stylesheet" href="/CSS/style.css" />
     <title>Acerca de Nosotros</title>
   </head>
+
   <body>
     <!--Inicia header-->
     <header class="headerNavBar">
       <div class="divNavBarLogo">
         <img
+          src="../SRC/img/logo.png"
           class="imgLogo"
           alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras"
         />
@@ -53,123 +58,213 @@
         <nav class="navNavBar">
           <div>
             <a href="" class="enlaces">Inicio</a>
-            <a href="" class="enlaces">Contacto</a
-            ><a href="" class="enlaces">Productos</a
-            ><a href="" class="enlaces">Acerca de Nosotros</a>
+            <a href="" class="enlaces">Contacto</a>
+            <a href="" class="enlaces">Productos</a>
+            <a href="" class="enlaces">Nosotros</a>
+            <a href="" class="enlaces">Bolsa</a>
+            <a href="" class="enlaces"><i class="fi fi-rr-user"></i></a><!--ICONOS-->
           </div>
         </nav>
       </div>
     </header>
     <!--Fin header-->
+
     <!-- carrusel -->
-    <main class="container">
-      <div class="row">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide col-md-6"
-          data-bs-ride="carousel"
+    <main>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-theme="dark"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+          aria-label="Slide 7"></button> -->
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../SRC/img-feature-members/alex.png"
+              class="d-block"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Alejandro Flores</h5>
+              <p>
+                HABILIDADES BLANDAS Autodidacta | Escucha activa | Empatía |
+                Orientación al detalle | Adaptabilidad | Trabajo en equipo |
+                <br />
+                HABILIDADES TÉCNICAS|HTML | CSS | Github | Javascript | Visual
+                Studio Code
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../SRC/img-feature-members/Mario.png"
+              class="d-block"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mario Mata</h5>
+              <p>
+                HABILIDADES BLANDAS | Autodidacta | Creativo| Adaptabilidad |
+                Proactivo | Analítico | Trabajo en equipo | Gestión del tiempo |
+                <br />
+                HABILIDADES TÉCNICAS | HTML | CSS | Javascript | Git
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../SRC/img-feature-members/livi.png"
+              class="d-block"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Olivia Rivas</h5>
+              <p>
+                HABILIDADES BLANDAS | Amor al aprendizaje | Curiosidad | Juicio
+                | Creativa | Perspectiva |
+                <br />HABILIDADES TÉCNICAS | JavaScript | HTML | CSS
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../SRC/img-feature-members/cyn.png"
+              class="d-block"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cynthia Rosales</h5>
+              <p>
+                HABILIDADES BLANDAS | Perseverante | Trabajo en equipo |
+                Creativa | Comunicación efectiva
+                <br />
+                HABILIDADES TÉCNICAS CSS | HTML | JS | Power BI Some
+                representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../SRC/img-feature-members/br.png"
+              class="d-block"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Brayan Hernández</h5>
+              <p>
+                HABILIDADES BLANDAS | Amor por el trabajo| Honestidad | Humildad
+                | Trabajo en equipo |
+                <br />HABILIDADES TÉCNICAS | HTML | CSS | Javascript | Github
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="../SRC/img-feature-members/dani.png"
+              class="d-block"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Daniela León</h5>
+              <p>
+                Habilidades blandas | Responsabilidad | Escucha activa |
+                Tolerancia | Trabajo en equipo |
+                <br />
+                Habilidades técnicas | Html |Css | JavaScript
+              </p>
+            </div>
+          </div>
+
+          <!-- foto de miguel -->
+          <!-- <div class="carousel-item">
+          <img src="../SRC/img-feature-members/  " class="d-block" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Miguel Ortega</h5>
+            <p>
+              Some representative placeholder content for the third slide.
+            </p>
+          </div>
+        </div> -->
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
         >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../SRC/img-feature-members/alex.png"
-                class="d-block"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../SRC/img-feature-members/br.png"
-                class="d-block"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../SRC/img-feature-members/livi.png"
-                class="d-block"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <div class="col-md-6">
-          <p>
-            <br />
-            <br />
-            <br />
-            Nuestra plataforma nace de la preocupación por el bienestar de
-            perros y gatos, ofreciendo productos y servicios de alta calidad que
-            priorizan su salud y comodidad. Nos esforzamos por ser una opción
-            accesible para dueños comprometidos y profesionales del cuidado
-            animal, proporcionando una experiencia de compra enfocada en el amor
-            y el cuidado de las mascotas.
-          </p>
-        </div>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="">
+        <p>
+          Nuestra plataforma nace de la preocupación por el bienestar de perros
+          y gatos, ofreciendo productos y servicios de alta calidad que
+          priorizan su salud y comodidad. Nos esforzamos por ser una opción
+          accesible para dueños comprometidos y profesionales del cuidado
+          animal, proporcionando una experiencia de compra enfocada en el amor y
+          el cuidado de las mascotas.
+        </p>
       </div>
     </main>
+
     <!-- fin carrusel -->
 
-    <section>
-      <div>
+    <!-- inicio misión visión -->
+    <section class="sectionMisionVision">
+      <div class="divMision">
         <h2>Misión</h2>
         <p>
           Brindar a los dueños de animales de compañía (perros y gatos) una
@@ -177,7 +272,7 @@
           enfocados a la salud y comodidad de sus mascotas.
         </p>
       </div>
-      <div>
+      <div class="divVision">
         <h2>Visión</h2>
         <p>
           Nos vemos como una plataforma líder en el comercio de productos para
@@ -186,13 +281,8 @@
           amor que amerita cada mascota.
         </p>
       </div>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sit
-        quia eveniet vel exercitationem maiores, dolorum aperiam libero omnis
-        voluptate sunt impedit enim, dolores hic non nostrum porro expedita
-        consectetur!
-      </p>
     </section>
+<<<<<<< HEAD
     <section>
       <p>
         =====LIVI===== Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -219,8 +309,102 @@
 =======
       <p>cynthia</p>
 >>>>>>> d9ce86b5c8455d79a17820b7c332578391b9ceba
+=======
+    <!-- fin misión visión -->
+
+    <!-- Valores-->
+    <div class="sectionTitleValores">
+      <h2>Valores</h2>
+    </div>
+    <section class="sectionValores">
+      <div class="sectionValoresSuperior">
+        <div class="valorCalidad">
+          <h3>Calidad</h3>
+          <p>
+            Buscamos que nuestros clientes tengan la confianza de que están
+            recibiendo lo mejor para sus animales de compañía.
+          </p>
+        </div>
+        <div class="valorInnovacion">
+          <h3>Innovación</h3>
+          <p>
+            Mantenemos la disposición para adaptarnos rápidamente a los cambios,
+            necesidades del mercado y tendencias en la industria de las
+            mascotas.
+          </p>
+        </div>
+        <div class="valorTrabajoEnEquipo">
+          <h3>Trabajo en Equipo</h3>
+          <p>
+            Promovemos la colaboración y comunicación entre los integrantes de
+            nuestro equipo para garantizar un servicio integral a nuestros
+            clientes.
+          </p>
+        </div>
+      </div>
+      <div class="sectionValoresInferior">
+        <div class="valorResponsabilidad">
+          <h3>Responsabilidad social y ambiental</h3>
+          <p>
+            Compromiso con el bienestar de las mascotas: priorizamos el
+            bienestar de las mascotas. Tratamos de compartir prácticas y
+            productos que beneficien la vida de los animales.
+          </p>
+        </div>
+        <div class="valorTransparencia">
+          <h3>Transparencia</h3>
+          <p>
+            Protegemos la privacidad y los datos proporcionados por nuestros
+            clientes.
+          </p>
+        </div>
+      </div>
+>>>>>>> 507dca154b7069f654514a67c9c2aea10ca14b50
     </section>
-    <footer></footer>
+
+    <!-- fin Valores-->
+
+    <!-- footer-->
+    <footer class="footer">
+      <section>
+        <div class="footerDivNavBarLogo">
+          <img
+            src="../SRC/img/logo.png"
+            class="footerImgLogo"
+            alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras"
+          />
+        </div>
+        <!--Barra de iconos de redes *Mario-->
+        <div class="footerDivNavBar">
+          <nav class="navNavBar">
+            <a href="" class="iconos-redes enlaces"><i class="fi fi-brands-facebook"></i></a>
+            <a href="" class="iconos-redes enlaces"><i class="fi fi-brands-instagram"></i></a>
+            <a href="" class="iconos-redes enlaces"><i class="fi fi-brands-twitter-alt-circle"></i></a>
+            <a href="" class="iconos-redes enlaces"><i class="fi fi-brands-tik-tok"></i></a>
+          </nav>
+        </div>
+
+        <div class="footerDivNavBar">
+          <nav class="navNavBar">
+            <a href="" class="enlaces">Inicio</a>
+            <a href="" class="enlaces">Contacto</a>
+            <a href="" class="enlaces">Productos</a>
+            <a href="" class="enlaces">Nosotros</a>
+          </nav>
+        </div>
+      </section>
+      <br />
+      <p class="direccion">
+        Av. San José CP. 304950 Teléfono:55-34-23-45-56 <br />Email:
+        example@gmail.com
+      </p>
+      <br />
+      <p class="derechosReservados">
+        Pet Supermarket. Todos los derechos reservados.
+      </p>
+    </footer>
+    <!-- fin valores-->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
