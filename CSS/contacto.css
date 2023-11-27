@@ -1,8 +1,12 @@
 .eldivMario{
  color: yellowgreen;
  font-size: 500px;
- 
+}
 #holi{
     background-color: aquamarine;
     color: blueviolet;
+}
+.br{
+    background-color: red;
+    color: blue;
 }
