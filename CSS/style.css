@@ -77,9 +77,8 @@ p {
   display: none;
 }
 
-
 .divBusqueda {
-position: relative;
+  position: relative;
 }
 
 .barraBusqueda {
@@ -88,12 +87,11 @@ position: relative;
   border-radius: 2rem;
   border: none;
   outline: none;
-  }
+}
 .lupa {
   position: absolute;
-  padding: 0.8rem ;
+  padding: 0.8rem;
 }
-
 
 @media (min-width: 768px) {
   .divNav {

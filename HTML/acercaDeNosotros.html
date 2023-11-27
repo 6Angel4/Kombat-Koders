@@ -38,22 +38,22 @@
       href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
     <!--Font - Hind-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Hind&display=swap"
       rel="stylesheet"
     />
     <!--Font - Montserrat-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
     <!--Link-Propio-->
-    <link rel="stylesheet" href="/CSS/normalize.css"/>
-    <link rel="stylesheet" href="/CSS/style.css"/>
+    <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
     <title>Acerca de Nosotros</title>
   </head>
 
@@ -69,10 +69,31 @@
           />
         </a>
       </div>
-      <div class="navHamburger">
+      <div class="contenedorHamburguesa">
+        <div class="navHamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+          </svg>
+        </div>
+      </div>
+      <div class="contenedorBusqueda">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-menu-2"
+          class="icon icon-tabler icon-tabler-search"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -83,9 +104,8 @@
           stroke-linejoin="round"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M4 6l16 0" />
-          <path d="M4 12l16 0" />
-          <path d="M4 18l16 0" />
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
         </svg>
       </div>
       <div class="divNav">
@@ -97,34 +117,28 @@
         </nav>
       </div>
 
-
- <!-- Caja de búsqueda usando un input de tipo text -->
-      <!-- <div class="divBusqueda">
-       
+      <!--
+      <div class="divBusqueda">
+         Caja de búsqueda usando un input de tipo text 
         <input
           class="form-control me-2 cajaBusqueda rounded-pill"
           id="searchBar"
           type="search"
-          placeholder="      Buscar..."
+          placeholder="Buscar..."
           aria-label="Search"
         />
-
-        <div class="divBusquedaIcono">
-          <button class="btn" type="submit">
-            <i class="bi bi-search"></i>
-          </button>
-        </div>
-
-      </div> -->
-
-      <div class="divBusqueda">       
-          <input class="barraBusqueda" type="text" placeholder="      Buscar">
-          <button class="btn lupa" type="submit"><i class="bi bi-search"></i></button>
+        <button class="btn rounded-pill" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
       </div>
-
-
-      
-      <div class="iconos">
+    -->
+      <div class="divBusqueda">
+        <input class="barraBusqueda" type="text" placeholder="      Buscar" />
+        <button class="btn lupa" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      <div class="contenedorCarrito">
         <a href="#" class="enlaces enlaceCarrito">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +159,8 @@
             <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
           </svg>
         </a>
-
+      </div>
+      <div class="contenedorUsuario">
         <a href="" class="enlaces enlaceUsuario">
           <svg
             xmlns="http://www.w3.org/2000/svg"
