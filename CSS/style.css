@@ -71,11 +71,14 @@ p {
   margin: 0;
   /*Agregue esto . Miguel*/
 }
-.divNav{
+
+.divNav {
+  /*Esconde el nav*/
   display: none;
 }
 @media (min-width: 768px) {
-  .divNav{
+  .divNav {
+    /*Muestra el nav*/
     display: flex;
     flex-direction: row;
   }
@@ -136,11 +139,18 @@ p {
   font-weight: 400;
   font-size: 2rem;
 }
-
 .contenedorMaestro {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 0.5fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .contenedorMaestro {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+  }
 }
 /*No tocar (Mejoralito[Aspirina])*/
 .principal,
@@ -170,14 +180,30 @@ p {
   /*Agregue esto . Miguel*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   margin: 2rem 0;
   background-color: var(--colorNaranjaFondoTextos);
   text-align: center;
-  max-height: 25rem;
+  max-height: 35rem;
   padding: 2rem;
   /*Agregue esto . Miguel*/
 }
+
+@media (min-width: 768px) {
+  .sectionMisionVision {
+    /*Agregue esto . Miguel*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+    background-color: var(--colorNaranjaFondoTextos);
+    text-align: center;
+    max-height: 25rem;
+    padding: 2rem;
+    /*Agregue esto . Miguel*/
+  }
+}
+
 .divMision {
   padding: 2rem 0;
   grid-column: 1/2;
@@ -195,11 +221,18 @@ p {
 }
 
 /*Agregue esto . Miguel*/
+
 .contenedorValores {
   margin: 2rem 0;
 }
 .sectionValores {
   text-align: center;
+}
+.sectionValores h3 {
+  font-size: 1.8rem;
+}
+.sectionValores p {
+  font-size: 1rem;
 }
 .sectionValoresSuperior {
   display: grid;
@@ -219,17 +252,53 @@ p {
 .valorTransparencia {
   grid-column: 4/5;
 }
-/*Agregue esto . Miguel*/
 
+@media (min-width: 768px) {
+  .contenedorValores {
+    margin: 2rem 0;
+  }
+  .sectionValores {
+    text-align: center;
+  }
+  .sectionValoresSuperior {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 0;
+    gap: 2rem;
+  }
+  .sectionValoresInferior {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 2rem 0;
+    gap: 2rem;
+  }
+  .valorResponsabilidad {
+    grid-column: 2/3;
+  }
+  .valorTransparencia {
+    grid-column: 4/5;
+  }
+}
+
+/*Agregue esto . Miguel*/
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--colorNaranjaFooterYBotones);
-  max-height: 20rem;
+  max-height: 35rem;
   padding: 3rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
 }
-
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorNaranjaFooterYBotones);
+    max-height: 30rem;
+    padding: 3rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
+  }
+}
 .iconos-redes {
   /*Formato iconos *Mario*/
   max-width: 40px; /*Tamaño de iconos?*/ /*Modifique el tamaño de los iconos - Alex*/
