@@ -287,7 +287,7 @@ p {
   align-items: center;
   background-color: var(--colorNaranjaFooterYBotones);
   max-height: 35rem;
-  padding: 3rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
+  padding: 1rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
 }
 @media (min-width: 768px) {
   .footer {
