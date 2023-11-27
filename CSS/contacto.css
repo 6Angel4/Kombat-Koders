@@ -1,0 +1,8 @@
+#miDiv {
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde con color gris */
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Tipo de fuente */
+    color: #333; /* Color del texto */
+  }
+  
