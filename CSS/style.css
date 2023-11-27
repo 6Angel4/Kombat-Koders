@@ -49,8 +49,8 @@ p {
 
 .enlaces {
   /*Agregue esto . Miguel*/
-  font-family: var(--fuenteTextoCuerpo);
-  font-weight: 400;
+  font-family: var(--fuenteTextoTitulos); /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+  font-weight: 700; /*Cambie la fuente de acuerdo al Mock Up - Alex*/
   font-size: 2rem;
   text-decoration: none;
   color: black;
@@ -86,11 +86,14 @@ p {
   flex-direction: row;
   justify-content: center;
   max-height: 15rem;
-  background-color: blue;
+  /* background-color: blue; */
+
 }
 
 .imgLogo {
-  max-width: 30%;
+  max-width: 100px; /* Ajuste el tamaño del logo - Alex */
+  padding: 1rem 0; /* Le di un espacio al logo para que no este pegado con las lías del navbar - Alex*/
+
 }
 .cajaBusqueda {
   font-family: var(--fuenteTextoCuerpo);
@@ -188,11 +191,12 @@ p {
   align-items: center;
   background-color: var(--colorNaranjaFooterYBotones);
   max-height: 20rem;
+  padding: 3rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
 }
 
 .iconos-redes {
   /*Formato iconos *Mario*/
-  font-size: 3vmax; /*Tamaño de iconos?*/
+  max-width: 40px; /*Tamaño de iconos?*/ /*Modifique el tamaño de los iconos - Alex*/
 }
 
 .iconos-redes:hover {
