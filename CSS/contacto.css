@@ -1,3 +1,4 @@
+
 #miDiv {
     background-color: #f0f0f0; /* Color de fondo */
     padding: 20px; /* Espaciado interno */
@@ -6,3 +7,18 @@
     color: #333; /* Color del texto */
   }
   
+.contenedor{
+    color: white;
+    background-color: crimson;
+}
+
+.eldivMario{
+ color: yellowgreen;
+ font-size: 500px;
+}
+ 
+#holi{
+    background-color: aquamarine;
+    color: blueviolet;
+}
+
