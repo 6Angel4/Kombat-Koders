@@ -76,6 +76,27 @@ p {
   /*Esconde el nav*/
   display: none;
 }
+
+
+.divBusqueda {
+position: relative;
+}
+
+.barraBusqueda {
+  padding: 1rem;
+  padding-right: 3.5rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  }
+.lupa {
+  position: absolute;
+  padding: 0.8rem ;
+
+
+}
+
+
 @media (min-width: 768px) {
   .divNav {
     /*Muestra el nav*/
