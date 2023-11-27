@@ -112,6 +112,8 @@ p {
   }
 }
 
+
+
 .header {
   display: flex;
   flex-direction: row;
@@ -281,22 +283,15 @@ p {
 }
 
 /*Agregue esto . Miguel*/
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--colorNaranjaFooterYBotones);
-  max-height: 35rem;
-  padding: 1rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
-}
+
 @media (min-width: 768px) {
   .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--colorNaranjaFooterYBotones);
-    max-height: 30rem;
-    padding: 3rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
+    max-height: 35rem;
+    padding: 1rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
   }
 }
 .iconos-redes {
