@@ -111,9 +111,6 @@ p {
     margin-right: 20px; /*agregue esto . cynthia*/
   }
 }
-
-
-
 .header {
   display: flex;
   flex-direction: row;
@@ -123,7 +120,33 @@ p {
   max-height: 10rem;
   margin-bottom: 2rem;
 }
+.divBusqueda {
+  display: none;
+}
+.navHamburger {
+  background-color: var(--colorNaranjaFooterYBotones);
+  width: 4rem;
+  border-radius: 2rem;
+}
 
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--colorNaranjaFondoBarraListas);
+    max-height: 10rem;
+    margin-bottom: 2rem;
+  }
+  .divBusqueda {
+    display: flex;
+    flex-direction: row;
+  }
+  .navHamburger {
+    display: none;
+  }
+}
 .enlaceImagen {
   display: flex;
   flex-direction: row;
@@ -190,8 +213,21 @@ p {
   padding: 2rem;
   /*Agregue esto . Miguel*/
 }
-
 @media (min-width: 768px) {
+  .sectionMisionVision {
+    /*Agregue esto . Miguel*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+    background-color: var(--colorNaranjaFondoTextos);
+    text-align: center;
+    max-height: 35rem;
+    padding: 2rem;
+    /*Agregue esto . Miguel*/
+  }
+}
+@media (min-width: 992px) {
   .sectionMisionVision {
     /*Agregue esto . Miguel*/
     display: grid;
@@ -215,11 +251,6 @@ p {
   padding: 2rem 0;
   grid-column: 2/3;
   grid-row: 1/3;
-}
-
-.divBusqueda {
-  display: flex;
-  flex-direction: row;
 }
 
 /*Agregue esto . Miguel*/
@@ -283,15 +314,22 @@ p {
 }
 
 /*Agregue esto . Miguel*/
-
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--colorNaranjaFooterYBotones);
+  max-height: 35rem;
+  padding: 1rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
+}
 @media (min-width: 768px) {
   .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--colorNaranjaFooterYBotones);
-    max-height: 35rem;
-    padding: 1rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
+    max-height: 30rem;
+    padding: 3rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
   }
 }
 .iconos-redes {
