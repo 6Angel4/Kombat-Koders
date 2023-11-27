@@ -49,7 +49,9 @@ p {
 
 .enlaces {
   /*Agregue esto . Miguel*/
-  font-family: var(--fuenteTextoTitulos); /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+  font-family: var(
+    --fuenteTextoTitulos
+  ); /*Cambie la fuente de acuerdo al Mock Up - Alex*/
   font-weight: 700; /*Cambie la fuente de acuerdo al Mock Up - Alex*/
   font-size: 2rem;
   text-decoration: none;
@@ -58,7 +60,6 @@ p {
   /*Agregue esto . Miguel*/
   margin-right: 20px; /*agregue esto . cynthia*/
 }
-
 .enlaces:hover {
   /*Agregue esto . Miguel*/
   color: white;
@@ -69,6 +70,37 @@ p {
   /*Agregue esto . Miguel*/
   margin: 0;
   /*Agregue esto . Miguel*/
+}
+
+@media (min-width: 768px) {
+  .enlaces {
+    /*Agregue esto . Miguel*/
+    font-family: var(
+      --fuenteTextoTitulos
+    ); /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+    font-weight: 700; /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    /*Agregue esto . Miguel*/
+    margin-right: 20px; /*agregue esto . cynthia*/
+  }
+}
+@media (min-width: 992px) {
+  .enlaces {
+    /*Agregue esto . Miguel*/
+    font-family: var(
+      --fuenteTextoTitulos
+    ); /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+    font-weight: 700; /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    /*Agregue esto . Miguel*/
+    margin-right: 20px; /*agregue esto . cynthia*/
+  }
 }
 
 .header {
@@ -87,13 +119,11 @@ p {
   justify-content: center;
   max-height: 15rem;
   /* background-color: blue; */
-
 }
 
 .imgLogo {
   max-width: 100px; /* Ajuste el tamaño del logo - Alex */
   padding: 1rem 0; /* Le di un espacio al logo para que no este pegado con las lías del navbar - Alex*/
-
 }
 .cajaBusqueda {
   font-family: var(--fuenteTextoCuerpo);
@@ -153,7 +183,7 @@ p {
   grid-row: 1/3;
 }
 
-.divBusqueda{
+.divBusqueda {
   display: flex;
   flex-direction: row;
 }
