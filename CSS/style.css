@@ -53,7 +53,7 @@ p {
     --fuenteTextoTitulos
   ); /*Cambie la fuente de acuerdo al Mock Up - Alex*/
   font-weight: 700; /*Cambie la fuente de acuerdo al Mock Up - Alex*/
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: black;
   cursor: pointer;
