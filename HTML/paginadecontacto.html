@@ -53,24 +53,31 @@
 
   <div class="container mt-5">
     <h2>Comunicate con nosotros</h2>
-    <form id="formulario">
+    <form id="contactForm">
       <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
+        <label id="name" for="nombre" class="form-label">Nombre</label>
         <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
       </div>
       <div class="mb-3">
-        <label for="correo" class="form-label">Correo electrónico</label>
+        <label id="email" for="correo" class="form-label">Correo electrónico</label>
         <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
       </div>
+
+      <div class="mb-3">
+        <label id="phone" for="correo" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="teléfono" placeholder="Ingresa número">
+      </div>
+      
       
 
       <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje</label>
+        <label id="message" for="mensaje" class="form-label">Mensaje</label>
         <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      <button id="submmit" type="submit" class="btn btn-primary">Enviar mensaje</button>
     </form>
   </div>
+
 
   <!-- Footer personalizado -->
   <footer>
