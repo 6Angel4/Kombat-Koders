@@ -1,11 +1,13 @@
 document.getElementById('formulario').addEventListener('submit', (event) => {//getE... permite acceder y manipular elementos HTML por el atributo id("formulario"),utiliza addEventListener para escuchar el evento "submit" 
     event.preventDefault(); // Prevenir el envío por defecto del formulario
     const email = document.getElementById('correo').value; //obtiene el valor de un campo de HTML con el id "correo, se accede al elemento mediante document.getElementById('correo'), y luego se extrae su valor con .value
+    const mensaje = document.getElementById('mensaje').value;
     if (validaEmail(email)) {//condicional para mensajes, y evita que salgan las dos alertas seguidas, aunque el email este incorrecto
         alert('¡Mensaje enviado con éxito!');//alert bloquea funciones, dejar al ultimo
     } else {
         alert("Por favor, ingrese un correo electrónico válido");
     }
+    validaMensaje(mensaje);
 });
 
 
@@ -18,6 +20,20 @@ const validaEmail = (email) => { //funcion de validacion de email
         return false;
     }
 };
+
+
+const validaMensaje = (mensaje) => {
+    if (mensaje === ""){
+        alert("Por favor escribe tu mensaje.")
+        return false;
+    } else if(mensaje.length<3){
+        alert("Tu mensaje es muy corto, para una buena comunicación te pedimos que nos cuentes con más detalles tu situación.");
+        return false;
+    }   
+};
+
+
+
 
 
 ///^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
