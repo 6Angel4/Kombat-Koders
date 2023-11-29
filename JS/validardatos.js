@@ -1,5 +1,3 @@
-
-
 // document.getElementById('contactForm').addEventListener('submit', function(event) {
 //     event.preventDefault(); // Prevenir el envío por defecto del formulario
 
@@ -32,5 +30,5 @@
 // alert('¡Mensaje enviado con éxito!');
 // });
 
-
+//  Obtener los valores de phone
 
