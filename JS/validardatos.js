@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 document.getElementById('formulario').addEventListener('submit', (event) => {//getE... permite acceder y manipular elementos HTML por el atributo id("formulario"),utiliza addEventListener para escuchar el evento "submit" 
     event.preventDefault(); // Prevenir el envío por defecto del formulario
     const email = document.getElementById('correo').value; //obtiene el valor de un campo de HTML con el id "correo, se accede al elemento mediante document.getElementById('correo'), y luego se extrae su valor con .value
@@ -59,7 +57,6 @@ const validaMensaje = (mensaje) => {
 // $                Coincide con el final de la cadena
 
 
->>>>>>> bbc41b98c11a3f9e31b1093e18bee2dc3ad5f5e2
 // document.getElementById('contactForm').addEventListener('submit', function(event) {
 //     event.preventDefault(); // Prevenir el envío por defecto del formulario
 
