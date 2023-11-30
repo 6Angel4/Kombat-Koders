@@ -205,25 +205,25 @@
   <div class="container mt-5">
     <h2>Comunícate con nosotros</h2>
 
-    <form id="formulario">
+    <form id="formulario" action="https://formsubmit.co/399e3c6402b9f3cddca9d61ecb4d58b4" method="POST"> 
       <div class="mb-3">
 
         <label id="name" for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="Nombre">
       </div>
 
       <div class="mb-3">
         <label id="email" for="correo" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
+        <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico:" name="E-mail">
       </div>
 
       <div class="mb-3">
         <label for="telefono" class="form-label">Número de teléfono</label>
-        <input type="telefono" class="form-control" id="telefono" placeholder="Ingresa tu número de telefono">
+        <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de telefono" name="Teléfono">
       </div>
       <div class="mb-3">
         <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" name="Mensaje"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
