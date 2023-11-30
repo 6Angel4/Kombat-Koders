@@ -3,8 +3,8 @@ const datosVerificados = (usuario) => {
     const nombreRegex = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const telefonoSinEspacios = usuario.telefono.replace(/[ -]/g, "");
-    const telefonoRegex = /^(55)?(\d{2})(\d{2})(\d{2})(\d{2})$/;
-
+    const telefonoRegex = /^(\d{2})?(\d{2})(\d{2})(\d{2})(\d{2})$/;
+    
 
     if (usuario.nombre.trim().length === 0) {
         alert("Falta tu nombre");
