@@ -208,7 +208,8 @@ p {
 }
 
 .imgLogo {
-  max-width: 100px; /* Ajuste el tamaño del logo - Alex */
+  max-width: 100px;
+  max-height: 85px; /* Ajuste el tamaño del logo - Alex */
   padding: 1rem 0; /* Le di un espacio al logo para que no este pegado con las lías del navbar - Alex*/
 }
 .cajaBusqueda {
@@ -242,6 +243,7 @@ p {
 .carousel-inner img {
   margin: auto;
   max-height: 300px;
+  border-radius: 20px;
 }
 /* ajusta el tamaño del carrusel, se agrego para evitar que al momento de cambiar de imagen se sobrepongan dos imagenes ina sobre otra -cynthia */
 .carousel-inner {
