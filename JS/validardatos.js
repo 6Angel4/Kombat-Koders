@@ -2,14 +2,8 @@ const datosVerificados = (usuario) => {
     let esValido = true;
     const nombreRegex = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-<<<<<<< HEAD
-    const telefonoSinEspacios = usuario.telefono.replace(/[ -]/g, "");
-    const telefonoRegex = /^(\d{2})?(\d{2})(\d{2})(\d{2})(\d{2})$/;
-    
-=======
     const telefonoRegex = /^[0-9]+$/;
     const telefonoSinSeparacion = usuario.telefono.replace(/[ +-.,()]/g, "");
->>>>>>> 0ae7a1eb068f9be680bc16ac2bf03373dc551619
 
     if (usuario.nombre.trim().length === 0) {
         alert("Ingresa tu nombre, por favor.");
