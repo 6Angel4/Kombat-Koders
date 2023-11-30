@@ -4,7 +4,7 @@ const datosVerificados = (usuario) => {
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const telefonoSinEspacios = usuario.telefono.replace(/[ -]/g, "");
     const telefonoRegex = /^(55)?(\d{2})(\d{2})(\d{2})(\d{2})$/;
-
+    
 
     if (usuario.nombre.trim().length === 0) {
         alert("Falta tu nombre");
@@ -15,7 +15,7 @@ const datosVerificados = (usuario) => {
     } else if (!emailRegex.test(usuario.email)) {
         alert("Este email no tiene un formato valido");
         esValido = false;
-    } else if (!telefonoRegex.test(telefonoSinEspacios) && !telefonoSinEspacios.length === 10) {
+    } else if (!telefonoRegex.test(telefonoSinEspacios) || !telefonoSinEspacios.length === 10) {
         alert("Tú número no es valido");
         esValido = false;
     } else if (usuario.mensaje === "") {
@@ -36,18 +36,17 @@ document.getElementById("formulario").addEventListener("submit", (event) => {
 
 const usuario = { 
     
-    nombre : document.getElementById('nombre').value;
-    email : document.getElementById("correo").value; //obtiene el valor de un campo de HTML con el id "correo, se accede al elemento mediante document.getElementById('correo'), y luego se extrae su valor con .value
-    telefono : document.getElementById("telefono").value;
-    mensaje : document.getElementById("mensaje").value;
-    }
-   
+    nombre : document.getElementById('nombre').value,
+    email : document.getElementById("correo").value, //obtiene el valor de un campo de HTML con el id "correo, se accede al elemento mediante document.getElementById('correo'), y luego se extrae su valor con .value
+    telefono : document.getElementById("telefono").value,
+    mensaje : document.getElementById("mensaje").value
+    }   
 
     if( datosVerificados( usuario ) ){
-        enviarDatosAlServidor( usuario );
-    }
+//         enviarDatosAlServidor( usuario );
+  }
 
-});
+ });
 
 
 
