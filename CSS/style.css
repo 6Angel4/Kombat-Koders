@@ -395,3 +395,14 @@ p {
   color: black;
   text-shadow: 0 0 5px white;
 }
+
+/* ====================================================navbar===============??????????????????????? */
+
+/* .navbar-custom {
+  background-color:  #f68035;
+} */
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #f68035;
+}
