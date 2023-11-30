@@ -43,7 +43,7 @@ const usuario = {
     }
    
 
-    if( datosVerificados( usuario )  ){
+    if( datosVerificados( usuario ) ){
         enviarDatosAlServidor( usuario );
     }
 
