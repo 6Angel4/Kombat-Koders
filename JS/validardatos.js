@@ -3,11 +3,7 @@ const datosVerificados = (usuario) => {
     const nombreRegex = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const telefonoSinEspacios = usuario.telefono.replace(/[ -]/g, "");
-<<<<<<< HEAD
     const telefonoRegex = /^(\d{2})?(\d{2})(\d{2})(\d{2})(\d{2})$/;
-=======
-    const telefonoRegex = /^(55)?(\d{2})(\d{2})(\d{2})(\d{2})$/;
->>>>>>> e03bfedf7f5f81fde88bbc6ebbb14ed41189dd08
     
 
     if (usuario.nombre.trim().length === 0) {
