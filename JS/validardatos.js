@@ -1,7 +1,24 @@
+
+
+const validarNombre = (nombre) => {
+    const nombreRegex = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+    if (nombreRegex.test(nombre)) {
+        console.log(nombre);
+    } else if (nombre.trim().length === 0) {
+        alert("El campo esta vacío, ingresa tu nombre");
+        return false;
+    }
+};
+
+
+
 document.getElementById('formulario').addEventListener('submit', (event) => {//getE... permite acceder y manipular elementos HTML por el atributo id("formulario"),utiliza addEventListener para escuchar el evento "submit" 
     event.preventDefault(); // Prevenir el envío por defecto del formulario
+    const nombre = document.getElementById('nombre').value;
     const email = document.getElementById('correo').value; //obtiene el valor de un campo de HTML con el id "correo, se accede al elemento mediante document.getElementById('correo'), y luego se extrae su valor con .value
     const mensaje = document.getElementById('mensaje').value;
+    validarNombre(nombre);
+    
     if (validaEmail(email)) {//condicional para mensajes, y evita que salgan las dos alertas seguidas, aunque el email este incorrecto
         alert('¡Mensaje enviado con éxito!');//alert bloquea funciones, dejar al ultimo
     } else {
@@ -23,16 +40,14 @@ const validaEmail = (email) => { //funcion de validacion de email
 
 
 const validaMensaje = (mensaje) => {
-    if (mensaje === ""){
+    if (mensaje === "") {
         alert("Por favor escribe tu mensaje.")
         return false;
-    } else if(mensaje.length<3){
+    } else if (mensaje.length < 3) {
         alert("Tu mensaje es muy corto, para una buena comunicación te pedimos que nos cuentes con más detalles tu situación.");
         return false;
-    }   
+    }
 };
-
-
 
 
 
