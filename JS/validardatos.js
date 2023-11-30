@@ -1,61 +1,58 @@
+const datosVerificados = (usuario) => {
+    let esValido = true;
+    const nombreRegex = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const telefonoSinEspacios = usuario.telefono.replace(/[ -]/g, "");
+    const telefonoRegex = /^(55)?(\d{2})(\d{2})(\d{2})(\d{2})$/;
+
+
+    if (usuario.nombre.trim().length === 0) {
+        alert("Falta tu nombre");
+        esValido = false;
+    } else if (!nombreRegex.test(usuario.nombre)) {
+        alert("Ingresa solo letras");
+        esValido = false;
+    } else if (!emailRegex.test(usuario.email)) {
+        alert("Este email no tiene un formato valido");
+        esValido = false;
+    } else if (!telefonoRegex.test(telefonoSinEspacios) && !telefonoSinEspacios.length === 10) {
+        alert("Tú número no es valido");
+        esValido = false;
+    } else if (usuario.mensaje === "") {
+        alert("Por favor escribe un mensaje");
+        esValido = false; 
+    }  else if (mensaje.length < 3) {
+        alert("Tu mensaje es muy corto, para una buena comunicación te pedimos que nos cuentes con más detalles tu situación.");
+        esValido = false;
+    }
+    return esValido;
+}
+
+
+
 document.getElementById("formulario").addEventListener("submit", (event) => {
-  //getE... permite acceder y manipular elementos HTML por el atributo id("formulario"),utiliza addEventListener para escuchar el evento "submit"
-  event.preventDefault(); // Prevenir el envío por defecto del formulario
-  const email = document.getElementById("correo").value; //obtiene el valor de un campo de HTML con el id "correo, se accede al elemento mediante document.getElementById('correo'), y luego se extrae su valor con .value
-  const telefono = document.getElementById("telefono").value;
-  const mensaje = document.getElementById("mensaje").value;
-  if (validaEmail(email)) {
-    //condicional para mensajes, y evita que salgan las dos alertas seguidas, aunque el email este incorrecto
-    alert("¡Mensaje enviado con éxito!"); //alert bloquea funciones, dejar al ultimo
-  } else {
-    alert("Por favor, ingrese un correo electrónico válido");
-  }
-  validaTelefono(telefono);
-  validaMensaje(mensaje);
+    //getE... permite acceder y manipular elementos HTML por el atributo id("formulario"),utiliza addEventListener para escuchar el evento "submit"
+    event.preventDefault(); // Prevenir el envío por defecto del formulario
+
+const usuario = { 
+    
+    nombre : document.getElementById('nombre').value;
+    email : document.getElementById("correo").value; //obtiene el valor de un campo de HTML con el id "correo, se accede al elemento mediante document.getElementById('correo'), y luego se extrae su valor con .value
+    telefono : document.getElementById("telefono").value;
+    mensaje : document.getElementById("mensaje").value;
+    }
+   
+
+    if( datosVerificados( usuario ) ){
+        enviarDatosAlServidor( usuario );
+    }
+
 });
 
-const validaEmail = (email) => {
-  //funcion de validacion de email
-  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //expresiones regulares son patrones de búsqueda y manipulación de cadenas de texto, magia negra, no tocar*
-  if (emailRegex.test(email)) {
-    //test es un metodo que se usa en expresiones regulares(regex) para comprobar si una cadena es igual al regex
-    return true; //test devuelve true si hay una coincidencia y false si no hay coincidencia
-  } else {
-    return false;
-  }
-};
 
-const validaTelefono = (telefono) => {
-  // Eliminar espacios y guiones
-  /**
-   * Hacer uso de replace, para reemplazar los - (globales) por nada
-   */
-  const telefonoSinEspacios = telefono.replace(/[ -]/g, "");
-  // Definir una expresión regular para validar el formato del teléfono
-  const formatoValido = /^(55)?(\d{2})(\d{2})(\d{2})(\d{2})$/;
-  // Comprobar si el número cumple con el formato y tiene 10 dígitos
-  if (
-    formatoValido.test(telefonoSinEspacios) &&
-    telefonoSinEspacios.length === 10
-  ) {
-    return true;
-  } else {
-    alert("Ingresa un número de teléfono válido con 10 dígitos");
-    return false;
-  }
-};
 
-const validaMensaje = (mensaje) => {
-  if (mensaje === "") {
-    alert("Por favor escribe tu mensaje.");
-    return false;
-  } else if (mensaje.length < 3) {
-    alert(
-      "Tu mensaje es muy corto, para una buena comunicación te pedimos que nos cuentes con más detalles tu situación."
-    );
-    return false;
-  }
-};
+
+
 
 ///^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
