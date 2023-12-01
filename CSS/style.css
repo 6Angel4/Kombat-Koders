@@ -9,6 +9,7 @@
   --fuenteTextoTitulos: "Montserrat", sans-serif;
   --fuenteTextoCuerpo: "Hind", sans-serif;
 }
+
 /*  === Globales y Generales ===*/
 html {
   /*Border ni padding no afectan el ancho*/
@@ -29,7 +30,8 @@ h2,
 h3 {
   /*agregue esto . Miguel*/
   font-family: var(--fuenteTextoTitulos);
-  font-weight: 700; /*700-bold*/
+  font-weight: 700;
+  /*700-bold*/
   font-size: 3rem;
   padding: 0;
   margin: 0;
@@ -49,17 +51,19 @@ p {
 
 .enlaces {
   /*Agregue esto . Miguel*/
-  font-family: var(
-    --fuenteTextoTitulos
-  ); /*Cambie la fuente de acuerdo al Mock Up - Alex*/
-  font-weight: 700; /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+  font-family: var(--fuenteTextoTitulos);
+  /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+  font-weight: 700;
+  /*Cambie la fuente de acuerdo al Mock Up - Alex*/
   font-size: 1.4rem;
   text-decoration: none;
   color: black;
   cursor: pointer;
   /*Agregue esto . Miguel*/
-  margin-right: 20px; /*agregue esto . cynthia*/
+  margin-right: 20px;
+  /*agregue esto . cynthia*/
 }
+
 .enlaces:hover {
   /*Agregue esto . Miguel*/
   color: white;
@@ -104,6 +108,7 @@ p {
   border: none;
   outline: none;
 }
+
 .lupa {
   position: absolute;
   padding: 0.8rem;
@@ -115,35 +120,40 @@ p {
     display: flex;
     flex-direction: row;
   }
+
   .enlaces {
     /*Agregue esto . Miguel*/
-    font-family: var(
-      --fuenteTextoTitulos
-    ); /*Cambie la fuente de acuerdo al Mock Up - Alex*/
-    font-weight: 700; /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+    font-family: var(--fuenteTextoTitulos);
+    /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+    font-weight: 700;
+    /*Cambie la fuente de acuerdo al Mock Up - Alex*/
     font-size: 1.1rem;
     text-decoration: none;
     color: black;
     cursor: pointer;
     /*Agregue esto . Miguel*/
-    margin-right: 20px; /*agregue esto . cynthia*/
+    margin-right: 20px;
+    /*agregue esto . cynthia*/
   }
 }
+
 @media (min-width: 992px) {
   .enlaces {
     /*Agregue esto . Miguel*/
-    font-family: var(
-      --fuenteTextoTitulos
-    ); /*Cambie la fuente de acuerdo al Mock Up - Alex*/
-    font-weight: 700; /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+    font-family: var(--fuenteTextoTitulos);
+    /*Cambie la fuente de acuerdo al Mock Up - Alex*/
+    font-weight: 700;
+    /*Cambie la fuente de acuerdo al Mock Up - Alex*/
     font-size: 2rem;
     text-decoration: none;
     color: black;
     cursor: pointer;
     /*Agregue esto . Miguel*/
-    margin-right: 20px; /*agregue esto . cynthia*/
+    margin-right: 20px;
+    /*agregue esto . cynthia*/
   }
 }
+
 .header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -185,6 +195,7 @@ p {
 .divBusqueda {
   display: none;
 }
+
 .contenedorHamburguesa {
   background-color: var(--colorNaranjaFooterYBotones);
   width: 4rem;
@@ -204,17 +215,21 @@ p {
     max-height: 10rem;
     margin-bottom: 2rem;
   }
+
   .divBusqueda {
     display: flex;
     flex-direction: row;
   }
+
   .navHamburger {
     display: none;
   }
+
   .contenedorBusqueda {
     display: none;
   }
 }
+
 .enlaceImagen {
   display: flex;
   flex-direction: row;
@@ -225,20 +240,25 @@ p {
 
 .imgLogo {
   max-width: 100px;
-  max-height: 85px; /* Ajuste el tamaño del logo - Alex */
-  padding: 1rem 0; /* Le di un espacio al logo para que no este pegado con las lías del navbar - Alex*/
+  max-height: 85px;
+  /* Ajuste el tamaño del logo - Alex */
+  padding: 1rem 0;
+  /* Le di un espacio al logo para que no este pegado con las lías del navbar - Alex*/
 }
+
 .cajaBusqueda {
   font-family: var(--fuenteTextoCuerpo);
   font-weight: 400;
   font-size: 2rem;
 }
+
 .contenedorMaestro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 @media (min-width: 768px) {
   .contenedorMaestro {
     display: grid;
@@ -246,12 +266,14 @@ p {
     grid-template-rows: 1fr 0.5fr 1fr;
   }
 }
+
 /*No tocar (Mejoralito[Aspirina])*/
 .principal,
 .sectionMisionVision,
 .contenedorValores {
   grid-column: 2/3;
 }
+
 /*No tocar (Mejoralito[Aspirina])*/
 
 /* === Carrusel  ==== */
@@ -261,10 +283,12 @@ p {
   max-height: 300px;
   border-radius: 20px;
 }
+
 /* ajusta el tamaño del carrusel, se agrego para evitar que al momento de cambiar de imagen se sobrepongan dos imagenes ina sobre otra -cynthia */
 .carousel-inner {
   max-height: 300px;
 }
+
 /* se agrega backgroud de la caption para que no se pierda el color de las letras -cynthia*/
 .carousel-caption {
   background-color: rgba(255, 255, 255, 0.5);
@@ -273,9 +297,7 @@ p {
 
 .sectionMisionVision {
   /*Agregue esto . Miguel*/
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+ 
   margin: 2rem 0;
   background-color: var(--colorNaranjaFondoTextos);
   text-align: center;
@@ -283,12 +305,10 @@ p {
   padding: 2rem;
   /*Agregue esto . Miguel*/
 }
+
 @media (min-width: 768px) {
   .sectionMisionVision {
     /*Agregue esto . Miguel*/
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
     margin: 2rem 0;
     background-color: var(--colorNaranjaFondoTextos);
     text-align: center;
@@ -297,12 +317,10 @@ p {
     /*Agregue esto . Miguel*/
   }
 }
+
 @media (min-width: 992px) {
   .sectionMisionVision {
     /*Agregue esto . Miguel*/
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
     margin: 2rem 0;
     background-color: var(--colorNaranjaFondoTextos);
     text-align: center;
@@ -312,76 +330,38 @@ p {
   }
 }
 
-.divMision {
-  padding: 2rem 0;
-  grid-column: 1/2;
-  grid-row: 1/3;
+
+
+.divMision, .divVision {
+  padding: 2rem 0;  
 }
-.divVision {
-  padding: 2rem 0;
-  grid-column: 2/3;
-  grid-row: 1/3;
+.sectionMisionVision h2 {
+  padding: 2rem;
 }
 
-/*Agregue esto . Miguel*/
-
+.sectionValores h2{
+  text-align: center;
+  padding: 2rem;
+}
 .contenedorValores {
   margin: 2rem 0;
 }
 .sectionValores {
   text-align: center;
+  margin: 2rem;
 }
 .sectionValores h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: 2rem ;
 }
 .sectionValores p {
-  font-size: 1rem;
-}
-.sectionValoresSuperior {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 0;
-  gap: 2rem;
-}
-.sectionValoresInferior {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 2rem 0;
-  gap: 2rem;
-}
-.valorResponsabilidad {
-  grid-column: 2/3;
-}
-.valorTransparencia {
-  grid-column: 4/5;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border: 2rem;
 }
 
-@media (min-width: 768px) {
-  .contenedorValores {
-    margin: 2rem 0;
-  }
-  .sectionValores {
-    text-align: center;
-  }
-  .sectionValoresSuperior {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 2rem 0;
-    gap: 2rem;
-  }
-  .sectionValoresInferior {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 2rem 0;
-    gap: 2rem;
-  }
-  .valorResponsabilidad {
-    grid-column: 2/3;
-  }
-  .valorTransparencia {
-    grid-column: 4/5;
-  }
-}
+
 
 /*Agregue esto . Miguel*/
 .footer {
@@ -390,8 +370,10 @@ p {
   align-items: center;
   background-color: var(--colorNaranjaFooterYBotones);
   max-height: 35rem;
-  padding: 1rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
+  padding: 1rem;
+  /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
 }
+
 @media (min-width: 768px) {
   .footer {
     display: flex;
@@ -399,12 +381,16 @@ p {
     align-items: center;
     background-color: var(--colorNaranjaFooterYBotones);
     max-height: 30rem;
-    padding: 3rem; /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
+    padding: 3rem;
+    /*agregue un espacio en el footer para que no estuviera tan peagado al margen de la pantalla - Alex*/
   }
 }
+
 .iconos-redes {
   /*Formato iconos *Mario*/
-  max-width: 40px; /*Tamaño de iconos?*/ /*Modifique el tamaño de los iconos - Alex*/
+  max-width: 40px;
+  /*Tamaño de iconos?*/
+  /*Modifique el tamaño de los iconos - Alex*/
 }
 
 .iconos-redes:hover {
@@ -420,5 +406,43 @@ p {
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
+<<<<<<< HEAD
   background-color: #f68035;
 }
+=======
+  background-color: #f68035 !important;
+}
+
+#formulario {
+  
+  margin-top: 50px;
+  background-color: #F5B27F;
+  padding: 50px;
+  border-radius: 10px;
+  
+  height: auto;
+  flex-shrink: 0;
+  
+}
+@media (max-width: 576px) {
+  .col-sm-none {
+    display: none; /* Se oculta en dispositivos pequeños */
+  }}
+textarea.form-control{
+  height: 250px;
+
+}
+.btn-primary {
+ 
+  color: black;
+  background-color: #f68035 ;
+  border-color: #f68035;
+  border-radius: 10px;
+  padding: 10px 40px;
+ 
+}
+.btn-primary:hover {
+  background-color: #008f7a ; /* Cambia el color cuando el cursor está sobre el botón */
+  border-color: #008f7a;
+}
+>>>>>>> b695da622e494285ae2358bad9b20643ae9860a0
