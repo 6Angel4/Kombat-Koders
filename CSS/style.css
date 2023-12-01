@@ -90,6 +90,13 @@ p {
 .nav-hover:hover{
   color: white;
 }
+.icono-bolsa,
+.icono-usuario{
+  max-width: 10rem;
+  max-height: 8.5rem;
+  /* Ajuste el tamaño del logo - Alex */
+  padding: 1rem 0;
+}
 /*Cambios en el nav (Miguel)*/
 
 .divNav {
@@ -406,10 +413,6 @@ p {
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-<<<<<<< HEAD
-  background-color: #f68035;
-}
-=======
   background-color: #f68035 !important;
 }
 
