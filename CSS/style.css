@@ -76,6 +76,22 @@ p {
   /*Agregue esto . Miguel*/
 }
 
+/*Cambios en el nav (Miguel)*/
+.header-localCustom{
+  max-height: 10rem;
+  background-color: var(--colorNaranjaHeader);
+}
+.navbar-custom {
+  background-color: var(--colorNaranjaHeader);
+}
+.navbar-nav {
+  font-size: 2rem;
+}
+.nav-hover:hover{
+  color: white;
+}
+/*Cambios en el nav (Miguel)*/
+
 .divNav {
   /*Esconde el nav*/
   display: none;
@@ -281,9 +297,7 @@ p {
 
 .sectionMisionVision {
   /*Agregue esto . Miguel*/
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+ 
   margin: 2rem 0;
   background-color: var(--colorNaranjaFondoTextos);
   text-align: center;
@@ -295,9 +309,6 @@ p {
 @media (min-width: 768px) {
   .sectionMisionVision {
     /*Agregue esto . Miguel*/
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
     margin: 2rem 0;
     background-color: var(--colorNaranjaFondoTextos);
     text-align: center;
@@ -310,9 +321,6 @@ p {
 @media (min-width: 992px) {
   .sectionMisionVision {
     /*Agregue esto . Miguel*/
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
     margin: 2rem 0;
     background-color: var(--colorNaranjaFondoTextos);
     text-align: center;
@@ -322,89 +330,38 @@ p {
   }
 }
 
-.divMision {
-  padding: 2rem 0;
-  grid-column: 1/2;
-  grid-row: 1/3;
+
+
+.divMision, .divVision {
+  padding: 2rem 0;  
+}
+.sectionMisionVision h2 {
+  padding: 2rem;
 }
 
-.divVision {
-  padding: 2rem 0;
-  grid-column: 2/3;
-  grid-row: 1/3;
+.sectionValores h2{
+  text-align: center;
+  padding: 2rem;
 }
-
-/*Agregue esto . Miguel*/
-
 .contenedorValores {
   margin: 2rem 0;
 }
-
 .sectionValores {
   text-align: center;
+  margin: 2rem;
 }
-
 .sectionValores h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: 2rem ;
 }
-
 .sectionValores p {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border: 2rem;
 }
 
-.sectionValoresSuperior {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 0;
-  gap: 2rem;
-}
 
-.sectionValoresInferior {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 2rem 0;
-  gap: 2rem;
-}
-
-.valorResponsabilidad {
-  grid-column: 2/3;
-}
-
-.valorTransparencia {
-  grid-column: 4/5;
-}
-
-@media (min-width: 768px) {
-  .contenedorValores {
-    margin: 2rem 0;
-  }
-
-  .sectionValores {
-    text-align: center;
-  }
-
-  .sectionValoresSuperior {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 2rem 0;
-    gap: 2rem;
-  }
-
-  .sectionValoresInferior {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 2rem 0;
-    gap: 2rem;
-  }
-
-  .valorResponsabilidad {
-    grid-column: 2/3;
-  }
-
-  .valorTransparencia {
-    grid-column: 4/5;
-  }
-}
 
 /*Agregue esto . Miguel*/
 .footer {
@@ -449,6 +406,10 @@ p {
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
+<<<<<<< HEAD
+  background-color: #f68035;
+}
+=======
   background-color: #f68035 !important;
 }
 
@@ -484,6 +445,8 @@ textarea.form-control{
   background-color: #008f7a ; /* Cambia el color cuando el cursor está sobre el botón */
   border-color: #008f7a;
 }
+>>>>>>> b695da622e494285ae2358bad9b20643ae9860a0
+
 
 .Horario {
 
