@@ -90,6 +90,13 @@ p {
 .nav-hover:hover{
   color: white;
 }
+.icono-bolsa,
+.icono-usuario{
+  max-width: 10rem;
+  max-height: 8.5rem;
+  /* Ajuste el tamaño del logo - Alex */
+  padding: 1rem 0;
+}
 /*Cambios en el nav (Miguel)*/
 
 .divNav {
@@ -406,10 +413,6 @@ p {
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-<<<<<<< HEAD
-  background-color: #f68035;
-}
-=======
   background-color: #f68035 !important;
 }
 
@@ -445,4 +448,3 @@ textarea.form-control{
   background-color: #008f7a ; /* Cambia el color cuando el cursor está sobre el botón */
   border-color: #008f7a;
 }
->>>>>>> b695da622e494285ae2358bad9b20643ae9860a0
