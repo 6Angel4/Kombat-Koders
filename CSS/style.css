@@ -72,6 +72,22 @@ p {
   /*Agregue esto . Miguel*/
 }
 
+/*Cambios en el nav (Miguel)*/
+.header-localCustom{
+  max-height: 10rem;
+  background-color: var(--colorNaranjaHeader);
+}
+.navbar-custom {
+  background-color: var(--colorNaranjaHeader);
+}
+.navbar-nav {
+  font-size: 2rem;
+}
+.nav-hover:hover{
+  color: white;
+}
+/*Cambios en el nav (Miguel)*/
+
 .divNav {
   /*Esconde el nav*/
   display: none;

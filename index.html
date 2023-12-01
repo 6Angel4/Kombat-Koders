@@ -7,54 +7,54 @@
   <meta name="description"
     content="Esta es una e-commerce enfocada a la venta de productos para mascotas (perros y gatos)" />
   <!--Link_Bootstrap-->
-
-  <link rel="stylesheet" href="./CSS/normalize.css">
-  <link rel="stylesheet" href="./CSS/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <!--Link_Bootstrap-->
   <!--Links_Propios-->
+  <link rel="stylesheet" href="./CSS/normalize.css">
+  <link rel="stylesheet" href="./CSS/style.css">
   <!--Links_Propios-->
   <title>Pet Super Market</title> <!--agregar huellita estilos-->
 </head>
 
 <body>
 
-  <head>
+  <!-- header-localCustom -> max-heigth:10rem -->
+  <header class=" header-localCustom ">
     <!--inicio barrade navegacion-->
-    <nav class="navbar navbar-expand-md bg-body-tertiary narvar-custom"> <!--chacar lg o md por responsivo-->
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./SRC/img/logo.png" alt="Bootstrap" width="90" height="60"> <!--checar tamaño de logo -->
+    <nav class=" navbar navbar-expand-lg bg-body-tertiary m-0 p-0 ">
+      <div class="container-fluid navbar-custom d-flex ">
+        <a class="navbar-brand" href="#">
+          <img class="imgLogo" src="./SRC/img/logo.png" alt="Logo de la pagina">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../HTML/productos.html">Producto</a>
+              <a class="nav-link" href="./HTML/paginadecontacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../HTML/paginadecontacto.html">Contacto</a>
+              <a class="nav-link" href="./HTML/productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../HTML/acercaDeNosotros.html">Nosotros</a>
+              <a class="nav-link" href="./HTML/acercaDeNosotros.html">Nosotros</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
     <!--fin barra de navegación-->
-  </head>
+  </header>
+
 
   <!--carrusel-->
   <main class="container">
@@ -100,13 +100,14 @@
 
 
   </main> <!--fin carrusel-->
-  <main class="text-center">
+  
+  <div class="text-center">
     <br>
     <h1>Productos destacados</h1>
     <br>
-  </main>
+  </div>
 
-  <main> <!--card-->
+  <section> <!--card-->
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-3 ">
@@ -158,7 +159,7 @@
             </div>
           </div>
         </div>
-  </main>
+  </section>
 
   <!-- boton ver más productos -->
   <div class="text-center mb-4">
@@ -201,7 +202,6 @@
     <p class="derechosReservados">
       Pet Supermarket. Todos los derechos reservados.
     </p>
-    [19:29]
   </footer>
   <!-- fin valores-->
 
