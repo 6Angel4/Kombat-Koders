@@ -76,7 +76,7 @@ p {
   /*Agregue esto . Miguel*/
 }
 
-/*Cambios en el nav (Miguel)*/
+/*Cambios en el nav [boton y barra de navegacion] (Miguel)*/
 .header-localCustom {
   max-height: 10rem;
   background-color: var(--colorNaranjaHeader);
@@ -100,12 +100,12 @@ p {
 .button-localCustom {
   background-color: var(--colorNaranjaFooterYBotones);
 }
-.auxiliar{
+.auxiliar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/*Cambios en el nav (Miguel)*/
+/*Cambios en el nav [boton y barra de navegacion] (Miguel)*/
 
 .divNav {
   /*Esconde el nav*/
@@ -142,7 +142,7 @@ p {
     /*Cambie la fuente de acuerdo al Mock Up - Alex*/
     font-weight: 700;
     /*Cambie la fuente de acuerdo al Mock Up - Alex*/
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: black;
     cursor: pointer;
