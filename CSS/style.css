@@ -114,7 +114,7 @@ p {
     align-items: center;
   }
 }
-enlaces-custom {
+.enlaces-custom {
   display: none;
 }
 @media (min-width: 768px) {
