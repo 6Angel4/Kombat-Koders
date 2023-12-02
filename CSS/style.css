@@ -105,7 +105,22 @@ p {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+}
+@media (min-width: 768px) {
+  .auxiliar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+enlaces-custom {
+  display: none;
+}
+@media (min-width: 768px) {
+  .enlaces-custom {
+    display: inline;
+  }
 }
 /*Cambios en el nav [boton y barra de navegacion] (Miguel)*/
 
