@@ -59,112 +59,105 @@
 
   <body>
     <!--Inicia header-->
-    <header class="header">
-      <div class="divNavLogo">
-        <a href="../index.html" class="enlaces enlaceImagen">
-          <img
-            src="../SRC/img/logo.png"
-            class="imgLogo"
-            alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras"
-          />
-        </a>
-      </div>
-      <div class="contenedorHamburguesa">
-        <div class="navHamburger">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-menu-2"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M4 6l16 0" />
-            <path d="M4 12l16 0" />
-            <path d="M4 18l16 0" />
-          </svg>
-        </div>
-      </div>
-      <div class="contenedorBusqueda">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-search"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-          <path d="M21 21l-6 -6" />
-        </svg>
-      </div>
-      <div class="divNav">
-        <nav class="nav">
-          <a href="../index.html" class="enlaces">Inicio</a>
-          <a href="./paginadecontacto.html" class="enlaces">Contacto</a>
-          <a href="./productos.html" class="enlaces">Productos</a>
-          <a href="./acercaDeNosotros.html" class="enlaces">Nosotros</a>
-        </nav>
-      </div>
+    <header class="m-0 p-0 text-center">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary nav-custom">
+        <div class="container-fluid d-flex justify-content-center">
+          <!-- Logo -->
+          <div class="col-md-2 col-6 text-center">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                class="imgLogo"
+                src="../SRC/img/logo.png"
+                alt="Logo de la pagina"
+              />
+            </a>
+          </div>
 
-      <div class="divBusqueda">
-        <input class="barraBusqueda" type="text" placeholder="      Buscar" />
-        <button class="btn lupa" type="submit">
-          <i class="bi bi-search"></i>
-        </button>
-      </div>
-      <div class="contenedorCarrito">
-        <a href="#" class="enlaces enlaceCarrito">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-shopping-bag"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+          <!--Boton-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"
-            />
-            <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
-          </svg>
-        </a>
-      </div>
-      <div class="contenedorUsuario">
-        <a href="" class="enlaces enlaceUsuario">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-user"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-          </svg>
-        </a>
-      </div>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <!-- Enlaces de navegación -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link enlaces" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-hover enlaces"
+                  href="./productos.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-hover enlaces"
+                  href="./paginadecontacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-hover active enlaces"
+                  href="./acercaDeNosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control ms-3 me-1"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn button-localCustom" type="submit">
+                Buscar
+              </button>
+            </form>
+
+            <!-- Iconos de carrito y usuario en divs separados -->
+            <div
+              class="col-sm-12 col-md-1 col-6 d-md-flex justify-content-md-around justify-content-center align-items-center mt-md-0 icons-mobile mx-auto"
+            >
+              <!-- Icono de bolsa de compras -->
+              <div>
+                <a href="">
+                  <img
+                    src="../SRC/img/shopping-bag.png"
+                    alt="#"
+                    width="auto"
+                    height="30px"
+                  />
+                </a>
+              </div>
+              <!-- Icono de usuario -->
+              <div>
+                <a href="">
+                  <img
+                    src="../SRC/img/user.png"
+                    alt="#"
+                    width="auto"
+                    height="30px"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!--Fin header-->
 
