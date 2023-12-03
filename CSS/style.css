@@ -75,55 +75,6 @@ p {
   margin: 0;
   /*Agregue esto . Miguel*/
 }
-
-/*Cambios en el nav [boton y barra de navegacion] (Miguel)*/
-.header-localCustom {
-  max-height: 10rem;
-  background-color: var(--colorNaranjaHeader);
-}
-.navbar-custom {
-  background-color: var(--colorNaranjaHeader);
-}
-.navbar-nav {
-  font-size: 2rem;
-}
-.nav-hover:hover {
-  color: white;
-}
-.icono-bolsa,
-.icono-usuario {
-  max-width: 10rem;
-  max-height: 8.5rem;
-  /* Ajuste el tamaño del logo - Alex */
-  padding: 1rem 0;
-}
-.button-localCustom {
-  background-color: var(--colorNaranjaFooterYBotones);
-}
-.auxiliar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .auxiliar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-.enlaces-custom {
-  display: none;
-}
-@media (min-width: 768px) {
-  .enlaces-custom {
-    display: inline;
-  }
-}
-/*Cambios en el nav [boton y barra de navegacion] (Miguel)*/
-
 .divNav {
   /*Esconde el nav*/
   display: none;
@@ -199,44 +150,6 @@ p {
   justify-items: center;
 }
 
-.contenedorHamburguesa {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.contenedorBusqueda {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.divNavLogo {
-  grid-column: 3/4;
-  grid-row: 1/4;
-}
-
-.contenedorCarrito {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
-
-.contenedorUsuario {
-  grid-column: 5/6;
-  grid-row: 2/3;
-}
-
-.divBusqueda {
-  display: none;
-}
-
-.contenedorHamburguesa {
-  background-color: var(--colorNaranjaFooterYBotones);
-  width: 4rem;
-  border-radius: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 @media (min-width: 768px) {
   .header {
     display: flex;
@@ -251,10 +164,6 @@ p {
   .divBusqueda {
     display: flex;
     flex-direction: row;
-  }
-
-  .navHamburger {
-    display: none;
   }
 
   .contenedorBusqueda {
@@ -435,7 +344,7 @@ p {
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: #f68035 !important;
+  background-color: #fdc35a !important;
 }
 
 #formulario {
