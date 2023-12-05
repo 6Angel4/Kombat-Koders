@@ -366,6 +366,7 @@ textarea.form-control {
 }
 .btn-primary {
   color: black;
+  font-weight: 700;
   background-color: #f68035;
   border-color: #f68035;
   border-radius: 10px;
