@@ -386,7 +386,16 @@ textarea.form-control {
 
 /*Ajusta la clase de bootstrap para la imagen de las tarjetas*/
 .card-img-top {
-  width: 100%;
-  height: 30vh;
+  height: 215px;
   object-fit: contain;
 }
+
+.img-btn-categoria{
+  height: 70px;
+}
+
+.dropdown-menu{
+  background-color: var(--colorVerdeFondo);
+  border-radius: 0 0 10px 10px;
+}
+

@@ -107,6 +107,17 @@
     #productos{
       background-color: rgb(120, 239, 90);
     }
+
+    #todoperro{
+      font-size: 1.5rem;
+    }
+
+    .dropdown-toggle{
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+
   </style>
 
 
@@ -115,27 +126,47 @@
     <section id="btn-categoria-pog" class="container-fluid">
       <div class="row">
         <div class="col-4 col-md-2">
-          Volver
+  
         </div>
         <div class="col-4 col-md-5">
-          <div class="text-center mb-4">
-            <button class="btn btn-primary btn-lg">Todo para tu gato</button>
+          <div class="dropdown mt-4 mb-4">
+            <button class="btn btn-primary dropdown-toggle w-100 d-flex flex-column flex-md-row justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div id="todoperro" class="text-wrap">
+                Todo para tu gato
+              </div>
+              <img src="../SRC/img/gato-categoria.png" alt="" class="img-btn-categoria mt-2 mb-2">
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item " href="#">Alimento</a></li>
+              <li><a class="dropdown-item" href="#">Juguetes</a></li>
+              <li><a class="dropdown-item" href="#">Accesorios</a></li>
+            </ul>
           </div>
         </div>
         <div class="col-4 col-md-5">
-          <div class="text-center mb-4">
-            <button class="btn btn-primary btn-lg">Todo para tu perro</button>
+          <div class="dropdown mt-4 mb-4">
+            <button class="btn btn-primary dropdown-toggle w-100 d-flex flex-column flex-md-row justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div id="todoperro" class="text-wrap">
+                Todo para tu perro
+              </div>
+              <img src="../SRC/img/perro-categoria.png" alt="" class="img-btn-categoria mt-2 mb-2">
+            </button>
+            <ul class="dropdown-menu  w-100">
+              <li><a class="dropdown-item" href="#">Alimento</a></li>
+              <li><a class="dropdown-item" href="#">Juguetes</a></li>
+              <li><a class="dropdown-item" href="#">Accesorios</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <section id="filtros-productos" class="row">
-      <div id="filtros" class="col-6 col-md-2">
+      <div id="filtros" class="col-4 col-md-2">
         filtros Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam, quia possimus ipsum rerum neque odio sapiente quaerat quidem. Ducimus, magnam voluptates! At error eius nostrum omnis laboriosam! Rem, dolorum.
       </div>
       <!--Grid Productos-->
-      <div id="productos" class="col-6 col-md-10">
+      <div id="productos" class="col-8 col-md-10">
         <!--Row de prodcutos-->
         <div class="row">
           <div class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-3">
