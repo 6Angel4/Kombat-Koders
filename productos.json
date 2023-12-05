@@ -11,10 +11,11 @@
   },
   {
     "id": 2,
-    "nombreProducto": "Medium Moyen",
+    "nombreProducto": "Medium Adult",
     "contenidoProducto": 13.61,
     "precio": 2648,
     "marca": "Royal Cannin",
+    "imagen": "https://cdn.royalcanin-weshare-online.io/nGkVrmsBG95Xk-RBL_v3/v438/packshot-med-ad-shn17?w=640&auto=compress",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas"
   },
