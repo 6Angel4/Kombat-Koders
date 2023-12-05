@@ -1,5 +1,5 @@
+let listaProductosQueSeVaAMostrarEnLaPagina = [];
 
-var listaProductosQueSeVaAMostrarEnLaPagina = [];
 function cargaPagina() {
     /*
     imaginemos que aqui hicimos todo el proceso para cargar la pagina
@@ -31,6 +31,6 @@ function borrarTodaLista() {
 }
 
 cargaPagina()
-console.log("quedan "+listaProductosQueSeVaAMostrarEnLaPagina.length, " en el arreglo");
+console.log("quedan "+listaProductosQueSeVaAMostrarEnLaPagina.length, " productos totales");
 borrarTodaLista();
-console.log("quedan "+listaProductosQueSeVaAMostrarEnLaPagina.length, " elementos en el arreglo");
+console.log("quedan "+listaProductosQueSeVaAMostrarEnLaPagina.length, " productos totales");
