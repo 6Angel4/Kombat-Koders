@@ -365,6 +365,7 @@ textarea.form-control {
   height: 250px;
 }
 .btn-primary {
+  font-family: var(--fuenteTextoTitulos);
   color: black;
   font-weight: 700;
   background-color: #f68035;
