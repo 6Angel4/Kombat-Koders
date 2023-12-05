@@ -454,11 +454,23 @@ textarea.form-control {
   border-radius: 0 0 10px 10px;
 }
 
-.texto-menu-animal{
+.texto-filtros{
   font-family: var(--fuenteTextoTitulos);
   font-size: 1.5rem;
 }
 
 .filtros{
   background-color: var(--colorNaranjaFondoBarraListas);
+}
+
+.fi-sr-star,
+.fi-rr-star{
+  color: #008f7a;
+}
+
+.vineta-filtros {
+  background-color: #f5b27f;
+  padding: 10px;
+  border-radius: 10px;
+  height: auto;
 }
