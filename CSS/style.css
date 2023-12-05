@@ -388,9 +388,26 @@ textarea.form-control {
   box-shadow: none;
   background-color:#008f7a ;
   border-color: #008f7a;
-  border-radius: 10px 10px 0 0;
 }
 
+.btn-categoria{
+  font-family: var(--fuenteTextoTitulos);
+  color: black;
+  font-weight: 700;
+  background-color: #f68035;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  box-shadow: none;
+}
+
+.btn-categoria:hover {
+  background-color: #008f7a; /* Cambia el color cuando el cursor está sobre el botón */
+  border-style: none;
+  box-shadow: none;
+  color: white;
+
+}
 
 .Horario {
   text-align: center;
@@ -400,7 +417,7 @@ textarea.form-control {
 
 /*Ajusta la clase de bootstrap para la imagen de las tarjetas*/
 .card-img-top {
-  height: 215px;
+  height: 210px;
   object-fit: contain;
 }
 
@@ -408,20 +425,33 @@ textarea.form-control {
   height: 70px;
 }
 
-.dropdown-menu{
-  background-color: var(--colorVerdeFondo);
-  border-radius: 0 0 10px 10px;
-}
-
 .dropdown-toggle{
   font-size: 2.5rem;
   text-align: center;
 }
 
+.dropdown-menu{
+  background-color: var(--colorNaranjaFooterYBotones);
+  border-radius: 0 0 10px 10px;
+  padding: 0;
+}
+
+
 .dropdown-item{/*Letra de los items del menu desplegale*/
   font-family: var(--fuenteTextoCuerpo);
   font-size: 1.5rem;
+  color: black;
+}
+
+.dropdown-item:hover{/*Letra de los items del menu desplegale*/
+  font-size: 1.5rem;
+  background-color: var(--colorVerdeFondo);
   color: white;
+  border-radius: 0px;
+}
+
+.dropdown-menu li:last-child > a:hover{
+  border-radius: 0 0 10px 10px;
 }
 
 .texto-menu-animal{
@@ -429,6 +459,6 @@ textarea.form-control {
   font-size: 1.5rem;
 }
 
-#categoria-animal{
+.categoria-animal{
   background-color: var(--colorNaranjaFondoBarraListas);
 }
