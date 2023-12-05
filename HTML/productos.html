@@ -98,16 +98,11 @@
   </header>
 
   <style>
-#productos{
-  background-color: rgb(12, 255, 12);
-}
-
-
 
   </style>
 
   <main class="container-fluid px-0">
-    <section class="row me-0 categoria-animal">
+    <section class="row me-0 filtros">
       <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
         <img src="../SRC/img/huellitas.png" alt="" class="mt-2 mb-2 w-50">
       </div>
@@ -148,10 +143,17 @@
     </section>
 
     <section class="row me-0">
-      <div id="filtros" class="col-4 col-md-2">
-        <div>
+      <div class="col-4 col-md-2 d-flex flex-column filtros">
+        <div class="align-self-center texto-menu-animal position-fixed">
           Filtros
         </div>
+        <ul class="ms-3 mt-5 texto-menu-animal position-fixed">
+          <li>Precio</li>
+          <li>Oferta</li>
+          <li>Novedades</li>
+          <li>Calificación</li>
+          <li>Marca</li>
+        </ul>
       </div>
       <!--Grid Productos-->
       <div id="productos" class="col-8 col-md-10">
