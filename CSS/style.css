@@ -3,7 +3,7 @@
   --colorNaranjaHeader: #fdc35a;
   --colorNaranjaFondoTextos: #ffd486;
   --colorNaranjaFooterYBotones: #f68035;
-  --colorNaranjaFondoBarraListas: #fdc35a;
+  --colorNaranjaFondoBarraListas: #fee1ac;
   --colorNaranjaFondoFormularios: #f5b27f;
   --colorVerdeFondo: #008f7a;
   --fuenteTextoTitulos: "Montserrat", sans-serif;
@@ -365,7 +365,9 @@ textarea.form-control {
   height: 250px;
 }
 .btn-primary {
+  font-family: var(--fuenteTextoTitulos);
   color: black;
+  font-weight: 700;
   background-color: #f68035;
   border-color: #f68035;
   border-radius: 10px;
@@ -376,6 +378,37 @@ textarea.form-control {
   border-color: #008f7a;
 }
 
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.btn-primary.focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus {
+  outline: none;
+  box-shadow: none;
+  background-color:#008f7a ;
+  border-color: #008f7a;
+}
+
+.btn-categoria{
+  font-family: var(--fuenteTextoTitulos);
+  color: black;
+  font-weight: 700;
+  background-color: #f68035;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  box-shadow: none;
+}
+
+.btn-categoria:hover {
+  background-color: #008f7a; /* Cambia el color cuando el cursor está sobre el botón */
+  border-style: none;
+  box-shadow: none;
+  color: white;
+
+}
+
 .Horario {
   text-align: center;
 
@@ -384,7 +417,60 @@ textarea.form-control {
 
 /*Ajusta la clase de bootstrap para la imagen de las tarjetas*/
 .card-img-top {
-  width: 100%;
-  height: 30vh;
+  height: 210px;
   object-fit: contain;
+}
+
+.img-btn-categoria{/*Tamaño del icono categoria perro gato*/
+  height: 70px;
+}
+
+.dropdown-toggle{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.dropdown-menu{
+  background-color: var(--colorNaranjaFooterYBotones);
+  border-radius: 0 0 10px 10px;
+  padding: 0;
+}
+
+
+.dropdown-item{/*Letra de los items del menu desplegale*/
+  font-family: var(--fuenteTextoCuerpo);
+  font-size: 1.5rem;
+  color: black;
+}
+
+.dropdown-item:hover{/*Letra de los items del menu desplegale*/
+  font-size: 1.5rem;
+  background-color: var(--colorVerdeFondo);
+  color: white;
+  border-radius: 0px;
+}
+
+.dropdown-menu li:last-child > a:hover{
+  border-radius: 0 0 10px 10px;
+}
+
+.texto-filtros{
+  font-family: var(--fuenteTextoTitulos);
+  font-size: 1.5rem;
+}
+
+.filtros{
+  background-color: var(--colorNaranjaFondoBarraListas);
+}
+
+.fi-sr-star,
+.fi-rr-star{
+  color: #008f7a;
+}
+
+.vineta-filtros {
+  background-color: #f5b27f;
+  padding: 10px;
+  border-radius: 10px;
+  height: auto;
 }
