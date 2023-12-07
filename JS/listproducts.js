@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 function borrarTodosElementos() {
@@ -17,7 +16,6 @@ borrarTodosElementos();//llamada a funcion que eliminara todos los elementos,
 // }
 
 // borrarTodosElementos();//llamada a funcion que eliminara todos los elementos, 
-=======
 // Función que recibe los datos que provienen del formulario en HTML
 
 const agregarProducto = () => {
@@ -63,4 +61,3 @@ const agregarProducto = () => {
 //             return JSON.stringify(this.producto)
 //         }
 // }
->>>>>>> e2675dfa1c5307c9d83a00913b6cd32b4a8b60ad
