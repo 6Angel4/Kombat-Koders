@@ -34,6 +34,18 @@
   <link rel="stylesheet" href="../CSS/style.css" />
   <title>Pet Super Market</title>
   <!--agregar huellita estilos-->
+  <style>
+    body {
+      background-color: #FFFFFF;
+    }
+
+    .form-container {
+      background-color: #F5B27F;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -76,7 +88,7 @@
               Buscar
             </button>
           </form>
-          
+
           <!-- Iconos de carrito y usuario en divs separados -->
           <div
             class="col-sm-12 col-md-1 col-6 d-md-flex justify-content-md-around justify-content-center align-items-center mt-md-0 icons-mobile mx-auto">
@@ -98,14 +110,7 @@
     </nav>
   </header>
 
-  <style>
-
-  </style>
-
-  
-
   <main class="container-fluid px-0">
-    
 
     <section class="row me-0">
       <div class="col-4 col-md-2 d-flex flex-column filtros">
@@ -118,8 +123,8 @@
         <div class="align-self-center texto-filtros vineta-filtros">
           Editar perfil
         </div>
-        
       </div>
+
       <!--Grid Productos-->
       <div id="productos" class="col-8 col-md-10">
         <!--Row de prodcutos-->
@@ -132,41 +137,41 @@
               <input type="text" class="form-control" id="codigoProducto" placeholder="">
             </div>
             <div class="form-group">
-              <label for="nombreProducto">Contraseña:</label>
+              <label for="nombreProducto">Nombre del producto:</label>
               <input type="text" class="form-control" id="nombreProducto" placeholder="">
             </div>
             <div class="form-group">
-              <label for="codigoProducto"> Código del producto:</label>
-              <input type="text" class="form-control" id="codigoProducto" placeholder="">
+              <label for="marca"> Marca:</label>
+              <input type="text" class="form-control" id="marca" placeholder="">
             </div>
             <div class="form-group">
-              <label for="nombreProducto">Contraseña:</label>
-              <input type="text" class="form-control" id="nombreProducto" placeholder="">
+              <label for="descripcion">Descripción:</label>
+              <input type="text" class="form-control" id="descripcion" placeholder="">
             </div>
             <div class="form-group">
-              <label for="codigoProducto"> Código del producto:</label>
-              <input type="text" class="form-control" id="codigoProducto" placeholder="">
+              <label for="categoria"> Categoría:</label>
+              <input type="text" class="form-control" id="categoria" placeholder="">
             </div>
             <div class="form-group">
-              <label for="nombreProducto">Contraseña:</label>
-              <input type="text" class="form-control" id="nombreProducto" placeholder="">
+              <label for="fecha">Fecha:</label>
+              <input type="text" class="form-control" id="fecha" placeholder="">
             </div>
             <div class="form-group">
-              <label for="codigoProducto"> Código del producto:</label>
-              <input type="text" class="form-control" id="codigoProducto" placeholder="">
+              <label for="cantidad"> Cantidad:</label>
+              <input type="text" class="form-control" id="cantidad" placeholder="">
             </div>
             <div class="form-group">
-              <label for="nombreProducto">Contraseña:</label>
-              <input type="text" class="form-control" id="nombreProducto" placeholder="">
+              <label for="precioSinIVA">Precio sin IVA:</label>
+              <input type="text" class="form-control" id="precioSinIVA" placeholder="">
             </div>
             <div class="form-group">
-              <label for="codigoProducto"> Código del producto:</label>
-              <input type="text" class="form-control" id="codigoProducto" placeholder="">
+              <label for="enlaceImagen"> Imagen (URL):</label>
+              <input type="text" class="form-control" id="enlaceImagen" placeholder="">
             </div>
             <button type="submit" class="btn btn-primary btn-block mt-3">Añadir producto</button>
           </form>
-        <!-- Fin del formulario -->
-      </div>
+          <!-- Fin del formulario -->
+        </div>
 
     </section>
 
