@@ -8,7 +8,8 @@
     "imagen": "https://www.hillspet.com.mx/content/dam/pim/hills/es_mx/sd/dry/sd-canine-adult-dry-productShot_zoom.jpg.rendition.991.991.jpg",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Science Diet para perros adultos. Nutrición balanceada para una vida saludable."
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "imagen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/e3dbe58a-e198-4e28-8900-1555c1ed14a9.49a40064f4cceb74b3a053399e30f301.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Medium Adult de Royal Cannin para perros adultos. Fórmula especial para razas medianas."
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "imagen": "https://www.petco.com.mx/medias/122518.jpg-1200ftw?context=bWFzdGVyfHJvb3R8MzM0MzIzfGltYWdlL2pwZWd8aGNlL2gxZS8xMDIxMDg3Njk0ODUxMC8xMjI1MTguanBnXzEyMDBmdHd8MzA1MzM3ZDdlZDhlOGU0MTMzZTUwNDg1NWI2NTBjYjNhODIzZGQ4ODBlNTc3Zjk3MjQ4YzI2MTQ5MDQ3MWFkOQ",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Salmon & Pea Recipe de Whole Hearted para perros. Con ingredientes de alta calidad."
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "imagen": "https://assets.petco.com/petco/image/upload/f_auto,q_auto/3275114-center-1",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Chicken & Pea Recipe de Whole Hearted para perros. Delicioso sabor a pollo y guisantes."
   },
   {
     "id": 5,
@@ -49,10 +53,11 @@
     "contenidoProducto": 1.8,
     "precio": 720,
     "marca": "Canidae",
-    "imagen": "https://www.petco.com.mx/medias/123029.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjA0MTF8aW1hZ2UvanBlZ3xoZGMvaDBjLzEwMzgwNDY0OTE0NDYyLzEyMzAyOS5qcGdfMzAwZnR3fDdmM2ZlZTEwYjNiNzZiMGQ4NmVhOTVjOTkwODAxMzg4YjljNTlmYjU3ZDAwYTY4ZTQ2MGU0MGI5YzdlODhhMmE",
+    "imagen": "https://www.petco.com.mx/medias/123029.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjA0MTF8aW1hZ2UvanBlZ3xoZGMvaDBjLzEwMzgwNDY0OTE0NDYyLzEyMzAyOS5qcGdfMzAwZnR3fDdmM2ZlZTEwYjNiNzZiMGQ4NmVhOTVjOTkwODAxMzg4YjljNTlfYjU3ZDAwYTY4ZTQ2MGU0MGI5YzdlODhhMmE",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Real Bison de Canidae para perros. Elaboradas con carne de bisonte real."
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "imagen": "https://www.petco.com.mx/medias/104562.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NDgwNDA1fGltYWdlL2pwZWd8aGMyL2hhMC8xMDIxMDU0NDg3NzU5OC8xMDQ1NjIuanBnXzEyMDBmdHd8ZDAzMjBlNTg1ZmZmMjVlNGRjYTA0MWM2MWNiMzlhN2RmZTBhNzdiMmU2MDFjNzdlZWNkMGRiNTdmNTZmODhkMA",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Pro Plan Adult Optihealt de Purina para perros adultos. Fórmula balanceada para una salud óptima."
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "imagen": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wzMDU0MDB8aW1hZ2UvanBlZ3xpbWFnZXMvaDA0L2hiZi85NDAzMjI5NjM0NTkwLmpwZ3wwOTI0YWY5YzFlYzY2YWFjY2U5Nzk1NjUwNGQ1NTY3M2U1ZTRjNzcwYzRlYjM0MmY2ZGE2YWQ0MzJmMGNhN2U1",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Chicken & Pea Recipe de Whole Hearted para perros. Delicioso sabor a pollo y guisantes."
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "imagen": "https://amorperruno.mx/wp-content/uploads/2020/06/descarga-6-300x300.jpg",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Healthy Weight Recipe de Merrick para perros. Fórmula especial para mantener un peso saludable."
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "imagen": "https://www.petco.com.mx/medias/123028.jpg-1200ftw?context=bWFzdGVyfHJvb3R8MjYxMTc1fGltYWdlL2pwZWd8aDI2L2gwYi8xMDM4MzY0MzgzNjQ0Ni8xMjMwMjguanBnXzEyMDBmdHd8OTJjMjQyODRiMTM2MzIzOGYwZGExMTM4ZDhlYTg5MTg5ZWNkOTQ1YzIxZTI0NDIzMjU4OWU1NDFhZmFiODMzYg",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Real Salmon & Sweet Potato Recipe de Canidae para perros. Con salmón y batata real."
   },
   {
     "id": 10,
@@ -104,9 +113,10 @@
     "contenidoProducto": 1.8,
     "precio": 680,
     "marca": "Merrick",
-    "imagen":"https://m.media-amazon.com/images/I/813nUhMqr7L._AC_SY355_.jpg",
+    "imagen": "https://m.media-amazon.com/images/I/813nUhMqr7L._AC_SY355_.jpg",
     "productoPara": "Perro",
     "tipoProducto": "Croquetas",
-    "calificacionMaxima": 5
+    "calificacionMaxima": 5,
+    "descripcion": "Croquetas Real Bison, Beef+Sweat Potato Recipe de Merrick para perros. Elaboradas con carne de bisonte real, carne de res y batata."
   }
 ]
