@@ -1,80 +1,71 @@
+ /*iniciar funciones hasta que haya respuesta, para que las funciones no compilen antes de la respuesta
+    el código carga información de productos desde un archivo JSON, la almacena en el localStorage y luego utiliza esa información para generar 
+    y mostrar tarjetas de productos en el DOM de la página web. Además, opcionalmente, muestra en la consola la información almacenada en el 
+    localStorage con la clave "todosProducto".*/
 
+// let todosProductos; // Declara una variable para almacenar el JSON
 
+// fetch('../productos.json')
+//   .then((response) => response.json())
+//   .then((json) => {
+//     todosProductos = json; // Almacena el JSON en la variable todosProductos
+//     localStorage.setItem("todosProductos", JSON.stringify(todosProductos));//guardar datos en local storage
+//     console.log(todosProductos);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function borrarTodosElementos() {
-   //llamar funcion que reformatee el html sin productos para vender
    
-   localStorage.setItem("producto", []);
-   //localStorage.clear();// afecta todos los datos
-}
 
-borrarTodosElementos();//llamada a funcion que eliminara todos los elementos, 
+//     function imprimirEnDOM(producto) {
+//       const contenedorProductos = document.getElementById("productos-contenedor");
 
+//       const articulos = producto.map((producto, index, array) => `
+                
+//                   <div class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-3">
+//                     <div class="card border-0 mb-5"><!--Aqui esta la primera tarjeta de producto-->
+//                       <img src="${producto.imagen}" class="card-img-top" alt="..." />
+//                       <div class="card-body text-center d-flex align-items-center justify-content-between flex-column">
+//                         <div>
+//                           <h5 class="card-title">${producto.nombreProducto}</h5>
+//                           <p class="card-text">${producto.descripcion}</p>
+//                           <p>$${producto.precio}</p>
+//                         </div>
+//                         <a href="#" class="btn btn-primary">Añadir a carrito</a>
+//                       </div>
+//                     </div> 
+//                   </div>         
+//            `
+//       );
 
-// function borrarTodosElementos(productos) {
-//    productos =[];
+//       console.log(articulos);
+//       contenedorProductos.innerHTML = articulos.join("");
 
-// }
-
-// borrarTodosElementos();//llamada a funcion que eliminara todos los elementos, 
-// Función que recibe los datos que provienen del formulario en HTML
-
-const agregarProducto = () => {
-  const nombreProducto = document.getElementById("nombreProducto").value;
-  const contenidoProducto = document.getElementById("contenidoProducto").value;
-  const precio = document.getElementById("precio").value;
-  const marca = document.getElementById("marca").value;
-  const tipoProducto = document.getElementById("tipoProducto").value;
-
-  producto.agregarProducto(
-    nombreProducto,
-    contenidoProducto,
-    precio,
-    marca,
-    tipoProducto
-  );
-
-  console.log(producto.productoJSON());
-};
-
-// Agregar productos - Ejemplo Respositorio
-
-// class ControlProducto {
-//     constructor(productoId=0){
-//         this.producto = [];
-//         this.productoId = productoId;
 //     }
+//     imprimirEnDOM(todosProductos);
 
-//     agregarProducto(nombreProducto, contenidoProducto, precio, marca, tipoProducto) {
-//         const articulo = {
+//     const datos = localStorage.getItem("todosProductos");//que datos hay en local storage que se guardo
+//     console.log("Productos: ", JSON.parse(datos));
 
-//             id: this.productoId++,
-//             nombreProducto: nombreProducto,
-//             contenidoProducto: contenidoProducto,
-//             precio: precio,
-//             marca: marca,
-//             tipoProducto: tipoProducto
-//         };
+//   })
+//   .catch((error) => console.error('Error fetching the JSON:', error));
 
-//         this.producto.push(articulo);
-//     }
-//         productoJSON(){
-//             return JSON.stringify(this.producto)
-//         }
-// }
+
+
+
+// let productos; // Declara una variable para almacenar el JSON
+
+    // fetch('../prueba.json')
+    //   .then((response) => response.json())
+    //   .then((json) => {
+    //     productos = json; // Almacena el JSON en la variable todosProductos
+    //     localStorage.setItem("productos", JSON.stringify(productos));//guardar datos en local storage
+    //     console.log(productos);   
+   
+    //     imprimirEnDOM(productos);
+    
+    //     const datos = localStorage.getItem("productos");//que datos hay en local storage que se guardo
+    //     console.log("Productos: ", JSON.parse(datos));
+    
+    //   })
+    //   .catch((error) => console.error('Error fetching the JSON:', error));
+    
+
+
