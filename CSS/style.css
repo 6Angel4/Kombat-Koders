@@ -488,3 +488,8 @@ textarea.form-control {
 .alert{
   display: none;
 }
+
+select{
+  display: block;
+  width: 100%;
+}

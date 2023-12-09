@@ -120,56 +120,63 @@
         <div id="formulario-nuevo-producto" class="form-container">
           <h2 class="text-center mb-4">Ingresar nuevo producto</h2>
           <form>
-            <div class="form-group">
+            <div class="form-group mt-2">
               <label for="nombreProducto">Nombre del producto:</label>
               <input type="text" class="form-control" id="nombreProducto" placeholder="">
               <div id="error-nombre-producto" class="alert alert-danger" role="alert">
                 Por favor ingresa un nombre valido
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
               <label for="marcaProducto"> Marca:</label>
               <input type="text" class="form-control" id="marcaProducto" placeholder="">
               <div id="error-marca" class="alert alert-danger" role="alert">
                 Por favor ingresa una marca valida
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
               <label for="descripcionProducto">Descripción:</label>
               <input type="text" class="form-control" id="descripcionProducto" placeholder="">
               <div id="error-descripcion" class="alert alert-danger" role="alert">
                 Por favor ingresa una descripción válida
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
               <label for="productoPara">¿Perrito o gatito?:</label>
-              <input type="text" class="form-control" id="productoPara" placeholder="">
+              <select name="precioProducto" id="productoPara">
+                <option value="perro">Perrito</option>
+                <option value="gato">Gatito</option>
+              </select>
               <div id="error-productoPara" class="alert alert-danger" role="alert">
                 Sólo vendemos productos para perritos y gatitos
               </div>
             </div>
-            <div class="form-group">
-              <label for="tipoProducto">Categoria</label>
-              <input type="text" class="form-control" id="tipoProducto" placeholder="">
+            <div class="form-group mt-2">
+              <label for="tipoProducto">Categoría:</label>
+              <select name="tipoProducto" id="tipoProducto">
+                <option value="juguete">Juguetes</option>
+                <option value="comida">Comida</option>
+                <option value="accesorios">Acessorios</option>
+              </select>
               <div id="error-tipoProducto" class="alert alert-danger" role="alert">
                 Sólo vendemos productos como jueguetes, comida y accesorios
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
               <label for="contenidoProducto"> Contenido:</label>
               <input type="text" class="form-control" id="contenidoProducto" placeholder="">
               <div id="error-contenidoProducto" class="alert alert-danger" role="alert">
                 El contenido debe seguir el formato xx.xx
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
               <label for="precioProducto">Precio:</label>
               <input type="text" class="form-control" id="precioProducto" placeholder="">
               <div id="error-precio" class="alert alert-danger" role="alert">
                 El precio debe tener formato xxxxx.xx
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
               <label for="imagenProducto"> Imagen (URL):</label>
               <input type="text" class="form-control" id="imagenProducto" placeholder="">
               <div id="error-imagen-producto" class="alert alert-danger" role="alert">
