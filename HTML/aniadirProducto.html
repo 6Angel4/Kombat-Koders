@@ -100,18 +100,25 @@
 
   <main class="container-fluid px-0">
 
-    <section class="row me-0">
+    <section class="row me-0 ">
       <div class="col-4 col-md-2 d-flex flex-column filtros align-items-start">
-        <div class="align-self-center texto-filtros vineta-filtros">
+        <button class="btn btn-primary mb-3 w-100 mt-3" onclick="editarProductos()">
+          <img src="../SRC/svg/editing.svg" alt="Editar productos" width="30" height="30">
           Editar productos
-        </div>
-        <div class="align-self-center texto-filtros vineta-filtros">
+        </button>
+        <hr class="w-100 border-bottom">
+        <button class="btn btn-primary mb-3 w-100" onclick="anadirProductos()">
+          <img src="../SRC/svg/more.svg" alt="Añadir productos" width="30" height="30">
           Añadir productos
-        </div>
-        <div class="align-self-center texto-filtros vineta-filtros">
+        </button>
+        <hr class="w-100 border-bottom">
+        <button class="btn btn-primary mb-3 w-100" onclick="editarPerfil()">
+          <img src="../SRC/svg/user.svg" alt="Editar perfil" width="30" height="30">
           Editar perfil
-        </div>
+        </button>
       </div>
+      
+      
 
       <!--Grid Productos-->
       <div class="col-8 col-md-10 d-flex justify-content-center" >
