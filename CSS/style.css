@@ -484,3 +484,7 @@ textarea.form-control {
   max-width: 70%;
   font-family: var(--fuenteTextoCuerpo);
 }
+
+.alert{
+  display: none;
+}

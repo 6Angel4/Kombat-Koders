@@ -34,11 +34,6 @@
   <link rel="stylesheet" href="../CSS/style.css" />
   <title>Pet Super Market</title>
   <!--agregar huellita estilos-->
-  <style>
-    body {
-      background-color: #FFFFFF;
-    }
-  </style>
 </head>
 
 <body>
@@ -122,66 +117,66 @@
       <div class="col-8 col-md-10 d-flex justify-content-center" >
         <!--Row de prodcutos-->
         <!-- Formulario de Añadir producto -->
-        <div class="form-container">
+        <div id="formulario-nuevo-producto" class="form-container">
           <h2 class="text-center mb-4">Ingresar nuevo producto</h2>
           <form>
             <div class="form-group">
               <label for="nombreProducto">Nombre del producto:</label>
               <input type="text" class="form-control" id="nombreProducto" placeholder="">
-              <div class="alert alert-danger error-nombre-producto" role="alert">
-                
+              <div id="error-nombre-producto" class="alert alert-danger" role="alert">
+                Por favor ingresa un nombre valido
               </div>
             </div>
             <div class="form-group">
-              <label for="marca"> Marca:</label>
-              <input type="text" class="form-control" id="marca" placeholder="">
-              <div class="alert alert-danger error-marca" role="alert">
-                
+              <label for="marcaProducto"> Marca:</label>
+              <input type="text" class="form-control" id="marcaProducto" placeholder="">
+              <div id="error-marca" class="alert alert-danger" role="alert">
+                Por favor ingresa una marca valida
               </div>
             </div>
             <div class="form-group">
-              <label for="descripcion">Descripción:</label>
-              <input type="text" class="form-control" id="descripcion" placeholder="">
-              <div class="alert alert-danger error-descripcion" role="alert">
-                
+              <label for="descripcionProducto">Descripción:</label>
+              <input type="text" class="form-control" id="descripcionProducto" placeholder="">
+              <div id="error-descripcion" class="alert alert-danger" role="alert">
+                Por favor ingresa una descripción válida
               </div>
             </div>
             <div class="form-group">
-              <label for="categoria"> Categoría:</label>
-              <input type="text" class="form-control" id="categoria" placeholder="">
-              <div class="alert alert-danger error-categoria" role="alert">
-                
+              <label for="productoPara">¿Perrito o gatito?:</label>
+              <input type="text" class="form-control" id="productoPara" placeholder="">
+              <div id="error-productoPara" class="alert alert-danger" role="alert">
+                Sólo vendemos productos para perritos y gatitos
               </div>
             </div>
             <div class="form-group">
-              <label for="fecha">Fecha:</label>
-              <input type="text" class="form-control" id="fecha" placeholder="">
-              <div class="alert alert-danger error-fecha" role="alert">
-                
+              <label for="tipoProducto">Categoria</label>
+              <input type="text" class="form-control" id="tipoProducto" placeholder="">
+              <div id="error-tipoProducto" class="alert alert-danger" role="alert">
+                Sólo vendemos productos como jueguetes, comida y accesorios
               </div>
             </div>
             <div class="form-group">
-              <label for="cantidad"> Cantidad:</label>
-              <input type="text" class="form-control" id="cantidad" placeholder="">
-              <div class="alert alert-danger error-cantidad" role="alert">
-                
+              <label for="contenidoProducto"> Contenido:</label>
+              <input type="text" class="form-control" id="contenidoProducto" placeholder="">
+              <div id="error-contenidoProducto" class="alert alert-danger" role="alert">
+                El contenido debe seguir el formato xx.xx
               </div>
             </div>
             <div class="form-group">
-              <label for="precioSinIVA">Precio sin IVA:</label>
-              <input type="text" class="form-control" id="precioSinIVA" placeholder="">
-              <div class="alert alert-danger error-precio-sin-IVA" role="alert">
-                
+              <label for="precioProducto">Precio:</label>
+              <input type="text" class="form-control" id="precioProducto" placeholder="">
+              <div id="error-precio" class="alert alert-danger" role="alert">
+                El precio debe tener formato xxxxx.xx
               </div>
             </div>
             <div class="form-group">
-              <label for="enlaceImagen"> Imagen (URL):</label>
-              <input type="text" class="form-control" id="enlaceImagen" placeholder="">
-              <div class="alert alert-danger error-enlace-imagen" role="alert">
-                
+              <label for="imagenProducto"> Imagen (URL):</label>
+              <input type="text" class="form-control" id="imagenProducto" placeholder="">
+              <div id="error-imagen-producto" class="alert alert-danger" role="alert">
+                Por favor ingresa una imagen valida
               </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-block mt-3">Añadir producto</button>
+            <button type="submit" class="btn btn-primary mt-3">Añadir producto</button>
           </form>
           <!-- Fin del formulario -->
         </div>
@@ -225,6 +220,7 @@
     </p>
   </footer>
 
+  <script src="../JS/validardatosproducto.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>

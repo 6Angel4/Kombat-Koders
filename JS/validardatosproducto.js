@@ -1,17 +1,28 @@
-document.getElementById("formulario").addEventListener("submit", (event) => {
+document.getElementById("formulario-nuevo-producto").addEventListener("submit", (event) => {
+    //Limpiar alertas
+    document.getElementById("error-nombre-producto").style.display="none";
+    document.getElementById("error-marca").style.display="none";
+    document.getElementById("error-descripcion").style.display="none";
+    document.getElementById("error-productoPara").style.display="none";
+    document.getElementById("error-tipoProducto").style.display="none";
+    document.getElementById("error-contenidoProducto").style.display="none";
+    document.getElementById("error-precio").style.display="none";
+    document.getElementById("error-imagen-producto").style.display="none";
 
+    event.preventDefault();
     //getE... permite acceder y manipular elementos HTML por el atributo id("formulario"),utiliza addEventListener para escuchar el evento "submit"
 const producto = { 
     nombre : document.getElementById("nombreProducto").value, 
+    descripcion : document.getElementById("descripcionProducto").value,
     contenido : document.getElementById("contenidoProducto").value,
-    precio : document.getElementById("precio").value,
-    marca : document.getElementById("marca").value,
-    imagen : document.getElementById("imagen").value,
+    precio : document.getElementById("precioProducto").value,
+    marca : document.getElementById("marcaProducto").value,
+    imagen : document.getElementById("imagenProducto").value,
     esPara : document.getElementById("productoPara").value,
     tipo : document.getElementById("tipoProducto").value
     }   
 
-    if(!datosVerificados(producto)) event.preventDefault(); // Prevenir el envío por defecto del formulario después de la validación
+    if(!datosVerificados(producto)) ; // Prevenir el envío por defecto del formulario después de la validación o añadir a json
 
 });
 
@@ -20,26 +31,29 @@ const datosVerificados = (producto) => {
     const contenidoRegex = /^[0-9]*\.[0-9]{2}$/;
     const precioRegex = /^[0-9]*\.[0-9]{2}$/;
 
-    if (!contenidoRegex.test(producto.contenido)) {
-        alert("El contenido debe seguir el formato xx.xx");
-        esValido = false;
-    } else if (!precioRegex.test(producto.precio)) {
-        alert("El precio debe tener formato xxxxx.xx");
-        esValido = false;
-    } else if (!(producto.esPara === "perro" || producto.esPara === "gato")) {
-        alert("Sólo vendemos productos para perritos y gatitos");
-        esValido = false;
-    } else if (!(producto.tipo === "juguete" || producto.tipo === "comida" || producto.tipo === "accesorios")) {
-        alert("Sólo vendemos productos como jueguetes, comida y accesorios");
-        esValido = false;
-    } else if (producto.nombre === "") {
-        alert("Por favor ingresa un nombre valido");
+    if (producto.nombre === "") {
+        document.getElementById("error-nombre-producto").style.display="block";
         esValido = false;
     } else if (producto.marca === "") {
-        alert("Por favor ingresa una marca valida");
+        document.getElementById("error-marca").style.display="block";
         esValido = false;
-    } else if (producto.imagen === "") {
-        alert("Por favor ingresa una imagen valida");
+    } else if (producto.descripcion === "") {
+        document.getElementById("error-descripcion").style.display="block";
+        esValido = false;
+    } else if (!(producto.esPara === "perro" || producto.esPara === "gato")) {
+        document.getElementById("error-productoPara").style.display="block";
+        esValido = false;
+    } else if (!(producto.tipo === "juguete" || producto.tipo === "comida" || producto.tipo === "accesorios")) {
+        document.getElementById("error-tipoProducto").style.display="block";
+        esValido = false;
+    } else if (!contenidoRegex.test(producto.contenido)) {
+        document.getElementById("error-contenidoProducto").style.display="block";
+        esValido = false;
+    } else if (!precioRegex.test(producto.precio)) {
+        document.getElementById("error-precio").style.display="block";
+        esValido = false;
+    }  else if (producto.imagen === "") {
+        document.getElementById("error-imagen-producto").style.display="block";
         esValido = false;
     }
 
