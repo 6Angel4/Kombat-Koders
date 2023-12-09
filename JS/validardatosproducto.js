@@ -8,6 +8,7 @@ document.getElementById("formulario-nuevo-producto").addEventListener("submit", 
     document.getElementById("error-contenidoProducto").style.display="none";
     document.getElementById("error-precio").style.display="none";
     document.getElementById("error-imagen-producto").style.display="none";
+    document.getElementById("error-oferta").style.display="none";
 
     event.preventDefault();
     //getE... permite acceder y manipular elementos HTML por el atributo id("formulario"),utiliza addEventListener para escuchar el evento "submit"
@@ -19,7 +20,8 @@ const producto = {
     marca : document.getElementById("marcaProducto").value,
     imagen : document.getElementById("imagenProducto").value,
     esPara : document.getElementById("productoPara").value,
-    tipo : document.getElementById("tipoProducto").value
+    tipo : document.getElementById("tipoProducto").value,
+    oferta : document.getElementById("ofertaProducto").value
     }   
 
     if(!datosVerificados(producto)) ; // Prevenir el envío por defecto del formulario después de la validación o añadir a json
@@ -30,6 +32,7 @@ const datosVerificados = (producto) => {
     let esValido = true;
     const contenidoRegex = /^[0-9]*\.[0-9]{2}$/;
     const precioRegex = /^[0-9]*\.[0-9]{2}$/;
+    const ofertaRegex = /^[0-9,$]*$/;
 
     if (producto.nombre === "") {
         document.getElementById("error-nombre-producto").style.display="block";
@@ -54,6 +57,9 @@ const datosVerificados = (producto) => {
         esValido = false;
     }  else if (producto.imagen === "") {
         document.getElementById("error-imagen-producto").style.display="block";
+        esValido = false;
+    }  else if (!ofertaRegex.test(producto.oferta) || !(producto.oferta<=95) || !(producto.oferta >=0)) {
+        document.getElementById("error-oferta").style.display="block";
         esValido = false;
     }
 
