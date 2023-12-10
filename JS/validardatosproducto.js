@@ -3,7 +3,6 @@ import {ControladorProductos} from "../JS/controladorProductos.js";
 document.getElementById("formulario-nuevo-producto").addEventListener("submit", (event) => {
     //Limpiar alertas
     event.preventDefault();
-    console.log("Holis");
     document.getElementById("error-nombre-producto").style.display="none";
     document.getElementById("error-marca").style.display="none";
     document.getElementById("error-descripcion").style.display="none";
@@ -13,6 +12,7 @@ document.getElementById("formulario-nuevo-producto").addEventListener("submit", 
     document.getElementById("error-precio").style.display="none";
     document.getElementById("error-imagen-producto").style.display="none";
     document.getElementById("error-oferta").style.display="none";
+    document.getElementById("producto-creado-exitosamente").style.display="none";
 
     
     //getE... permite acceder y manipular elementos HTML por el atributo id("formulario"),utiliza addEventListener para escuchar el evento "submit"
@@ -29,7 +29,7 @@ const producto = {
     }   
 
     if(datosVerificados(producto)){
-        const miControladorProductos = new ControladorProductos(0);
+        const miControladorProductos = new ControladorProductos();
         miControladorProductos.agregarProducto(
             producto.nombre,
             producto.marca,
@@ -40,9 +40,14 @@ const producto = {
             producto.precio,
             producto.oferta,
             producto.imagen);
-
-    } else{
-        console.log("No valido");
+        document.getElementById("producto-creado-exitosamente").style.display="block";
+        document.getElementById("nombreProducto").value = "";
+        document.getElementById("descripcionProducto").value = "";
+        document.getElementById("contenidoProducto").value = "";
+        document.getElementById("precioProducto").value = "";
+        document.getElementById("marcaProducto").value = "";
+        document.getElementById("imagenProducto").value = "";
+        document.getElementById("ofertaProducto").value = "";
     }
 
 });

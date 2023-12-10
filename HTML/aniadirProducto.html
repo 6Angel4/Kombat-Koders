@@ -126,24 +126,27 @@
         <!-- Formulario de Añadir producto -->
         <div id="formulario-nuevo-producto" class="form-container">
           <h2 class="text-center mb-4">Ingresar nuevo producto</h2>
+          <div id="producto-creado-exitosamente" class="alert alert-success" role="alert">
+            ¡Producto añadido exitosamente!
+          </div>
           <form>
             <div class="form-group mt-2">
               <label for="nombreProducto">Nombre del producto:</label>
-              <input type="text" class="form-control" id="nombreProducto" placeholder="">
+              <input type="text" class="form-control" id="nombreProducto" placeholder="Croquetas sabrosas">
               <div id="error-nombre-producto" class="alert alert-danger" role="alert">
                 Por favor ingresa un nombre valido
               </div>
             </div>
             <div class="form-group mt-2">
               <label for="marcaProducto"> Marca:</label>
-              <input type="text" class="form-control" id="marcaProducto" placeholder="">
+              <input type="text" class="form-control" id="marcaProducto" placeholder="El tio">
               <div id="error-marca" class="alert alert-danger" role="alert">
                 Por favor ingresa una marca valida
               </div>
             </div>
             <div class="form-group mt-2">
               <label for="descripcionProducto">Descripción:</label>
-              <input type="text" class="form-control" id="descripcionProducto" placeholder="">
+              <input type="text" class="form-control" id="descripcionProducto" placeholder="Croquetas Medium Adult de Royal Cannin para perros adultos. Fórmula especial para razas medianas.">
               <div id="error-descripcion" class="alert alert-danger" role="alert">
                 Por favor ingresa una descripción válida
               </div>
@@ -170,29 +173,29 @@
               </div>
             </div>
             <div class="form-group mt-2">
-              <label for="contenidoProducto"> Contenido:</label>
-              <input type="text" class="form-control" id="contenidoProducto" placeholder="">
+              <label for="contenidoProducto"> Contenido (en Kg/piezas/Litros):</label>
+              <input type="text" class="form-control" id="contenidoProducto" placeholder="5.25">
               <div id="error-contenidoProducto" class="alert alert-danger" role="alert">
                 El contenido debe seguir el formato xx.xx
               </div>
             </div>
             <div class="form-group mt-2">
-              <label for="precioProducto">Precio:</label>
-              <input type="text" class="form-control" id="precioProducto" placeholder="">
+              <label for="precioProducto">Precio (en MXN):</label>
+              <input type="text" class="form-control" id="precioProducto" placeholder="200.00">
               <div id="error-precio" class="alert alert-danger" role="alert">
                 El precio debe tener formato xxxxx.xx
               </div>
             </div>
             <div class="form-group mt-2">
-              <label for="ofertaProducto"> Descueto de %:</label>
-              <input type="text" class="form-control" id="ofertaProducto" placeholder="">
+              <label for="ofertaProducto"> Descuento del producto %:</label>
+              <input type="text" class="form-control" id="ofertaProducto" placeholder="40">
               <div id="error-oferta" class="alert alert-danger" role="alert">
-                Por favor ingresa el %
+                Por favor ingresa un entero, este se tomará como el porcentaje de descuento
               </div>
             </div>
             <div class="form-group mt-2">
               <label for="imagenProducto"> Imagen (URL):</label>
-              <input type="text" class="form-control" id="imagenProducto" placeholder="">
+              <input type="text" class="form-control" id="imagenProducto" placeholder="https://www.petlife.mx/u/fotografias/m/2023/4/11/f768x1-970_1097_5050.jpg">
               <div id="error-imagen-producto" class="alert alert-danger" role="alert">
                 Por favor ingresa una imagen valida
               </div>

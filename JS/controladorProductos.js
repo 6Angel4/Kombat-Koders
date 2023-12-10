@@ -1,17 +1,24 @@
 // Create a ItemsController class
 export class ControladorProductos {
   // Set up the items and currentId property in the contructor
-  constructor(idActual = 0) {
+  constructor() {
       this.productos = [];
-      this.idActual = idActual;
   }
 
   // Función agregar productos
   agregarProducto(name, brand, description, animal, category, quantity, price, discount, image) {
-   
+    let idUltimoProducto;
+    this.productos=this.cargarProductosFromLocalStorage();
+    if(this.productos.length === 0){
+      idUltimoProducto=-1;
+    } else{
+      idUltimoProducto=this.productos[this.productos.length-1].id;
+    }
+
+
       const producto = {
           // Increment the currentId property
-          id: this.idActual++,
+          id: idUltimoProducto+1,
           nombreProducto: name,
           marcaProducto: brand,
           descripcionProducto: description,
@@ -24,7 +31,6 @@ export class ControladorProductos {
           fechaProducto: new Date().getTime()
         };
 
-      this.productos=this.cargarProductosFromLocalStorage();
       this.productos.push(producto);
       this.pushProductosLocalStorage();
   }   
