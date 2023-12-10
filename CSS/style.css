@@ -474,3 +474,22 @@ textarea.form-control {
   border-radius: 10px;
   height: auto;
 }
+
+.form-container {
+  background-color: #F5B27F;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 70%;
+  font-family: var(--fuenteTextoCuerpo);
+}
+
+.alert{
+  display: none;
+}
+
+select{
+  display: block;
+  width: 100%;
+}
