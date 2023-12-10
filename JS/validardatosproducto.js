@@ -1,5 +1,9 @@
+import {ControladorProductos} from "../JS/controladorProductos.js";
+
 document.getElementById("formulario-nuevo-producto").addEventListener("submit", (event) => {
     //Limpiar alertas
+    event.preventDefault();
+    console.log("Holis");
     document.getElementById("error-nombre-producto").style.display="none";
     document.getElementById("error-marca").style.display="none";
     document.getElementById("error-descripcion").style.display="none";
@@ -10,7 +14,7 @@ document.getElementById("formulario-nuevo-producto").addEventListener("submit", 
     document.getElementById("error-imagen-producto").style.display="none";
     document.getElementById("error-oferta").style.display="none";
 
-    event.preventDefault();
+    
     //getE... permite acceder y manipular elementos HTML por el atributo id("formulario"),utiliza addEventListener para escuchar el evento "submit"
 const producto = { 
     nombre : document.getElementById("nombreProducto").value, 
@@ -24,7 +28,22 @@ const producto = {
     oferta : document.getElementById("ofertaProducto").value
     }   
 
-    if(!datosVerificados(producto)) ; // Prevenir el envío por defecto del formulario después de la validación o añadir a json
+    if(datosVerificados(producto)){
+        const miControladorProductos = new ControladorProductos(0);
+        miControladorProductos.agregarProducto(
+            producto.nombre,
+            producto.marca,
+            producto.descripcion,
+            producto.esPara,
+            producto.tipo,
+            producto.contenido,
+            producto.precio,
+            producto.oferta,
+            producto.imagen);
+
+    } else{
+        console.log("No valido");
+    }
 
 });
 
