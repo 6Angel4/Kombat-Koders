@@ -48,6 +48,9 @@ const producto = {
         document.getElementById("marcaProducto").value = "";
         document.getElementById("imagenProducto").value = "";
         document.getElementById("ofertaProducto").value = "";
+        setTimeout(function() {
+            document.getElementById("producto-creado-exitosamente").style.display = 'none';
+          }, 2000);
     }
 
 });
@@ -88,25 +91,4 @@ const datosVerificados = (producto) => {
     }
 
     return esValido;
-}    //Lista de validaciones
-
-    //precio -> Debe ser un número con decimales al menos 2 decimales | no letras, solo numeros y el signo de punto
-
-//Id -> Garantizar que no hay repetición https://es.stackoverflow.com/questions/390700/eliminar-un-objeto-de-una-lista-mediante-su-atributo-id
-//a través de de la clase de control 
-
-//nombre -> Se vale de todo menos empty
-//contenido -> Debe ser un número con decimales al menos 2 decimales | no letras, solo numeros y el signo de punto
-
-
-    //Marca -> se vale de todo?
-
-    //imagen -> debe ser un link a una imagen https://es.stackoverflow.com/questions/203106/saber-si-una-imagen-existe-o-no-se-cargo-correctamente
-    //https://www.techiedelight.com/es/check-for-existence-of-image-at-given-url-javascript/
-
-    //esPara -> tiene que ser perro o gato, no otra cosa, se puede hacer una lista en el html
-    //Realizar un producto.esPara !== "perro" || "gato"
-
-
-    //tipo -> pertenece a las 3 categorias que vendemos, no otra cosa, se puede limitar desde html con una lista?
-    //Realizar tipo !== "juguete" || "comida" || "accesorios"
+}

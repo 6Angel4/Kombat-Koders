@@ -2,7 +2,6 @@ import {ControladorProductos} from "../JS/controladorProductos.js";
 
 const imprimirDOMFromLocalStorage = (Controlador)=>{
     const productosLS=Controlador.cargarProductosFromLocalStorage();
-    console.log(productosLS);
     const productosGrid = productosLS.map((producto) => `  
       <div class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-3">
         <div class="card border-0 mb-5"><!--Aqui esta la primera tarjeta de producto-->
@@ -20,6 +19,6 @@ const imprimirDOMFromLocalStorage = (Controlador)=>{
     `);
     document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
   }
-const miControladorProductos = new ControladorProductos(0);
-imprimirDOMFromLocalStorage(miControladorProductos);
 
+const miControladorProductos = new ControladorProductos();
+imprimirDOMFromLocalStorage(miControladorProductos);
