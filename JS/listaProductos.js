@@ -10,7 +10,7 @@ const imprimirDOMFromLocalStorage = (Controlador)=>{
               <div>
                 <h5 class="card-title">${producto.nombreProducto}</h5>
                 <p class="card-text">${producto.descripcionProducto}</p>
-                <p>$${producto.precioProducto}</p>
+                <p>$${producto.precioProducto.toFixed(2)}</p>
               </div>
               <a href="#" class="btn btn-primary">Añadir a carrito</a>
           </div>
