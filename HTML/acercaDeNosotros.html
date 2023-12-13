@@ -1,510 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Página de acerca de nosotros Pet Supermarket"
-    />
-    <!--Link-Propio (preload)-->
-    <link rel="preload" as="style" href="../CSS/normalize.css" />
-    <link rel="preload" as="style" href="../CSS/style.css" />
-    <!--Link-Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!--Link-Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <!-- Iconos flaticon *MARIO-->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
-    />
-    <!--Font - Hind-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind&display=swap"
-      rel="stylesheet"
-    />
-    <!--Font - Montserrat-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <!--Link-Propio-->
-    <link rel="stylesheet" href="../CSS/normalize.css" />
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <title>Acerca de Nosotros</title>
-  </head>
 
-  <body>
-    <!--Inicia header-->
-    <header class="m-0 p-0 text-center">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary nav-custom">
-        <div class="container-fluid d-flex justify-content-center">
-          <!-- Logo -->
-          <div class="col-md-2 col-6 text-center">
-            <a class="navbar-brand" href="../index.html">
-              <img
-                class="imgLogo"
-                src="../SRC/img/logo.png"
-                alt="Logo de la pagina"
-              />
-            </a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de acerca de nosotros Pet Supermarket" />
+  <!--Link-Propio (preload)-->
+  <link rel="preload" as="style" href="../CSS/normalize.css" />
+  <link rel="preload" as="style" href="../CSS/style.css" />
+  <!--Link-Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!--Link-Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <!-- Iconos flaticon *MARIO-->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <!--Font - Hind-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet" />
+  <!--Font - Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <!--Link-Propio-->
+  <link rel="stylesheet" href="../CSS/normalize.css" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <title>Acerca de Nosotros</title>
+</head>
 
-          <!--Boton-->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <!-- Enlaces de navegación -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link enlaces" href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link nav-hover enlaces"
-                  href="./productos.html"
-                  >Productos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link nav-hover enlaces"
-                  href="./paginadecontacto.html"
-                  >Contacto</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link nav-hover active enlaces"
-                  href="./acercaDeNosotros.html"
-                  >Nosotros</a
-                >
-              </li>
-            </ul>
+<body>
+  <!--Inicia header-->
+  <header class="m-0 p-0 text-center">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-custom">
+      <div class="container-fluid d-flex justify-content-center">
+        <!-- Logo -->
+        <div class="col-md-2 col-6 text-center">
+          <a class="navbar-brand" href="../index.html">
+            <img class="imgLogo" src="../SRC/img/logo.png" alt="Logo de la pagina" />
+          </a>
+        </div>
 
-            <form class="d-flex" role="search">
-              <input
-                class="form-control ms-3 me-1"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Search"
-              />
-              <button class="btn button-localCustom" type="submit">
-                Buscar
-              </button>
-            </form>
+        <!--Boton-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <!-- Enlaces de navegación -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link enlaces" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-hover enlaces" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-hover enlaces" href="./paginadecontacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-hover active enlaces" href="./acercaDeNosotros.html">Nosotros</a>
+            </li>
+          </ul>
 
-            <!-- Iconos de carrito y usuario en divs separados -->
-            <div
-              class="col-sm-12 col-md-1 col-6 d-md-flex justify-content-md-around justify-content-center align-items-center mt-md-0 icons-mobile mx-auto"
-            >
-              <!-- Icono de bolsa de compras -->
-              <div>
-                <a href="">
-                  <img
-                    src="../SRC/img/shopping-bag.png"
-                    alt="#"
-                    width="auto"
-                    height="30px"
-                  />
-                </a>
-              </div>
-              <!-- Icono de usuario -->
-              <div>
-                <a href="./InicioSesion.html">
-                  <img
-                    src="../SRC/img/user.png"
-                    alt="#"
-                    width="auto"
-                    height="30px"
-                  />
-                </a>
-              </div>
+          <form class="d-flex" role="search">
+            <input class="form-control ms-3 me-1" type="search" placeholder="Buscar" aria-label="Search" />
+            <button class="btn button-localCustom" type="submit">
+              Buscar
+            </button>
+          </form>
+
+          <!-- Iconos de carrito y usuario en divs separados -->
+          <div
+            class="col-sm-12 col-md-1 col-6 d-md-flex justify-content-md-around justify-content-center align-items-center mt-md-0 icons-mobile mx-auto">
+            <!-- Icono de bolsa de compras -->
+            <div>
+              <a href="">
+                <img src="../SRC/img/shopping-bag.png" alt="#" width="auto" height="30px" />
+              </a>
+            </div>
+            <!-- Icono de usuario -->
+            <div>
+              <a href="./InicioSesion.html">
+                <img src="../SRC/img/user.png" alt="#" width="auto" height="30px" />
+              </a>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <!--Fin header-->
+      </div>
+    </nav>
+  </header>
+  <!--Fin header-->
 
-    <div class="contenedorMaestro">
+  <div class="contenedorMaestro">
 
-      <!-- carrusel -->
-      <main class="principal">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
-          data-bs-ride="carousel"
-          data-bs-theme="dark"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="5"
-              aria-label="Slide 6"
-            ></button>           
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../SRC/img-feature-members/alex.png"
-                class="d-block"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Alejandro Flores</h5>
-                <p>
-                  HABILIDADES BLANDAS Autodidacta | Escucha activa | Empatía |
-                  Orientación al detalle | Adaptabilidad | Trabajo en equipo |
-                  <br />
-                  HABILIDADES TÉCNICAS|HTML | CSS | Github | Javascript | Visual
-                  Studio Code
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../SRC/img-feature-members/Mario.png"
-                class="d-block"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Mario Mata</h5>
-                <p>
-                  HABILIDADES BLANDAS | Autodidacta | Creativo| Adaptabilidad |
-                  Proactivo | Analítico | Trabajo en equipo | Gestión del tiempo
-                  |
-                  <br />
-                  HABILIDADES TÉCNICAS | HTML | CSS | Javascript | Git
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../SRC/img-feature-members/livi.png"
-                class="d-block"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Olivia Rivas</h5>
-                <p>
-                  HABILIDADES BLANDAS | Amor al aprendizaje | Curiosidad |
-                  Juicio | Creativa | Perspectiva |
-                  <br />HABILIDADES TÉCNICAS | JavaScript | HTML | CSS
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../SRC/img-feature-members/cyn.png"
-                class="d-block"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Cynthia Rosales</h5>
-                <p>
-                  HABILIDADES BLANDAS | Perseverante | Trabajo en equipo |
-                  Creativa | Comunicación efectiva
-                  <br />
-                  HABILIDADES TÉCNICAS CSS | HTML | JS | Power BI
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../SRC/img-feature-members/br.png"
-                class="d-block"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Brayan Hernández</h5>
-                <p>
-                  HABILIDADES BLANDAS | Amor por el trabajo| Honestidad |
-                  Humildad | Trabajo en equipo |
-                  <br />HABILIDADES TÉCNICAS | HTML | CSS | Javascript | Github
-                </p>
-              </div>
-            </div>          
-
-            <!-- foto de miguel -->
-            <div class="carousel-item">
-              <img
-                src="../SRC/img-feature-members/miguel.jpg"
-                class="d-block"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Miguel Ortega</h5>
-                <p>
-                  Habilidades blandas | Resolucion de Problemas | Comunicacion
-                  Efectiva | Trabajo en Equipo | Aprendizaje Constante |
-                  Creatividad
-                  <br />
-                  Habilidades técnicas Java | JavaScript | HTML | CSS | MySQL |
-                  Git | GitHub
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    <!-- carrusel -->
+    <main class="principal">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
         </div>
-        <div class="p-5"><h1>Nosotros</h1></div>
-        <div class="">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../SRC/img-feature-members/alex.png" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Alejandro Flores</h5>
+              <p>
+                HABILIDADES BLANDAS Autodidacta | Escucha activa | Empatía |
+                Orientación al detalle | Adaptabilidad | Trabajo en equipo |
+                <br />
+                HABILIDADES TÉCNICAS|HTML | CSS | Github | Javascript | Visual
+                Studio Code
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../SRC/img-feature-members/Mario.png" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mario Mata</h5>
+              <p>
+                HABILIDADES BLANDAS | Autodidacta | Creativo| Adaptabilidad |
+                Proactivo | Analítico | Trabajo en equipo | Gestión del tiempo
+                |
+                <br />
+                HABILIDADES TÉCNICAS | HTML | CSS | Javascript | Git
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../SRC/img-feature-members/livi.png" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Olivia Rivas</h5>
+              <p>
+                HABILIDADES BLANDAS | Amor al aprendizaje | Curiosidad |
+                Juicio | Creativa | Perspectiva |
+                <br />HABILIDADES TÉCNICAS | JavaScript | HTML | CSS
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../SRC/img-feature-members/cyn.png" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cynthia Rosales</h5>
+              <p>
+                HABILIDADES BLANDAS | Perseverante | Trabajo en equipo |
+                Creativa | Comunicación efectiva
+                <br />
+                HABILIDADES TÉCNICAS CSS | HTML | JS | Power BI
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../SRC/img-feature-members/br.png" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Brayan Hernández</h5>
+              <p>
+                HABILIDADES BLANDAS | Amor por el trabajo| Honestidad |
+                Humildad | Trabajo en equipo |
+                <br />HABILIDADES TÉCNICAS | HTML | CSS | Javascript | Github
+              </p>
+            </div>
+          </div>
+
+          <!-- foto de miguel -->
+          <div class="carousel-item">
+            <img src="../SRC/img-feature-members/miguel.jpg" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Miguel Ortega</h5>
+              <p>
+                Habilidades blandas | Resolucion de Problemas | Comunicacion
+                Efectiva | Trabajo en Equipo | Aprendizaje Constante |
+                Creatividad
+                <br />
+                Habilidades técnicas Java | JavaScript | HTML | CSS | MySQL |
+                Git | GitHub
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="p-5">
+        <h1>Nosotros</h1>
+      </div>
+      <div class="">
+        <p>
+          <br>
+          Nuestra plataforma nace de la preocupación por el bienestar de
+          perros y gatos, ofreciendo productos y servicios de alta calidad que
+          priorizan su salud y comodidad. Nos esforzamos por ser una opción
+          accesible para dueños comprometidos y profesionales del cuidado
+          animal, proporcionando una experiencia de compra enfocada en el amor
+          y el cuidado de las mascotas.
+        </p>
+      </div>
+
+    </main>
+
+    <!-- fin carrusel -->
+
+    <section class="sectionMisionVision">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h2>Misión</h2>
+            <p>
+              Brindar a los dueños de animales de compañía (perros y gatos)
+              una experiencia de compra satisfactoria al ofrecer productos y
+              servicios enfocados a la salud y comodidad de sus mascotas.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2>Visión</h2>
+            <p>
+              Nos vemos como una plataforma líder en el comercio de productos
+              para mascotas, aspiramos a ser la primera opción para la
+              adquisición de artículos que beneficien a perros y gatos,
+              contribuyendo al cuidado y amor que amerita cada mascota.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedorValores">
+      <div class="row sectionValores">
+        <div class="col-12">
+          <h2>Valores</h2>
+        </div>
+        <div class="col-12 col-md-4 valores">
+          <img class="icono-valor" src="../SRC/svg/certificate.svg" alt="Certificado de calidad" width="50" height="50" />
+          <h3>Calidad</h3>
           <p>
-            Nuestra plataforma nace de la preocupación por el bienestar de
-            perros y gatos, ofreciendo productos y servicios de alta calidad que
-            priorizan su salud y comodidad. Nos esforzamos por ser una opción
-            accesible para dueños comprometidos y profesionales del cuidado
-            animal, proporcionando una experiencia de compra enfocada en el amor
-            y el cuidado de las mascotas.
-          </p>          
-         </div>
-        
-      </main>
-
-      <!-- fin carrusel -->
-
-      <section class="sectionMisionVision">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <h2>Misión</h2>
-              <p>
-                Brindar a los dueños de animales de compañía (perros y gatos)
-                una experiencia de compra satisfactoria al ofrecer productos y
-                servicios enfocados a la salud y comodidad de sus mascotas.
-              </p>
-            </div>
-            <div class="col-12 col-md-6">
-              <h2>Visión</h2>
-              <p>
-                Nos vemos como una plataforma líder en el comercio de productos
-                para mascotas, aspiramos a ser la primera opción para la
-                adquisición de artículos que beneficien a perros y gatos,
-                contribuyendo al cuidado y amor que amerita cada mascota.
-              </p>
-            </div>
-          </div>
+            Buscamos que nuestros clientes tengan la confianza de que están
+            recibiendo lo mejor para sus animales de compañía.
+          </p>
         </div>
-      </section>
-
-      <section class="contenedorValores">
-        <div class="row sectionValores">
-          <div class="col-12">
-            <h2>Valores</h2>
-          </div>
-          <div class="col-12 col-md-4 valores">
-            <img
-              src="../SRC/svg/certificate.svg"
-              alt="Certificado de calidad"
-              width="50"
-              height="50"
-            />
-            <h3>Calidad</h3>
-            <p>
-              Buscamos que nuestros clientes tengan la confianza de que están
-              recibiendo lo mejor para sus animales de compañía.
-            </p>
-          </div>
-          <div class="col-12 col-md-4 valores">
-            <img
-              src="../SRC/svg/transparency.svg"
-              alt="Certificado de calidad"
-              width="50"
-              height="50"
-            />
-            <h3>Transparencia</h3>
-            <p>
-              Protegemos la privacidad y los datos proporcionados por nuestros
-              clientes.
-            </p>
-          </div>
-          <div class="col-12 col-md-4 valores">
-            <img
-              src="../SRC/svg/idea.svg"
-              alt="Certificado de calidad"
-              width="50"
-              height="50"
-            />
-            <h3>Innovación</h3>
-            <p>
-              Mantenemos la disposición para adaptarnos rápidamente a los
-              cambios, necesidades del mercado y tendencias en la industria de
-              las mascotas.
-            </p>
-          </div>
-          <div class="col-12 col-md-6 valores">
-            <img
-              src="../SRC/svg/growth.svg"
-              alt="Certificado de calidad"
-              width="50"
-              height="50"
-            />
-            <h3>Responsabilidad social y ambiental</h3>
-            <p>
-              Compromiso con el bienestar de las mascotas: priorizamos el
-              bienestar de las mascotas. Tratamos de compartir prácticas y
-              productos que beneficien la vida de los animales.
-            </p>
-          </div>
-          <div class="col-12 col-md-6 valores">
-            <img
-              src="../SRC/svg/team.svg"
-              alt="Certificado de calidad"
-              width="50"
-              height="50"
-            />
-            <h3>Trabajo en Equipo</h3>
-            <p>
-              Promovemos la colaboración y comunicación entre los integrantes de
-              nuestro equipo para garantizar un servicio integral a nuestros
-              clientes.
-            </p>
-          </div>
+        <div class="col-12 col-md-4 valores">
+          <img class="icono-valor" src="../SRC/svg/transparency.svg" alt="Certificado de calidad" width="50" height="50" />
+          <h3>Transparencia</h3>
+          <p>
+            Protegemos la privacidad y los datos proporcionados por nuestros
+            clientes.
+          </p>
         </div>
-      </section>
-      <!-- fin Valores-->
+        <div class="col-12 col-md-4 valores">
+          <img class="icono-valor" src="../SRC/svg/idea.svg" alt="Certificado de calidad" width="50" height="50" />
+          <h3>Innovación</h3>
+          <p>
+            Mantenemos la disposición para adaptarnos rápidamente a los
+            cambios, necesidades del mercado y tendencias en la industria de
+            las mascotas.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 valores">
+          <img class="icono-valor" src="../SRC/svg/growth.svg" alt="Certificado de calidad" width="50" height="50" />
+          <h3>Responsabilidad social y ambiental</h3>
+          <p>
+            Compromiso con el bienestar de las mascotas: priorizamos el
+            bienestar de las mascotas. Tratamos de compartir prácticas y
+            productos que beneficien la vida de los animales.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 valores">
+          <img class="icono-valor" src="../SRC/svg/team.svg" alt="Certificado de calidad" width="50" height="50" />
+          <h3>Trabajo en Equipo</h3>
+          <p>
+            <br>
+            Promovemos la colaboración y comunicación entre los integrantes de
+            nuestro equipo para garantizar un servicio integral a nuestros
+            clientes.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- fin Valores-->
+  </div>
+  <!-- fin contenedorMaestro -->
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="divNavLogo">
+      <a href="../index.html" class="enlaces enlaceImagen">
+        <img src="../SRC/img/logo.png" class="imgLogo"
+          alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras" />
+      </a>
     </div>
-    <!-- fin contenedorMaestro -->
 
-    <!-- footer-->
-    <footer class="footer">
-      <div class="divNavLogo">
-        <a href="../index.html" class="enlaces enlaceImagen">
-          <img
-            src="../SRC/img/logo.png"
-            class="imgLogo"
-            alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras"
-          />
-        </a>
-      </div>
+    <!--Barra de iconos de redes *Mario-->
+    <div class="footerDivNavBar">
+      <nav class="navNavBar">
+        <a href="https://www.facebook.com/profile.php?id=61554222387300" class="iconos-redes enlaces"><i
+            class="fi fi-brands-facebook"></i></a>
+        <a href="https://www.instagram.com/petsupermarket.contactanos/" class="iconos-redes enlaces"><i
+            class="fi fi-brands-instagram"></i></a>
+        <a href="https://twitter.com/SupermarketPet" class="iconos-redes enlaces"><i
+            class="fi fi-brands-twitter-alt-circle"></i></a>
+        <a href="https://www.tiktok.com/@petsupermarket.contacten?lang=es" class="iconos-redes enlaces"><i
+            class="fi fi-brands-tik-tok"></i></a>
+      </nav>
+    </div>
+    <div>
+      <nav>
+        <!--Intercambie de lugar los botones dee redes con los de enlaces, creo que se ve más estético - Alex-->
+        <a href="../index.html" class="enlaces">Inicio</a>
+        <a href="./productos.html" class="enlaces">Productos</a>
+        <a href="./paginadecontacto.html" class="enlaces">Contacto</a>
+        <a href="./acercaDeNosotros.html" class="enlaces">Nosotros</a>
+      </nav>
+    </div>
+    <p class="direccion">
+      Av. San José CP. 304950 Teléfono:55-34-23-45-56 <br />Email:
+      petsupermarket.contactanos@gmail.com
+    </p>
+    <br />
+    <p class="derechosReservados">
+      Pet Supermarket. Todos los derechos reservados.
+    </p>
+  </footer>
 
-      <!--Barra de iconos de redes *Mario-->
-      <div class="footerDivNavBar">
-        <nav class="navNavBar">
-          <a href="https://www.facebook.com/profile.php?id=61554222387300" class="iconos-redes enlaces"
-            ><i class="fi fi-brands-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/petsupermarket.contactanos/" class="iconos-redes enlaces"
-            ><i class="fi fi-brands-instagram"></i
-          ></a>
-          <a href="https://twitter.com/SupermarketPet" class="iconos-redes enlaces"
-            ><i class="fi fi-brands-twitter-alt-circle"></i
-          ></a>
-          <a href="https://www.tiktok.com/@petsupermarket.contacten?lang=es" class="iconos-redes enlaces"
-            ><i class="fi fi-brands-tik-tok"></i
-          ></a>
-        </nav>
-      </div>
-      <div>
-        <nav>
-          <!--Intercambie de lugar los botones dee redes con los de enlaces, creo que se ve más estético - Alex-->
-          <a href="../index.html" class="enlaces">Inicio</a>
-          <a href="./productos.html" class="enlaces">Productos</a>
-          <a href="./paginadecontacto.html" class="enlaces">Contacto</a>          
-          <a href="./acercaDeNosotros.html" class="enlaces">Nosotros</a>
-        </nav>
-      </div>
-      <p class="direccion">
-        Av. San José CP. 304950 Teléfono:55-34-23-45-56 <br />Email:
-        petsupermarket.contactanos@gmail.com
-      </p>
-      <br />
-      <p class="derechosReservados">
-        Pet Supermarket. Todos los derechos reservados.
-      </p>
-    </footer>
+  <!--Fin del footer-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../JS/app.js"></script>
+</body>
 
-    <!--Fin del footer-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../JS/app.js"></script>
-  </body>
 </html>
