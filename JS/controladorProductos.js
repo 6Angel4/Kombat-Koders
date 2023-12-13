@@ -23,7 +23,7 @@ export class ControladorProductos {
       animalProducto: animal,
       categoriaProducto: category,
       cantidadProducto: quantity,
-      precioProducto: price,
+      precioProducto: Number(price),
       descuentoProducto: discount,          
       fechaProducto: new Date().getTime()
     };
