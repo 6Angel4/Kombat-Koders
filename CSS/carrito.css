@@ -1,0 +1,14 @@
+:root {
+  --colorNaranjaHeader: #fdc35a;
+  --colorNaranjaFondoTextos: #ffd486;
+  --colorNaranjaFooterYBotones: #f68035;
+  --colorNaranjaFondoBarraListas: #fee1ac;
+  --colorNaranjaFondoFormularios: #f5b27f;
+  --colorVerdeFondo: #008f7a;
+  --fuenteTextoTitulos: "Montserrat", sans-serif;
+  --fuenteTextoCuerpo: "Hind", sans-serif;
+}
+
+.tr-custom {
+  background-color: var(--colorNaranjaFondoFormularios);
+}
