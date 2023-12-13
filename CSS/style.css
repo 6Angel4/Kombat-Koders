@@ -75,27 +75,32 @@ p {
   margin: 0;
   /*Agregue esto . Miguel*/
 }
-.divNav {
+
+.customSearch{
+  width: 200px;
+  height: 30px;
+}
+/* .divNav { */
   /*Esconde el nav*/
-  display: none;
-}
+  /* display: none;
+} */
 
-.divBusqueda {
+/* .divBusqueda {
   position: relative;
-}
+} */
 
-.barraBusqueda {
+/* .barraBusqueda {
   padding: 1rem;
   padding-right: 3.5rem;
   border-radius: 2rem;
   border: none;
   outline: none;
-}
+} */
 
-.lupa {
+/* .lupa {
   position: absolute;
   padding: 0.8rem;
-}
+} */
 
 @media (min-width: 768px) {
   .divNav {
