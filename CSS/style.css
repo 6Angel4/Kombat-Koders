@@ -188,7 +188,7 @@ p {
   max-width: 100px;
   max-height: 85px;
   /* Ajuste el tamaño del logo - Alex */
-  padding: 1rem 0;
+  padding: 1rem 0px;
   /* Le di un espacio al logo para que no este pegado con las lías del navbar - Alex*/
 }
 
