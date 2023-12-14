@@ -508,3 +508,7 @@ select{
   border-radius: 10px;
   padding: 10px 25px;
 }
+
+.img-historial-compras{
+  height: 30px
+}
