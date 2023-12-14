@@ -1,6 +1,7 @@
 import {ControladorProductos} from "../JS/controladorProductos.js";
 
 const imprimirDOMFromLocalStorage = (Controlador)=>{
+  Controlador.inicializarCheckboxes();
     const productosLS=Controlador.cargarProductosFromLocalStorage();
     const productosGrid = productosLS.map((producto) => `  
       <div class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-3">
