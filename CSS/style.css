@@ -503,3 +503,12 @@ select{
   transform: scale(1.3);
   filter: drop-shadow(0 0 1px rgb(0, 143, 122));
 }
+
+/* #formulario-recuperar-contraseña{
+  display:none;
+}
+
+#formulario-registro{
+  display:none;
+}  
+ */
