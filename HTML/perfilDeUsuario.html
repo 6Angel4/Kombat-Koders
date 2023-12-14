@@ -55,27 +55,30 @@
 
       <!--Boton-->
       <div class="order-2 align-self-center">
-        <button class=" btn btn-primary navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class=" btn btn-primary btn-ham navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation";">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
 
-      <div class="order-3 collapse navbar-collapse d-lg-flex justify-content-lg-around" id="navbarTogglerDemo01">
+      <div class="order-3 collapse navbar-collapse d-lg-flex justify-content-lg-around align-items-lg-center" id="navbarTogglerDemo01">
+        <div class="d-flex flex-column d-lg-flex flex-lg-row justify-content-lg-around align-items-lg-center w-100">
         <!-- Enlaces de navegación -->
-        <ul class="navbar-nav">
-          <li class="nav-item me-4 "><a class="nav-link enlaces" href="../index.html">Inicio</a></li>
-          <li class="nav-item mx-4 "><a class="nav-link nav-hover enlaces" href="./productos.html">Productos</a></li>
-          <li class="nav-item mx-4 "><a class="nav-link nav-hover active enlaces" href="./paginadecontacto.html">Contacto</a></li>
-          <li class="nav-item ms-4 "><a class="nav-link nav-hover enlaces" href="./acercaDeNosotros.html">Nosotros</a></li>
-        </ul>
+          <ul class="navbar-nav order-1 order-lg-0">
+            <li class="nav-item me-lg-4 "><a class="nav-link enlaces" href="../index.html">Inicio</a></li>
+            <li class="nav-item mx-lg-4 "><a class="nav-link nav-hover enlaces" href="./productos.html">Productos</a></li>
+            <li class="nav-item mx-lg-4 "><a class="nav-link nav-hover active enlaces" href="./paginadecontacto.html">Contacto</a></li>
+            <li class="nav-item ms-lg-4 "><a class="nav-link nav-hover enlaces" href="./acercaDeNosotros.html">Nosotros</a></li>
+          </ul>
 
-        <!--Barra de bsuwqueda-->
-        <form class="d-lg-flex" role="search">
-          <input class="form-control ms-2 me-2 rounded-pill customSearch" type="search" placeholder="Buscar" aria-label="Search" rounded/>
-          <button class="btn button-localCustom" type="submit">
-            <img class="lupa" width="auto" height="20px" src="../SRC/img/lupa.png"/>             
-          </button>
-        </form>
+          <!--Barra de bsuwqueda-->
+          <form class="order-0 order-lg-1 d-flex flex-row d-lg-flex justify-content-center" role="search">
+              <input class="form-control ms-5 ms-lg-2 me-lg-2 rounded-pill customSearch" type="search" placeholder="Buscar" aria-label="Search" rounded/>
+              <button class="btn button-localCustom" type="submit">
+                <img class="lupa" width="auto" height="20px" src="../SRC/img/lupa.png"/>             
+              </button>
+          </form>
+        </div>
+
       </div>
       <!-- Iconos de carrito y usuario en divs separados -->
       <div class="d-flex flex-row align-items-center order-0  d-lg-flex flex-lg-row align-items-lg-center order-lg-3 mx-2">
