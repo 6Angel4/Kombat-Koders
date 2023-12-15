@@ -108,37 +108,57 @@
       <div class="col-12 col-lg-6">
         <div id="form-datos-personales" class="form-container form-user mx-auto">
           <h2 class="text-center mb-4 fs-2">Datos personales</h2>
-          
+          <div id="datos-usuario-editados-exitoso" class="alert alert-success" role="alert">
+            ¡Datos editados exitosamente!
+          </div>
           <form class="container">
             <div class="row">
               <div class="form-group col-12">
                 <label for="nombre">Nombre:</label>
                 <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                <div id="error-nombre" class="alert alert-danger" role="alert">
+                  Por favor ingresa un nombre valido
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="form-group col-12 col-lg-6">
                 <label for="direccion">Dirección:</label>
                 <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección">
+                <div id="error-direccion" class="alert alert-danger" role="alert">
+                  Por favor ingresa una dirección
+                </div>
               </div>
               <div class="form-group col-12 col-lg-6">
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
+                <div id="error-telefono" class="alert alert-danger" role="alert">
+                  Por favor ingresa un telefono valido
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="form-group col-12 col-lg-6">
                 <label for="ciudad">Ciudad:</label>
                 <input type="text" class="form-control" id="ciudad" placeholder="Ingresa tu ciudad">
+                <div id="error-ciudad" class="alert alert-danger" role="alert">
+                  Por favor ingresa una ciudad
+                </div>
             </div>
               <div class="form-group col-12 col-lg-6">
                 <label for="cp">C.P.:</label>
                 <input type="text" class="form-control" id="cp" placeholder="Ingresa tu C.P.">
+                <div id="error-cp" class="alert alert-danger" role="alert">
+                  Por favor ingresa una ciudad
+                </div>
               </div>
             </div>               
               <div class="form-group">
                 <label for="email">Correo:</label>
                 <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                <div id="error-email" class="alert alert-danger" role="alert">
+                  Por favor ingresa una ciudad
+                </div>
               </div>
             <button type="submit" class="btn btn-primary btn-block mt-3">Editar</button>
           </form>
@@ -146,19 +166,25 @@
       </div>
 
       <div class="col-12 col-lg-6">
-        <div class="form-container form-user mx-auto">
+        <div id="form-datos-tarjeta" class="form-container form-user mx-auto">
           <h2 class="text-center mb-4 fs-2">Método de pago</h2>
 
           <div class="text-center d-flex flex-row justify-content-center align-items-center">
             <h5 class="card-tarjeta-credito px-4 py-1">Tarjeta de credito ó débito <img  class="mx-2" src="../SRC/img/credit-card.png" alt="" width="auto" height="30px"></h5>
           </div>
 
+          <div id="datos-tarjeta-editados-exitoso" class="alert alert-success" role="alert">
+            ¡Datos editados exitosamente!
+          </div>
 
           <form class="container">
             <div class="row">
               <div class="form-group">
                 <label for="nombreTitular">Nombre del titular:</label>
                 <input type="text" class="form-control" id="nombreTitular" placeholder="Ingresa el nombre del titular de la tarjeta">
+                <div id="error-nombreTitular" class="alert alert-danger" role="alert">
+                  Por favor ingresa el nombre del titular
+                </div>
               </div>
             </div>
 
@@ -166,17 +192,26 @@
               <div class="form-group">
                 <label for="numeroTarjeta">No. de tarjeta:</label>
                 <input type="text" class="form-control" id="numeroTarjeta" placeholder="Ingresa el número de tu tarjeta">
+                <div id="error-numeroTarjeta" class="alert alert-danger" role="alert">
+                  Por favor ingresa los 16 digitos de tu tarjeta por favor
+                </div>
               </div>
             </div>
 
             <div class="row">
               <div class="form-group col-12 col-md-6">
                 <label for="fechaExpiracion">Fecha de expiración:</label>
-                <input type="date" class="form-control" id="fechaExpiracion" placeholder="Ingresa tu contraseña">
-            </div>
+                <input type="text" class="form-control" id="fechaExpiracion" placeholder="Ingresa la fecha de expiración">
+                <div id="error-fechaExpiracion" class="alert alert-danger" role="alert">
+                  Por favor ingresa la fecha de expiración en formato mm-aa
+                </div>
+              </div>
               <div class="form-group col-12 col-md-6">
                 <label for="cvv">Código de seguridad:</label>
                 <input type="password" class="form-control" id="cvv" placeholder="Ingresa tu cvv">
+                <div id="error-cvv" class="alert alert-danger" role="alert">
+                  Por favor ingresa tu código de seguridad
+                </div>
               </div>
             </div>
             <button type="submit" class="btn btn-primary btn-block mt-3">Editar</button>
