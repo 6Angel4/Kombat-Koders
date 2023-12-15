@@ -490,8 +490,21 @@ textarea.form-control {
   font-family: var(--fuenteTextoCuerpo);
 }
 
+.form-user {
+  max-width: 90%;
+}
+
 .alert{
   display: none;
+}
+
+.tabla-historial{
+  background-color: var(--colorNaranjaFondoTextos); 
+  border-bottom: black;
+}
+
+.tabla-historial:hover{
+  background-color: var(  --colorNaranjaFooterYBotones); 
 }
 
 select{
@@ -512,3 +525,13 @@ select{
 .img-historial-compras{
   height: 30px
 }
+
+.card-tarjeta-credito{
+  background-color: var(--colorNaranjaFooterYBotones);
+  border-radius: 5px;
+}
+
+label {
+  font-family: var(--fuenteTextoCuerpo);
+}
+

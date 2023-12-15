@@ -101,44 +101,44 @@
 
 
 
-  <main class="container mx-5">
+  <main class="container">
     <h2 class="m-5">Tu perfil</h2>
 
     <section class="row">
       <div class="col-12 col-lg-6">
-        <div class="form-container mx-auto">
-          <h2 class="text-center mb-4">Datos personales</h2>
+        <div class="form-container form-user mx-auto">
+          <h2 class="text-center mb-4 fs-2">Datos personales</h2>
           
           <form class="container">
             <div class="row">
               <div class="form-group col-12">
-                <label for="registerNumber">Nombre:</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
               </div>
             </div>
             <div class="row">
               <div class="form-group col-12 col-lg-6">
-                <label for="registerEmail">Dirección:</label>
-                <input type="email" class="form-control" id="registerEmail" placeholder="Ingresa tu correo electrónico">
+                <label for="direccion">Dirección:</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección">
               </div>
               <div class="form-group col-12 col-lg-6">
-                <label for="registerPassword">Teléfono:</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
               </div>
             </div>
             <div class="row">
               <div class="form-group col-12 col-lg-6">
-                <label for="registerPasswordConfir">Ciudad:</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" class="form-control" id="ciudad" placeholder="Ingresa tu ciudad">
             </div>
               <div class="form-group col-12 col-lg-6">
-                <label for="registerPasswordConfir">C.P.:</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+                <label for="cp">C.P.:</label>
+                <input type="text" class="form-control" id="cp" placeholder="Ingresa tu C.P.">
               </div>
             </div>               
               <div class="form-group">
-                <label for="registerPasswordConfir">Correo:</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+                <label for="email">Correo:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
               </div>
             <button type="submit" class="btn btn-primary btn-block mt-3">Editar</button>
           </form>
@@ -146,50 +146,52 @@
       </div>
 
       <div class="col-12 col-lg-6">
-        <div class="form-container mx-auto">
-          <h2 class="text-center mb-4">Método de pago</h2>
-          <h5>Tarjeta de credito ó débito <img src="../SRC/img/credit-card.png" alt="" width="auto" height="30px"></h5>
+        <div class="form-container form-user mx-auto">
+          <h2 class="text-center mb-4 fs-2">Método de pago</h2>
+
+          <div class="text-center d-flex flex-row justify-content-center align-items-center">
+            <h5 class="card-tarjeta-credito px-4 py-1">Tarjeta de credito ó débito <img  class="mx-2" src="../SRC/img/credit-card.png" alt="" width="auto" height="30px"></h5>
+          </div>
+
 
           <form class="container">
             <div class="row">
               <div class="form-group">
-                <label for="registerNumber">Nombre del titular:</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+                <label for="nombreTitular">Nombre del titular:</label>
+                <input type="text" class="form-control" id="nombreTitular" placeholder="Ingresa el nombre del titular de la tarjeta">
               </div>
             </div>
 
             <div class="row">
               <div class="form-group">
-                <label for="registerEmail">No. de tarjeta:</label>
-                <input type="email" class="form-control" id="registerEmail" placeholder="Ingresa tu correo electrónico">
+                <label for="numeroTarjeta">No. de tarjeta:</label>
+                <input type="text" class="form-control" id="numeroTarjeta" placeholder="Ingresa el número de tu tarjeta">
               </div>
             </div>
 
             <div class="row">
               <div class="form-group col-12 col-md-6">
-                <label for="registerPassword">Fecha de expiración:</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+                <label for="fechaExpiracion">Fecha de expiración:</label>
+                <input type="date" class="form-control" id="fechaExpiracion" placeholder="Ingresa tu contraseña">
             </div>
               <div class="form-group col-12 col-md-6">
-                <label for="registerPasswordConfir">Código de seguridad:</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+                <label for="cvv">Código de seguridad:</label>
+                <input type="password" class="form-control" id="cvv" placeholder="Ingresa tu cvv">
               </div>
             </div>
-
             <button type="submit" class="btn btn-primary btn-block mt-3">Editar</button>
           </form>
         </div>
       </div>
     </section>
 
-
     <section class="row">
       <div class="col-12 col-lg-12">
-        <div class="form-container mx-auto">
-          <h2 class="text-center mb-4">Historial de compras</h2>
-          <table class="table">
+        <div class="form-container form-user mx-auto">
+          <h2 class="text-center mb-4 fs-2">Historial de compras</h2>
+          <table class="table table-hover">
             <thead>
-              <tr>
+              <tr class="text-center">
                 <th scope="col">Producto</th>
                 <th scope="col">Fecha</th>
                 <th scope="col">Precio</th>
@@ -197,18 +199,32 @@
                 <th scope="col">Total</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>
+            <tbody class="table-group-divider">
+              <tr class="text-center align-middle tabla-historial">
+                <td class="d-flex flex-row align-items-center">
                   <img class="img-historial-compras d-none d-sm-block" src="https://www.hillspet.com.mx/content/dam/pim/hills/es_mx/sd/dry/sd-canine-adult-dry-productShot_zoom.jpg.rendition.991.991.jpg" alt="">
-                  Science Diet
+                  <div class="flex-grow-1">Science Diet</div>
                 </td>
                 <td>14/12/2023</td>
                 <td>$200.00</td>
                 <td>2</td>
                 <td>$400.00</td>
               </tr>
+
+              <tr class="text-center align-middle tabla-historial">
+                <td class="d-flex flex-row align-items-center">
+                  <img class="img-historial-compras d-none d-sm-block" src="https://cdn11.bigcommerce.com/s-lnkn0tcvqc/images/stencil/960w/products/937/1158/2023_Pure_Bison_withGrain22lb_front-pack__94339.1680129900.jpg?c=1" alt="">
+                  <div class="flex-grow-1">Real Bison</div>
+                </td>
+                <td>15/12/2023</td>
+                <td>$720.00</td>
+                <td>1</td>
+                <td>$720.00</td>
+              </tr>
             </tbody>
+
+
+
           </table>
       </div>
       </div>
