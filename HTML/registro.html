@@ -113,28 +113,43 @@
       <div class="container m-5">
           <div class="row">
               <div class="col-8 offset-3 mx-auto">
+                
 
-                  <!-- Formulario de Inicio de Sesión y Recuperación de Contraseña -->
-                  <div id="formulario-inicio-sesion">
-                  <div class="form-container mx-auto">
-                      <h2 class="text-center mb-4">Iniciar sesión</h2>
-                      <form novalidate>
+                  <!-- Formulario de Registro -->
+                  <div id="formulario-registro">
+                   <div class="form-container mx-auto">
+                      <h2 class="text-center mb-4">Regístrate</h2>
+                      <form>
                           <div class="form-group">
-                              <label for="email"> Usuario:</label>
-                              <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                              <label for="registerName">Nombre:</label>
+                              <input type="text" class="form-control" id="registerName" placeholder="Ingresa tu nombre">
+                              <div id="error-nombre" class="alert alert-danger" role="alert">Por favor ingresa un nombre valido</div>
+                          </div>
+                          <div class="form-group">
+                              <label for="registerEmail">Correo electrónico:</label>
+                              <input type="email" class="form-control" id="registerEmail" placeholder="Ingresa tu correo electrónico">
                               <div id="error-email" class="alert alert-danger" role="alert">Por favor ingresa una dirección de correo electrónico valida</div>
-                            </div>
-                            <div class="form-group">
-                              <label for="password">Contraseña:</label>
-                              <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                          </div>
+                          <div class="form-group">
+                              <label for="registerPassword">Contraseña:</label>
+                              <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
                               <div id="error-password" class="alert alert-danger" role="alert">Tu contraseña es incorrecta</div>
-                            </div>
-                          <button type="submit" id="login" class="btn btn-primary btn-block mt-3">Iniciar Sesión</button>
+                          </div>
+                          <div class="form-group">
+                              <label for="registerPasswordConfir">Confirmar Contraseña:</label>
+                              <input type="password" class="form-control" id="registerPassword2" placeholder="Confirmar contraseña">
+                              <div id="error-password2" class="alert alert-danger" role="alert">Las contraseñas no coinciden</div>
+                          </div>
+                          <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="acceptTerms">
+                              <label class="form-check-label" for="acceptTerms">Acepto los términos y condiciones</label>
+                              <div id="error-termsConditions" class="alert alert-danger" role="alert">No has aceptado los terminos y condiciones</div>
+                          </div>
+                          <button type="submit" id="register" class="btn btn-primary btn-block mt-3">Registrarse</button>
                       </form>
-                      <p class="text-start mt-3" class="mostrar-recuperar-contrasena" onclick="mostrar();"><a href="./registro.html">¿Aún no te has registrado?</a></p>
-                      <p class="text-center mt-3" class="mostrar-recuperar-contrasena" onclick="mostrar();"><a href="./recuperarContrasena.html">¿Has olvidado tu contraseña?</a></p>                      
-                  </div>
-                </div> 
+                    </div> 
+                   </div>
+
 
               </div>
           </div>
@@ -193,7 +208,7 @@
 
   <!-- Incluye el enlace al archivo JS de Bootstrap y a la biblioteca de Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../JS/validarInicioSesion.js"></script>
+  <script src="../JS/validarRegistro.js"></script>
 </body>
 
 </html>
