@@ -73,7 +73,7 @@ export class ControladorProductos {
   }
 
   cargarProductosFromLocalStorage() {
-    const storageProductos = localStorage.getItem("productos")
+    const storageProductos = localStorage.getItem("productos")// cambiar esta variable por todosProductos que es el json
     if (storageProductos) {
       return JSON.parse(storageProductos);
     } else {
@@ -92,9 +92,8 @@ export class ControladorProductos {
       checkBoxesPrecio[i].addEventListener("change", function () {
         //quitar seleccion de otras checkboxes de precio
         quitarSeleccion(checkBoxesPrecio, this);
-        console.log(this.productos)
         this.productos = filtrado(jsonAModificar)
-        console.log(this.productos)
+        imprimirDOMFiltros(this.productos)
 
       });
 
@@ -104,15 +103,19 @@ export class ControladorProductos {
         //quitar seleccion de otras checkboxes de descuento
         quitarSeleccion(checkBoxesDescuento, this);
         this.productos = filtrado(jsonAModificar)
+        imprimirDOMFiltros(this.productos)
       });
 
     }
     for (var i = 0; i < checkBoxesMarcas.length; i++) {
       checkBoxesMarcas[i].addEventListener("change", function () {
+        quitarSeleccion(checkBoxesMarcas, this);
         this.productos = filtrado(jsonAModificar)
+        imprimirDOMFiltros(this.productos)
       });
 
     }
+    return this.productos;
   }
 };
 
@@ -168,15 +171,15 @@ function filtrado(jsonDeLocalStorage) {
 
       switch (checkBoxesDescuento[i].value) {
         case "10 o mas": {
-          jsonModificado = jsonModificado.filter((producto) => producto.descuentoProducto > 10 && producto.descuentoProducto < 20);
+          jsonModificado = jsonModificado.filter((producto) => producto.descuentoProducto >= 10 && producto.descuentoProducto < 20);
           break;
         }
         case "20 o mas": {
-          jsonModificado = jsonModificado.filter((producto) => producto.descuentoProducto > 20 && producto.descuentoProducto < 30);
+          jsonModificado = jsonModificado.filter((producto) => producto.descuentoProducto >= 20 && producto.descuentoProducto < 30);
           break;
         }
         case "30 o mas": {
-          jsonModificado = jsonModificado.filter((producto) => producto.descuentoProducto > 30);
+          jsonModificado = jsonModificado.filter((producto) => producto.descuentoProducto >= 30);
           break;
         }
       }
@@ -197,14 +200,41 @@ function filtrado(jsonDeLocalStorage) {
           jsonModificado = jsonModificado.filter((producto) => producto.marcaProducto == 'Royal Cannin');
           break;
         }
+        case "Canidae": {
+          jsonModificado = jsonModificado.filter((producto) => producto.marcaProducto == 'Canidae');
+          break;
+        }
+        case "Merrick": {
+          jsonModificado = jsonModificado.filter((producto) => producto.marcaProducto == 'Merrick');
+          break;
+        }
       }
     }
   }
   console.log(JSON.stringify(jsonModificado,undefined,4));// el parametro 4 indenta el resultado en consola pa que se vea bonito
-
   // checar cual checkbox esta checado de descuento y aplicar filtro necesario al json
   // checar cuales checkbox esta checado de marcas y aplicar filtro necesario al json
 
   //imprimir json modificado en pantalla
   return jsonModificado
+}
+
+const imprimirDOMFiltros = (productosFiltrados)=>{
+  const productosGrid = productosFiltrados.map((producto) => `  
+    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-3">
+      <div class="card border-0 mb-5"><!--Aqui esta la primera tarjeta de producto-->
+        <img src="${producto.imagenProducto}" class="card-img-top" alt="..." />
+          <div class="card-body text-center d-flex align-items-center justify-content-between flex-column">
+            <div>
+              <h5 class="card-title">${producto.marcaProducto}<br>${producto.nombreProducto}</h5>
+              
+              <p class="card-text">${producto.descripcionProducto}</p>
+              <p>$${producto.precioProducto.toFixed(2)}</p>
+            </div>
+            <a href="#" class="btn btn-primary">Añadir a carrito</a>
+        </div>
+      </div> 
+    </div>         
+  `);
+  document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
 }
