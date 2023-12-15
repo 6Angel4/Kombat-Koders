@@ -208,29 +208,77 @@
     </section>
 
     <!--Bolsa de Productos-->
-    <main>
+    <main class="container">
       <h1>Bolsa de productos</h1>
-      <table class="table table-borderless">
-        <div>
+      <div class="table-responsive text-center">
+        <table id="tableCarrito" class="table table-borderless my-4">
           <thead>
             <!--Headings de la tabla-->
             <tr>
-              <th scope="col">Eliminar</th>
-              <th scope="col">Producto</th>
-              <th scope="col">Precio</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Subtotal</th>
+              <th
+                class="fw-bold fs-3"
+                style="background-color: #f5b27f"
+                scope="col"
+              >
+                Eliminar
+              </th>
+              <th
+                class="fw-bold fs-3"
+                scope="col"
+                style="background-color: #f5b27f"
+              >
+                Producto
+              </th>
+              <th
+                class="fw-bold fs-3"
+                scope="col"
+                style="background-color: #f5b27f"
+              >
+                Precio
+              </th>
+              <th
+                class="fw-bold fs-3"
+                scope="col"
+                style="background-color: #f5b27f"
+              >
+                Cantidad
+              </th>
+              <th
+                class="fw-bold fs-3"
+                scope="col"
+                style="background-color: #f5b27f"
+              >
+                Subtotal
+              </th>
             </tr>
           </thead>
-        </div>
-      </table>
-      <table class="table table-borderless">
-        <div>
-          <tr>
-            <th scope="col">Total</th>
-          </tr>
-        </div>
-      </table>
+
+          <tbody id="tbody">
+            <!--Aqui van los productos-->
+
+            <!--Aqui van los productos-->
+          </tbody>
+
+          <tfoot id="tfoot">
+            <!--Aqui va el total-->
+
+            <!--Aqui va el total-->
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="container text-center">
+        <button
+          id="botonProcederPago"
+          class="btn fw-bold fs-3 my-4"
+          style="background-color: #f68035"
+          type="button"
+        >
+          <!--Boton para enviar a pagar-->
+          Proceder a pagar
+          <!--Boton para enviar a pagar-->
+        </button>
+      </div>
     </main>
     <!--Bolsa de Productos-->
 
@@ -295,5 +343,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="../JS/addCarrito.js"></script>
   </body>
 </html>

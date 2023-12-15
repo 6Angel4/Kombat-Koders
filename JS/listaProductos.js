@@ -12,7 +12,7 @@ const imprimirDOMFromLocalStorage = (Controlador)=>{
                 <p class="card-text">${producto.descripcionProducto}</p>
                 <p>$${producto.precioProducto.toFixed(2)}</p>
               </div>
-              <a href="#" class="btn btn-primary">Añadir a carrito</a>
+              <a href="#" id="botonAnadirProducto" class="btn btn-primary">Añadir a carrito</a>
           </div>
         </div> 
       </div>         
