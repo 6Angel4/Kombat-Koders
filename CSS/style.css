@@ -64,11 +64,17 @@ p {
   /*agregue esto . cynthia*/
 }
 
+.enlaces:visited {
+  color: black;
+}
+
+
 .enlaces:hover {
   /*Agregue esto . Miguel*/
   color: white;
   /*Agregue esto . Miguel*/
 }
+
 
 .enlaces:last-child {
   /*Agregue esto . Miguel*/
