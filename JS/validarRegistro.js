@@ -40,7 +40,7 @@ console.log(registro.terminos);
         document.getElementById("registerEmail").value = "";         
         document.getElementById("registerPassword").value = "";
         document.getElementById("registerPassword2").value="";
-        document.getElementById("acceptTerms").checkbox.checked = false;
+        document.getElementById("acceptTerms").checked = false;
 
         setTimeout(function() {
             document.getElementById("registro-completado-exitosamente").style.display = 'none';
