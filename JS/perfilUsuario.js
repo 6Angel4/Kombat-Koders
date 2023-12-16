@@ -142,3 +142,54 @@ const datosVerificadosMetodoPago = (metodoPago) => {
     }
     return esValido;
 }
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////Historial de compras//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//Debe recibir el controlador de usuario y extraer el historial del usuario
+const imprimirDOMHistorialCompras = (historial)=>{
+    //const productosHistorial=Controlador.cargarProductosFromLocalStorage();
+    const productosGrid = historial.map((producto) => `  
+    <tr class="text-center align-middle tabla-historial">
+        <td class="d-flex flex-row align-items-center">
+            <img class="img-historial-compras d-none d-sm-block" src="${producto.urlimg}" alt="">
+            <div class="flex-grow-1">${producto.nombre}</div>
+        </td>
+        <td>${producto.fecha}</td>
+        <td>$${producto.precio.toFixed(2)}</td>
+        <td>${producto.cantidad}</td>
+        <td>${producto.total}</td>
+    </tr>
+    `);
+    document.getElementById("historial-compras").innerHTML = productosGrid.join("");
+  }
+
+//const miControladorProductos = new ControladorProductos();
+const historial = [{ 
+    nombre : "Science Diet", 
+    urlimg: "https://www.hillspet.com.mx/content/dam/pim/hills/es_mx/sd/dry/sd-canine-adult-dry-productShot_zoom.jpg.rendition.991.991.jpg",
+    fecha : "12-23-2309",
+    precio : 999.99,
+    cantidad : 2,
+    total : 1999.98
+    },
+    { 
+        nombre : "Science Diet", 
+        urlimg: "https://www.hillspet.com.mx/content/dam/pim/hills/es_mx/sd/dry/sd-canine-adult-dry-productShot_zoom.jpg.rendition.991.991.jpg",
+        fecha : "12-23-2309",
+        precio : 999.99,
+        cantidad : 2,
+        total : 1999.98
+        },
+        { 
+            nombre : "Science Diet", 
+            urlimg: "https://www.hillspet.com.mx/content/dam/pim/hills/es_mx/sd/dry/sd-canine-adult-dry-productShot_zoom.jpg.rendition.991.991.jpg",
+            fecha : "12-23-2309",
+            precio : 999.99,
+            cantidad : 2,
+            total : 1999.98
+            }];
+imprimirDOMHistorialCompras(historial);
+//
