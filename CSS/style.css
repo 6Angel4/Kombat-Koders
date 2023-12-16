@@ -216,6 +216,7 @@ p {
 /*No tocar (Mejoralito[Aspirina])*/
 .principal,
 .sectionMisionVision,
+.detallesPedido,
 .contenedorValores {
   grid-column: 2/3;
 }
@@ -502,4 +503,14 @@ select{
 .icono-valor:hover{
   transform: scale(1.3);
   filter: drop-shadow(0 0 1px rgb(0, 143, 122));
+}
+
+.finalizarCompra{
+  background-color: #FEE1AD;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgCompra{
+  height: 200px;
 }

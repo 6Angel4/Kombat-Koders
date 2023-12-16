@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de acerca de nosotros Pet Supermarket" />
+  <!--Link-Propio (preload)-->
+  <link rel="preload" as="style" href="../CSS/normalize.css" />
+  <link rel="preload" as="style" href="../CSS/style.css" />
+  <!--Link-Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!--Link-Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <!-- Iconos flaticon *MARIO-->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <!--Font - Hind-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet" />
+  <!--Font - Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <!--Link-Propio-->
+  <link rel="stylesheet" href="../CSS/normalize.css" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="icon" type="image.png" href="../SRC/img/iconpets.png">
+  <title>Finalizar compra</title>
+
+  <style>
+    .shipping-details {
+      margin-bottom: 20px;
+    }
+
+    .edit-address-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .order-details {
+      margin-bottom: 20px;
+    }
+
+    .subtotal,
+    .shipping,
+    .iva,
+    .total {
+      margin-top: 10px;
+    }
+
+    .action-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .continue-shopping-btn,
+    .checkout-btn {
+      background-color: #008CBA;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--Inicia header-->
+  <header class="m-0 p-0 text-center">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-custom">
+      <div class="container-fluid d-flex justify-content-center">
+        <!-- Logo -->
+        <div class="col-md-2 col-6 text-center">
+          <a class="navbar-brand" href="../index.html">
+            <img class="imgLogo" src="../SRC/img/logo.png" alt="Logo de la pagina" />
+          </a>
+        </div>
+
+
+        <!--Boton-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <!-- Enlaces de navegación -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link enlaces" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-hover enlaces" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-hover enlaces" href="./paginadecontacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-hover active enlaces" href="./acercaDeNosotros.html">Nosotros</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control ms-2 me-2 rounded-pill customSearch" type="search" placeholder="Buscar"
+              aria-label="Search" rounded />
+            <button class="btn button-localCustom" type="submit">
+              <img class="lupa" width="auto" height="20px" src="../SRC/img/lupa.png" />
+            </button>
+          </form>
+
+
+
+          <!-- Iconos de carrito y usuario en divs separados -->
+          <div
+            class="col-sm-12 col-md-1 col-6 d-md-flex justify-content-md-around justify-content-center align-items-center mt-md-0 icons-mobile mx-auto">
+            <!-- Icono de bolsa de compras -->
+            <div>
+              <a href="">
+                <img src="../SRC/img/shopping-bag.png" alt="#" width="auto" height="30px" />
+              </a>
+            </div>
+            <!-- Icono de usuario -->
+            <div>
+              <a href="./InicioSesion.html">
+                <img src="../SRC/img/user.png" alt="#" width="auto" height="30px" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Fin header-->
+
+  <!-- Compra finalizada -->
+  <div class="finalizarCompra mt-5 mb-5">
+
+    <h1>Finalizar compra</h1>
+
+    <!-- Detalles del envío -->
+    <div class="shipping-details">
+      <h3>Detalles del Envío</h3>
+      <table>
+        <tr>
+          <td>Nombre:</td>
+          <td>Nombre de prueba</td>
+        </tr>
+        <tr>
+          <td>Dirección:</td>
+          <td>Dirección de prueba, Ciudad</td>
+        </tr>
+        <tr>
+          <td>Método de Pago:</td>
+          <td>Tarjeta de crédito</td>
+        </tr>
+        <tr>
+          <td>Indicaciones:</td>
+          <td>Dejar en la puerta principal</td>
+        </tr>
+      </table>
+      <button class="btn btn-primary">Editar Dirección</button>
+    </div>
+
+    <!-- Opciones de envío -->
+    <h2>Elige tu Método de Envío</h2>
+    <p>
+      <input type="radio" name="shipping-option" id="free-shipping" checked>
+      <label for="free-shipping">Envío gratis en compras mayores a $500.00</label>
+    </p>
+    <p>
+      <input type="radio" name="shipping-option" id="standard-shipping">
+      <label for="standard-shipping">Envío estándar en la compra mínima de $500, el precio del envío sería
+        $89</label>
+    </p>
+
+    <!-- Detalles del pedido -->
+    <section class="detallesPedido">
+      <div class="container">
+
+        <div class="orderDetails">
+          <h3>Detalles del Pedido</h3>
+          <div class="col-12 col-md-6">
+              Producto:
+              <div>
+
+                <img src="https://acuariolomas.com.mx/IMAGENES/FANCY%20PETS/1000x1000_72_png/FL3922/FL3922.png" alt=""
+                  class="imgCompra">
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <p class="subtotal">Subtotal: $65.3</p>
+            <p class="shipping">Envío: $89.00</p>
+            <p class="iva">IVA (16%): $4.37</p>
+            <p class="total">TOTAL: $159.00</p>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!-- Botones de acción -->
+  <div class="action-buttons">
+    <button class="btn btn-primary">Seguir Comprando</button>
+    <button class="btn btn-primary">Finalizar Compra</button>
+  </div>
+
+
+  </div>
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="divNavLogo">
+      <a href="../index.html" class="enlaces enlaceImagen">
+        <img src="../SRC/img/logo.png" class="imgLogo"
+          alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras" />
+      </a>
+    </div>
+
+    <!--Barra de iconos de redes *Mario-->
+    <div class="footerDivNavBar">
+      <nav class="navNavBar">
+        <a href="https://www.facebook.com/profile.php?id=61554222387300" class="iconos-redes enlaces"><i
+            class="fi fi-brands-facebook"></i></a>
+        <a href="https://www.instagram.com/petsupermarket.contactanos/" class="iconos-redes enlaces"><i
+            class="fi fi-brands-instagram"></i></a>
+        <a href="https://twitter.com/SupermarketPet" class="iconos-redes enlaces"><i
+            class="fi fi-brands-twitter-alt-circle"></i></a>
+        <a href="https://www.tiktok.com/@petsupermarket.contacten?lang=es" class="iconos-redes enlaces"><i
+            class="fi fi-brands-tik-tok"></i></a>
+      </nav>
+    </div>
+    <div>
+      <nav>
+        <!--Intercambie de lugar los botones dee redes con los de enlaces, creo que se ve más estético - Alex-->
+        <a href="../index.html" class="enlaces">Inicio</a>
+        <a href="./productos.html" class="enlaces">Productos</a>
+        <a href="./paginadecontacto.html" class="enlaces">Contacto</a>
+        <a href="./acercaDeNosotros.html" class="enlaces">Nosotros</a>
+      </nav>
+    </div>
+    <p class="direccion">
+      Av. San José CP. 304950 Teléfono:55-34-23-45-56 <br />Email:
+      petsupermarket.contactanos@gmail.com
+    </p>
+    <br />
+    <p class="derechosReservados">
+      Pet Supermarket. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <!--Fin del footer-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../JS/app.js"></script>
+</body>
+
+</html>
