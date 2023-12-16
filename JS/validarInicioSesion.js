@@ -11,7 +11,16 @@ document.getElementById("formulario-inicio-sesion").addEventListener("submit", (
          contrasena : document.getElementById("password").value, 
         
     }
-    if(!validarInicioSesion(inicioSesion));
+    if(validarInicioSesion(inicioSesion)){
+        document.getElementById("error-email").style.display="block";
+        else if {
+        document.getElementById("").style.display="block";
+        } else if {
+            document.getElementById("").style.display="block";
+        } else if{
+
+        }
+    }
 });
 
 const validarInicioSesion = (inicioSesion) => {
@@ -20,11 +29,11 @@ const validarInicioSesion = (inicioSesion) => {
     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
 
-    if (!emailRegex.test(inicioSesion.emailUsuario) || (emailusuario === "")){
-        document.getElementById("error-email").style.display="block";
+    if (!emailRegex.test(inicioSesion.emailUsuario || inicioSesion.emailUsuario === "")){
+       
         esValido = false;
     } else if (!passwordRegex.test(inicioSesion.contrasena)){
-        document.getElementById("error-password").style.display="block";
+        
         esValido = false;
     } 
     return esValido;

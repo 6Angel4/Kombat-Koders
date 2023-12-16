@@ -116,15 +116,23 @@
                 
 
                   <!-- Formulario de Registro -->
-                  <div id="formulario-registro">
-                   <div class="form-container mx-auto">
+                  <div>
+                   <div class="form-container mx-auto" id="formulario-registro">
                       <h2 class="text-center mb-4">Regístrate</h2>
+                      <div id="registro-completado-exitosamente" class="alert alert-success" role="alert">
+                        ¡Registro completado exitosamente!
+                      </div>
                       <form>
                           <div class="form-group">
                               <label for="registerName">Nombre:</label>
-                              <input type="text" class="form-control" id="registerName" placeholder="Ingresa tu nombre">
+                              <input type="text" class="form-control" id="registerName" placeholder="Ingresa tu nombre"> 
                               <div id="error-nombre" class="alert alert-danger" role="alert">Por favor ingresa un nombre valido</div>
                           </div>
+                          <div class="form-group">
+                            <label for="registerPhoneNumber">Número de télefono</label>
+                            <input type="text" class="form-control" id="registerPhoneNumber" placeholder="Ingresa tu número de teléfono">
+                            <div id="error-telefono" class="alert alert-danger" role="alert">Por favor ingresa un número de teléfono valido</div>
+                        </div>
                           <div class="form-group">
                               <label for="registerEmail">Correo electrónico:</label>
                               <input type="email" class="form-control" id="registerEmail" placeholder="Ingresa tu correo electrónico">
@@ -208,7 +216,8 @@
 
   <!-- Incluye el enlace al archivo JS de Bootstrap y a la biblioteca de Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../JS/validarRegistro.js"></script>
+  <script type="module" src="../JS/validarRegistro.js"></script>
+  <script type="module" src="../JS/controladorRegistro.js"></script>
 </body>
 
 </html>

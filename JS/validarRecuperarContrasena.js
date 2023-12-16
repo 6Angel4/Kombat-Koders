@@ -8,6 +8,7 @@
      const recuperarContrasena = {
          recuContrasena :  document.getElementById("recoveryEmail").value,
      }
+     
      if(!validarRecuperarContrasena(recuperarContrasena)){ //
         document.getElementById("error-recovery-email").style.display="block";
      } else {
