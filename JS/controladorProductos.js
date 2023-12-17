@@ -81,18 +81,28 @@ export class ControladorProductos {
     }
   }
 
-  inicializarCheckboxes() {
-    //event listener para los checkboxes por grupo filtrado(precio, descuento, marca)
+  inicializarFiltros() {
+    // checkboxes por grupo filtrado(precio, descuento, marca)
     const checkBoxesPrecio = document.getElementsByClassName("checkboxFiltroPrecio");
     const checkBoxesDescuento = document.getElementsByClassName("checkboxFiltroDescuento");
     const checkBoxesMarcas = document.getElementsByClassName("checkboxFiltroMarcas");
-    const jsonAModificar = this.cargarProductosFromLocalStorage()
+
+    const categoriaGatoAlimento = document.getElementById("gato-alimento");
+    const categoriaGatoJueguete = document.getElementById("gato-juguete");
+    const categoriaGatoAccesorio = document.getElementById("gato-accesorio");
+
+    const categoriaPerroAlimento = document.getElementById("perro-alimento");
+    const categoriaPerroJuguete = document.getElementById("perro-juguete");
+    const categoriaPerroAccesorio = document.getElementById("perro-accesorio");
+
+    const jsonAModificar = this.cargarProductosFromLocalStorage();
+
     for (var i = 0; i < checkBoxesPrecio.length; i++) {
 
       checkBoxesPrecio[i].addEventListener("change", function () {
         //quitar seleccion de otras checkboxes de precio
         quitarSeleccion(checkBoxesPrecio, this);
-        this.productos = filtrado(jsonAModificar)
+        this.productos = filtradoPorCheckboxes(jsonAModificar)
         imprimirDOMFiltros(this.productos)
 
       });
@@ -102,7 +112,7 @@ export class ControladorProductos {
       checkBoxesDescuento[i].addEventListener("change", function () {
         //quitar seleccion de otras checkboxes de descuento
         quitarSeleccion(checkBoxesDescuento, this);
-        this.productos = filtrado(jsonAModificar)
+        this.productos = filtradoPorCheckboxes(jsonAModificar)
         imprimirDOMFiltros(this.productos)
       });
 
@@ -110,12 +120,49 @@ export class ControladorProductos {
     for (var i = 0; i < checkBoxesMarcas.length; i++) {
       checkBoxesMarcas[i].addEventListener("change", function () {
         quitarSeleccion(checkBoxesMarcas, this);
-        this.productos = filtrado(jsonAModificar)
+        this.productos = filtradoPorCheckboxes(jsonAModificar)
         imprimirDOMFiltros(this.productos)
       });
 
     }
-    return this.productos;
+
+//maneja el evento de clic en la categoría "gato" y el tipo de producto "alimento"
+//Al hacer clic, se filtran los productos correspondientes y se actualiza la interfaz de usuario con los resultados
+    categoriaGatoAlimento.addEventListener("click", function () {
+      console.log("Antes de filtrado:", jsonAModificar);
+      this.productos = filtradoPorCategoria(jsonAModificar, "gato", "alimento");
+      console.log("Después de filtrado:", this.productos);
+      imprimirDOMFiltros(this.productos);
+    });
+
+
+     categoriaGatoJueguete.addEventListener("click", function () {
+      this.productos = filtradoPorCategoria(jsonAModificar, "gato","juguete");
+      imprimirDOMFiltros(this.productos)
+     });
+
+     categoriaGatoAccesorio.addEventListener("click", function () {
+      this.productos = filtradoPorCategoria(jsonAModificar, "gato","accesorio");
+      imprimirDOMFiltros(this.productos)
+     });
+
+     categoriaPerroAlimento.addEventListener("click", function () {
+      this.productos = filtradoPorCategoria(jsonAModificar,"perro","alimento");
+      imprimirDOMFiltros(this.productos)
+     });
+
+     categoriaPerroJuguete.addEventListener("click", function () {
+      this.productos = filtradoPorCategoria(jsonAModificar,"perro","juguete");
+      imprimirDOMFiltros(this.productos)
+     });
+
+     categoriaPerroAccesorio.addEventListener("click", function () {
+      this.productos = filtradoPorCategoria(jsonAModificar,"perro","accesorio");
+      imprimirDOMFiltros(this.productos)
+     });
+
+
+
   }
 };
 
@@ -127,16 +174,14 @@ function quitarSeleccion(checkBoxes, checkboxSeleccionado) { //quita seleccion d
   }
 }
 
-
-
-function filtrado(jsonDeLocalStorage) {
-  //event listener para los checkboxes por grupo filtrado(precio, descuento, marca)
+//buscar que grupo de checkboxes aplicar
+// checar cual checkbox esta checado de precio y aplicar filtro necesario al json
+function filtradoPorCheckboxes(jsonDeLocalStorage) {
+  let jsonModificado = jsonDeLocalStorage;
   const checkBoxesPrecio = document.getElementsByClassName("checkboxFiltroPrecio");
   const checkBoxesDescuento = document.getElementsByClassName("checkboxFiltroDescuento");
   const checkBoxesMarcas = document.getElementsByClassName("checkboxFiltroMarcas");
-  //buscar que filtros aplicar
-  var jsonModificado = jsonDeLocalStorage;
-  // checar cual checkbox esta checado de precio y aplicar filtro necesario al json
+
   console.log("aqui hago filtrado");
 
   //============================filtro precio==================
@@ -211,15 +256,43 @@ function filtrado(jsonDeLocalStorage) {
       }
     }
   }
-  console.log(JSON.stringify(jsonModificado,undefined,4));// el parametro 4 indenta el resultado en consola pa que se vea bonito
-  // checar cual checkbox esta checado de descuento y aplicar filtro necesario al json
-  // checar cuales checkbox esta checado de marcas y aplicar filtro necesario al json
 
-  //imprimir json modificado en pantalla
-  return jsonModificado
+  console.log(JSON.stringify(jsonModificado, undefined, 4));
+
+  console.log("Después del filtrado:", jsonModificado);
+  return jsonModificado;
 }
 
-const imprimirDOMFiltros = (productosFiltrados)=>{
+
+//esta función filtra un JSON de productos según la categoría de animal y el tipo de producto especificados.
+//Solo los productos que cumplen con ambas condiciones se incluirán en el resultado final.
+function filtradoPorCategoria(jsonDeLocalStorage, animalCategoria, tipoProducto) {
+  let jsonModificado = jsonDeLocalStorage;
+ // ===============filtrado gato y perro===========================
+ jsonModificado = jsonModificado.filter((producto) => {
+  const esGato = producto.animalProducto.toLowerCase() === "gato";
+  const esPerro = producto.animalProducto.toLowerCase() === "perro";
+  const esCategoriaCorrecta = producto.categoriaProducto.toLowerCase() === tipoProducto.toLowerCase();
+  
+  // Condiciones de filtrado combinadas
+  return (esGato && animalCategoria.toLowerCase() === "gato" && esCategoriaCorrecta) ||
+         (esPerro && animalCategoria.toLowerCase() === "perro" && esCategoriaCorrecta);
+});
+
+
+  console.log(JSON.stringify(jsonModificado, undefined, 4));
+
+  console.log("Después del filtrado:", jsonModificado);
+  return jsonModificado;
+}
+
+
+
+
+
+
+
+const imprimirDOMFiltros = (productosFiltrados) => {
   const productosGrid = productosFiltrados.map((producto) => `  
     <div class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-3">
       <div class="card border-0 mb-5"><!--Aqui esta la primera tarjeta de producto-->
@@ -237,4 +310,8 @@ const imprimirDOMFiltros = (productosFiltrados)=>{
     </div>         
   `);
   document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
+
+  console.log("Imprimiendo DOM con productos:", productosFiltrados);
+
+
 }

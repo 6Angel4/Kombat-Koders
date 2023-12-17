@@ -55,7 +55,7 @@ p {
   /*Cambie la fuente de acuerdo al Mock Up - Alex*/
   font-weight: 700;
   /*Cambie la fuente de acuerdo al Mock Up - Alex*/
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -79,6 +79,7 @@ p {
 .customSearch{
   width: 200px;
   height: 30px;
+  font-size: 1.5rem;
 }
 /* .divNav { */
   /*Esconde el nav*/
@@ -439,6 +440,7 @@ textarea.form-control {
   background-color: var(--colorNaranjaFooterYBotones);
   border-radius: 0 0 10px 10px;
   padding: 0;
+  
 }
 
 
@@ -462,6 +464,7 @@ textarea.form-control {
 .texto-filtros{
   font-family: var(--fuenteTextoTitulos);
   font-size: 1.5rem;
+  
 }
 
 .filtros{

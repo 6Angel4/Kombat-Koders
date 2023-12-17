@@ -120,14 +120,14 @@
             class="btn-categoria dropdown-toggle w-100 d-flex flex-column flex-md-row justify-content-between align-items-center"
             type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="text-wrap texto-filtros">
-              Todo para tu gato
+              <h4 class="categoria-mascota">Todo para tu gato</h4>
             </div>
             <img src="../SRC/img/gato-categoria.png" alt="" class="img-btn-categoria mt-2 mb-2">
           </button>
           <ul class="dropdown-menu w-100">
-            <li><a class="dropdown-item text-end" href="#">Alimento</a></li>
-            <li><a class="dropdown-item text-end" href="#">Juguetes</a></li>
-            <li><a class="dropdown-item text-end" href="#">Accesorios</a></li>
+            <li><a id="gato-alimento" class="dropdown-item text-end gato-alimento" href="#">Alimento</a></li>
+            <li><a id="gato-juguete" class="dropdown-item text-end gato-juguete" href="#">Juguetes</a></li>
+            <li><a id="gato-accesorio" class="dropdown-item text-end " href="#">Accesorios</a></li>
           </ul>
         </div>
       </div>
@@ -137,14 +137,14 @@
             class="btn-categoria dropdown-toggle w-100 d-flex flex-column flex-md-row justify-content-between align-items-center"
             type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="text-wrap texto-filtros">
-              Todo para tu perro
+              <h4 class="categoria-mascota">Todo para tu perro</h4>
             </div>
             <img src="../SRC/img/perro-categoria.png" alt="" class="img-btn-categoria mt-2 mb-2">
           </button>
           <ul class="dropdown-menu w-100">
-            <li><a class="dropdown-item text-end" href="#">Alimento</a></li>
-            <li><a class="dropdown-item text-end" href="#">Juguetes</a></li>
-            <li><a class="dropdown-item text-end" href="#">Accesorios</a></li>
+            <li><a id="perro-alimento" class="dropdown-item text-end " href="#">Alimento</a></li>
+            <li><a id="perro-juguete" class="dropdown-item text-end " href="#">Juguetes</a></li>
+            <li><a id="perro-accesorio" class="dropdown-item text-end " href="#">Accesorios</a></li>
           </ul>
         </div>
       </div>
@@ -152,9 +152,10 @@
 
     <section class="row me-0">
       <div class="col-4 col-md-2 d-flex flex-column filtros">
-        <div class="align-self-center texto-filtros vineta-filtros">
+        <div class="align-self-center texto-filtros vineta-filtros" style="text-align: center;">
 
           Filtros
+          <h6>Para todos los productos</h6>
         </div>
         <div class="ms-3 mt-5 texto-filtros">
           <span>Precio</span>

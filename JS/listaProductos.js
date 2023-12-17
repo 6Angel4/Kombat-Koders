@@ -22,7 +22,7 @@ const imprimirDOMFromLocalStorage = (Controlador)=>{
 
 const miControladorProductos = new ControladorProductos();
 imprimirDOMFromLocalStorage(miControladorProductos);
-miControladorProductos.inicializarCheckboxes();
+miControladorProductos.inicializarFiltros();
 
 
 
