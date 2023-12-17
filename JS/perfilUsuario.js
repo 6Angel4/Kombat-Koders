@@ -152,16 +152,14 @@ const datosVerificadosMetodoPago = (metodoPago) => {
 const imprimirDOMHistorialCompras = (historial)=>{
     //const productosHistorial=Controlador.cargarProductosFromLocalStorage();
     const productosGrid = historial.map((producto) => `  
-    <tr class="text-center align-middle tabla-historial">
-        <td class="d-flex flex-row align-items-center">
-            <img class="img-historial-compras d-none d-sm-block" src="${producto.urlimg}" alt="">
-            <div class="flex-grow-1">${producto.nombre}</div>
-        </td>
-        <td>${producto.fecha}</td>
-        <td>$${producto.precio.toFixed(2)}</td>
-        <td>${producto.cantidad}</td>
-        <td>${producto.total}</td>
-    </tr>
+          <div class="row tabla-historial align-items-center ">
+            <div class="col-0 col-sm-2"><img class="float-end img-historial-compras d-none d-sm-block" src="${producto.urlimg}" alt=""></div>
+            <div class="col-4 col-sm-2 text-center text-sm-start">${producto.nombre}</div>
+            <div class="col-2 text-center">${producto.fecha}</div>
+            <div class="col-2 text-center">$${producto.precio}</div>
+            <div class="col-2 text-center">${producto.cantidad}</div>
+            <div class="col-2 text-center">$${producto.total}</div>
+          </div>
     `);
     document.getElementById("historial-compras").innerHTML = productosGrid.join("");
   }
@@ -170,26 +168,26 @@ const imprimirDOMHistorialCompras = (historial)=>{
 const historial = [{ 
     nombre : "Science Diet", 
     urlimg: "https://www.hillspet.com.mx/content/dam/pim/hills/es_mx/sd/dry/sd-canine-adult-dry-productShot_zoom.jpg.rendition.991.991.jpg",
-    fecha : "12-23-2309",
+    fecha : "12-23-2023",
     precio : 999.99,
     cantidad : 2,
     total : 1999.98
     },
     { 
-        nombre : "Science Diet", 
-        urlimg: "https://www.hillspet.com.mx/content/dam/pim/hills/es_mx/sd/dry/sd-canine-adult-dry-productShot_zoom.jpg.rendition.991.991.jpg",
-        fecha : "12-23-2309",
-        precio : 999.99,
-        cantidad : 2,
-        total : 1999.98
+        nombre : "Medium Adult", 
+        urlimg: "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/e3dbe58a-e198-4e28-8900-1555c1ed14a9.49a40064f4cceb74b3a053399e30f301.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+        fecha : "02-03-2023",
+        precio : 99.99,
+        cantidad : 5,
+        total : 99.98
         },
         { 
-            nombre : "Science Diet", 
-            urlimg: "https://www.hillspet.com.mx/content/dam/pim/hills/es_mx/sd/dry/sd-canine-adult-dry-productShot_zoom.jpg.rendition.991.991.jpg",
-            fecha : "12-23-2309",
-            precio : 999.99,
-            cantidad : 2,
-            total : 1999.98
+            nombre : "Pro Plan Adult Optihealt", 
+            urlimg: "https://www.petco.com.mx/medias/104562.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NDgwNDA1fGltYWdlL2pwZWd8aGMyL2hhMC8xMDIxMDU0NDg3NzU5OC8xMDQ1NjIuanBnXzEyMDBmdHd8ZDAzMjBlNTg1ZmZmMjVlNGRjYTA0MWM2MWNiMzlhN2RmZTBhNzdiMmU2MDFjNzdlZWNkMGRiNTdmNTZmODhkMA",
+            fecha : "01-12-2023",
+            precio : 500.99,
+            cantidad : 8,
+            total : 129.98
             }];
 imprimirDOMHistorialCompras(historial);
 //

@@ -504,15 +504,6 @@ textarea.form-control {
   display: none;
 }
 
-.tabla-historial{
-  background-color: var(--colorNaranjaFondoTextos); 
-  border-bottom: black;
-}
-
-.tabla-historial:hover{
-  background-color: var(  --colorNaranjaFooterYBotones); 
-}
-
 select{
   display: block;
   width: 100%;
@@ -529,7 +520,7 @@ select{
 }
 
 .img-historial-compras{
-  height: 30px
+  height: 30px;
 }
 
 .card-tarjeta-credito{
@@ -541,3 +532,14 @@ label {
   font-family: var(--fuenteTextoCuerpo);
 }
 
+.tabla-historial{
+  background-color: var(--colorNaranjaFondoTextos); 
+  border-radius: 10px;
+  margin: 4px 0px;
+  padding: 4px 0px;
+}
+
+.tabla-historial:hover{
+  background-color: var(  --colorNaranjaFooterYBotones); 
+
+}
