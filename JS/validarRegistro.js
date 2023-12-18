@@ -2,7 +2,7 @@
 import { ControladorRegistro } from "./controladorRegistro.js";
 
 document.getElementById("formulario-registro").addEventListener("submit", (event) =>  {
-console.log("Hola Mundo");
+
 // Limpiar alertas
 event.preventDefault();
 document.getElementById("error-nombre").style.display="none";
@@ -19,10 +19,10 @@ const registro = {
     email: document.getElementById("registerEmail").value,         
     registroPassword : document.getElementById("registerPassword").value,
     contrasena : document.getElementById("registerPassword2").value,
-    terminos : document.getElementById("acceptTerms").checked 
-          
+    terminos : document.getElementById("acceptTerms").checked     
 }
-console.log(registro.terminos);
+
+// console.log(registro.terminos);
 
 // Verificar datos antes de enviar
     if(validarRegistro(registro)){
@@ -76,14 +76,5 @@ console.log(registro.terminos);
         document.getElementById("error-termsConditions").style.display="block";    
         esValido = false;
     }
-    return esValido;
-
-    
+    return esValido;    
 };
-
-// Contrasena123
- 
-
-
-// crear variable de usuarios con un array y convertir en JSON
-// Lanzar mensaje de registro exitoso  

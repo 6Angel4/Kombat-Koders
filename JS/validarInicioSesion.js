@@ -13,14 +13,10 @@ document.getElementById("formulario-inicio-sesion").addEventListener("submit", (
     }
     if(validarInicioSesion(inicioSesion)){
         document.getElementById("error-email").style.display="block";
-        else if {
-        document.getElementById("").style.display="block";
         } else if {
-            document.getElementById("").style.display="block";
-        } else if{
-
-        }
-    }
+        document.getElementById("").style.display="block";
+        } 
+    
 });
 
 const validarInicioSesion = (inicioSesion) => {
