@@ -24,7 +24,7 @@ const registro = {
 
 // console.log(registro.terminos);
 
-// Verificar datos antes de enviar
+// Verificar datos del formulario son validos antes de enviar
     if(validarRegistro(registro)){
         const miControladorRegistro = new ControladorRegistro();
         miControladorRegistro.agregarRegistro(
@@ -46,7 +46,6 @@ const registro = {
             document.getElementById("registro-completado-exitosamente").style.display = 'none';
           }, 2000);
     }
-
 });
 
 // Validar datos del formulario
