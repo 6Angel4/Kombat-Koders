@@ -506,3 +506,19 @@ select{
   transform: scale(1.3);
   filter: drop-shadow(0 0 1px rgb(0, 143, 122));
 }
+
+
+.form-container-admin {
+  background-color: #F5B27F;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  max-width: 80%;
+  font-family: var(--fuenteTextoCuerpo);
+}
+.tabla-admin th{
+  font-family: var(--fuenteTextoCuerpo);
+  font-size: 1.5rem;
+}
