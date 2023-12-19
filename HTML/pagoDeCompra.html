@@ -33,46 +33,6 @@
   <link rel="icon" type="image.png" href="../SRC/img/iconpets.png">
   <title>Finalizar compra</title>
 
-  <style>
-    .shipping-details {
-      margin-bottom: 20px;
-    }
-
-    .edit-address-btn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .order-details {
-      margin-bottom: 20px;
-    }
-
-    .subtotal,
-    .shipping,
-    .iva,
-    .total {
-      margin-top: 10px;
-    }
-
-    .action-buttons {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .continue-shopping-btn,
-    .checkout-btn {
-      background-color: #008CBA;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      margin: 0 10px;
-    }
-  </style>
-
 </head>
 
 <body>
@@ -150,24 +110,16 @@
     <!-- Detalles del envío -->
     <div class="shipping-details">
       <h3>Detalles del Envío</h3>
-      <table>
-        <tr>
-          <td>Nombre:</td>
-          <td>Nombre de prueba</td>
-        </tr>
-        <tr>
-          <td>Dirección:</td>
-          <td>Dirección de prueba, Ciudad</td>
-        </tr>
-        <tr>
-          <td>Método de Pago:</td>
-          <td>Tarjeta de crédito</td>
-        </tr>
-        <tr>
-          <td>Indicaciones:</td>
-          <td>Dejar en la puerta principal</td>
-        </tr>
-      </table>
+      <p>Nombre:</p>
+      <p>Nombre de prueba</p>
+      <p>Dirección:</p>
+      <p>Dirección de prueba, Ciudad</p>
+      <p>Método de Pago:</p>
+      <p>Tarjeta de crédito</p>
+
+      <p>Indicaciones:</p>
+      <p>Dejar en la puerta principal</p>
+      </p>
       <button class="btn btn-primary">Editar Dirección</button>
     </div>
 
@@ -184,37 +136,38 @@
     </p>
 
     <!-- Detalles del pedido -->
-    <section class="detallesPedido">
-      <div class="container">
-
-        <div class="orderDetails">
-          <h3>Detalles del Pedido</h3>
-          <div class="col-12 col-md-6">
-              Producto:
-              <div>
-
-                <img src="https://acuariolomas.com.mx/IMAGENES/FANCY%20PETS/1000x1000_72_png/FL3922/FL3922.png" alt=""
-                  class="imgCompra">
+    <main class="container">
+      <section class="detallesPedido">
+        <div class="container">
+          <div class="row">
+            <div class="orderDetails">
+              <h3>Detalles del Pedido</h3>
+              <div class="col-12 col-md-6">
+                Producto:
+                <div>
+                  <img src="https://acuariolomas.com.mx/IMAGENES/FANCY%20PETS/1000x1000_72_png/FL3922/FL3922.png" alt=""
+                    class="imgCompra">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <p class="subtotal">Subtotal: $65.3</p>
+                <p class="shipping">Envío: $89.00</p>
+                <p class="iva">IVA (16%): $4.37</p>
+                <p class="total">TOTAL: $159.00</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-            <p class="subtotal">Subtotal: $65.3</p>
-            <p class="shipping">Envío: $89.00</p>
-            <p class="iva">IVA (16%): $4.37</p>
-            <p class="total">TOTAL: $159.00</p>
-        </div>
+      </section>
+
+      <!-- Botones de acción -->
+      <div class="action-buttons">
+        <button class="btn btn-primary">Seguir Comprando</button>
+        <button class="btn btn-primary">Finalizar Compra</button>
       </div>
   </div>
-  </section>
-  <!-- Botones de acción -->
-  <div class="action-buttons">
-    <button class="btn btn-primary">Seguir Comprando</button>
-    <button class="btn btn-primary">Finalizar Compra</button>
-  </div>
-
-
-  </div>
-
+  </main>
+  
   <!-- footer-->
   <footer class="footer">
     <div class="divNavLogo">
@@ -260,7 +213,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script src="../JS/app.js"></script>
 </body>
 
 </html>

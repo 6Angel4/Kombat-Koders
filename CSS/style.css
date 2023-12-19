@@ -507,10 +507,32 @@ select{
 
 .finalizarCompra{
   background-color: #FEE1AD;
-  display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 60%;
+  font-family: var(--fuenteTextoCuerpo);
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 .imgCompra{
   height: 200px;
+}
+
+.shipping-details {
+  margin-bottom: 20px;
+}  
+
+.subtotal,
+.shipping,
+.iva,
+.total {
+  margin-top: 5px;
+}
+
+.action-buttons {
+  text-align: center;
+  margin-top: 30px;
 }
