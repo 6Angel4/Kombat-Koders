@@ -517,8 +517,13 @@ select{
   margin-left: 20px;
   max-width: 80%;
   font-family: var(--fuenteTextoCuerpo);
+  font-size: large;
 }
 .tabla-admin th{
   font-family: var(--fuenteTextoCuerpo);
   font-size: 1.5rem;
+}
+
+.row-index-admin{
+  flex-wrap: initial;
 }
