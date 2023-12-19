@@ -504,3 +504,6 @@ select{
   filter: drop-shadow(0 0 1px rgb(0, 143, 122));
 }
 
+.form-iniciarSesion {
+  max-width: 90%;
+}

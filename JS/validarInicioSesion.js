@@ -24,6 +24,7 @@ document.getElementById("formulario-inicio-sesion").addEventListener("submit", (
   
   if (usuarioRegistrado) {
       document.getElementById("inicio-sesion-exitoso").style.display = "block";
+      document.location.href = "../index.html";
       localStorage.setItem("usuarioActual", JSON.stringify(usuarioActual));
       document.getElementById("loginEmail").value = "";
       document.getElementById("loginPassword").value ="";
