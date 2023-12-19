@@ -1,8 +1,11 @@
+import { ControladorRegistro } from "./controladorRegistro.js";
+
 document.getElementById("formulario-inicio-sesion").addEventListener("submit", (event) => {
+
     // Evitar que se envíe el formulario automáticamente
     event.preventDefault();
-    document.getElementById("completa-campos").style.display="none";
-    document.getElementById("no-registrado").style.display="none";
+  
+    document.getElementById("completa-campos").style.display="none";    
     document.getElementById("error-login-email").style.display="none";
     document.getElementById("error-login-password").style.display="none";
   
@@ -19,32 +22,28 @@ document.getElementById("formulario-inicio-sesion").addEventListener("submit", (
     if (email.trim() === "" || password.trim() === "") {
     document.getElementById("completa-campos").style.display="block";   
     esValido = false;
-    }
-  
-    // Validar formato de email
-    else if (!emailRegex.test(email)) {
+    } else if (!emailRegex.test(email)) {
       document.getElementById("error-login-email").style.display="block";
       esValido = false;
-    }
-  
-    // Validar formato de contraseña
-    else if (!passwordRegex.test(password)) {
+    } else if (!passwordRegex.test(password)) {
         document.getElementById("error-login-password").style.display="block";
         esValido = false;
-    }
-  
-    // Datos de usuario de prueba (puedes cambiar estos valores)
-    const usuarioPrueba = {
-      username: "usuarioprueba@test.com",
-      password: "contrasena123",
-    };
-  
-    // Verificar datos de usuario
-     if (email === usuarioPrueba.username && password === usuarioPrueba.password) {
+    }  
+     
+
+    const usuarioActual = {
+    username: email,
+    password: password
+  }; 
+
+  // Controlador
+    const miControladorRegistro = new ControladorRegistro();
+  // Verificar datos de usuario
+        if (miControladorRegistro.buscarRegistroLocalStorage(usuarioActual.username, usuarioActual.password)  ) {
         document.getElementById("inicio-sesion-exitoso").style.display="block";
-      // Almacenar datos del usuario en el local storage
-      localStorage.setItem("usuarioActual", JSON.stringify(usuarioPrueba));
-      // Redirigir a otra página aquí si lo deseas
+        
+  // Almacenar datos del usuario en el local storage
+      localStorage.setItem("usuarioActual", JSON.stringify(usuarioActual));   
     } else {
         document.getElementById("no-registrado").style.display="block";
     }
@@ -57,14 +56,13 @@ document.getElementById("formulario-inicio-sesion").addEventListener("submit", (
     if (usuarioAlmacenado) {
       const usuarioActual = JSON.parse(usuarioAlmacenado);
       console.log("Usuario autenticado:", usuarioActual.username);
-      // Puedes redirigir a otra página aquí si lo deseas
+      
     } else {
       console.log("No hay usuario autenticado");
     }
   });
   
-      
-   
+
 
     
    

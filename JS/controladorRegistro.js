@@ -35,4 +35,22 @@ export class ControladorRegistro {
             return [];
         }
     }
+
+
+    buscarRegistroLocalStorage(emailFormulario, passwordFormulario) {
+        console.log(emailFormulario, passwordFormulario);
+        this.registros = this.cargarRegistrosFromLocalStorage();
+        console.log(this.registros);
+        const usuarioRegistrado = this.registros.find(usuario => usuario.emailRegistro === emailFormulario);
+        console.log(usuarioRegistrado, "tarea10noqueda");
+        if (!usuarioRegistrado) {
+            console.log("usuario no encontrado");
+        } else {
+            if (usuarioRegistrado.passwordRegistro === passwordFormulario) {
+                return true;
+            } else {
+                return false;
+            }
+         }
+    }
 };
