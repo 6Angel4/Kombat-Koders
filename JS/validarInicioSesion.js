@@ -2,17 +2,20 @@ import { ControladorRegistro } from "./controladorRegistro.js";
 
 document.getElementById("formulario-inicio-sesion").addEventListener("submit", (event) => {
 
-    // Evitar que se envíe el formulario automáticamente
     event.preventDefault();
-  
-    document.getElementById("completa-campos").style.display="none";    
+    document.getElementById("inicio-sesion-exitoso").style.display="none";    
+    document.getElementById("completa-campos").style.display="none";
+    document.getElementById("no-registrado").style.display="none";
     document.getElementById("error-login-email").style.display="none";
     document.getElementById("error-login-password").style.display="none";
-  
+
+    
     // Obtener los valores de email y contraseña
     const email = document.getElementById("loginEmail").value;
     const password = document.getElementById("loginPassword").value;
-  
+ 
+
+
     // Expresiones regulares
     let esValido = true; 
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -29,42 +32,49 @@ document.getElementById("formulario-inicio-sesion").addEventListener("submit", (
         document.getElementById("error-login-password").style.display="block";
         esValido = false;
     }  
-     
-
     const usuarioActual = {
-    username: email,
-    password: password
-  }; 
-
-  // Controlador
+      username: email,
+      password: password
+    }; 
+  
+    // Controlador
     const miControladorRegistro = new ControladorRegistro();
-  // Verificar datos de usuario
-        if (miControladorRegistro.buscarRegistroLocalStorage(usuarioActual.username, usuarioActual.password)  ) {
-        document.getElementById("inicio-sesion-exitoso").style.display="block";
-        
-  // Almacenar datos del usuario en el local storage
-      localStorage.setItem("usuarioActual", JSON.stringify(usuarioActual));   
-    } else {
-        document.getElementById("no-registrado").style.display="block";
-    }
-  });
+    // Verificar datos de usuario
+    const usuarioRegistrado = miControladorRegistro.buscarRegistroLocalStorage(usuarioActual.username, usuarioActual.password);
   
-  // Autenticación al cargar la página (verificar si hay un usuario almacenado en el local storage)
-  document.addEventListener("DOMContentLoaded", () => {
-    const usuarioAlmacenado = localStorage.getItem("usuarioActual");
+    if (usuarioRegistrado) {
+      document.getElementById("inicio-sesion-exitoso").style.display = "block";
+      localStorage.setItem("usuarioActual", JSON.stringify(usuarioActual));
+  } else {
+      // Ocultar mensajes previos
+      document.getElementById("no-registrado").style.display = "block";
+      document.getElementById("error-login-password").style.display = "none";
+      document.getElementById("completa-campos").style.display = "none";
   
-    if (usuarioAlmacenado) {
-      const usuarioActual = JSON.parse(usuarioAlmacenado);
-      console.log("Usuario autenticado:", usuarioActual.username);
-      
-    } else {
-      console.log("No hay usuario autenticado");
-    }
-  });
-  
+      // Mostrar mensajes específicos
+      if (email.trim() === "") {
+          // El campo de correo está incompleto
+          document.getElementById("completa-campos").style.display = "block";
+      } else if (!emailRegex.test(email)) {
+          // El campo de correo no es válido
+          document.getElementById("error-login-email").style.display = "block";
+      } else if (!miControladorRegistro.existeUsuarioLocalStorage(usuarioActual.username)) {
+          // El usuario no está registrado
+          document.getElementById("no-registrado").style.display = "block";
+      } else {
+          // Contraseña incorrecta
+          document.getElementById("error-login-password").style.display = "block";
+      }
+  }
 
 
-    
+});
+
+
+
+
+
+
    
 
 
