@@ -64,11 +64,17 @@ h4, p {
   /*agregue esto . cynthia*/
 }
 
+.enlaces:visited {
+  color: black;
+}
+
+
 .enlaces:hover {
   /*Agregue esto . Miguel*/
   color: white;
   /*Agregue esto . Miguel*/
 }
+
 
 .enlaces:last-child {
   /*Agregue esto . Miguel*/
@@ -189,7 +195,7 @@ h4, p {
   max-width: 100px;
   max-height: 85px;
   /* Ajuste el tamaño del logo - Alex */
-  padding: 1rem 0;
+  padding: 1rem 0px;
   /* Le di un espacio al logo para que no este pegado con las lías del navbar - Alex*/
 }
 
@@ -495,6 +501,10 @@ textarea.form-control {
   font-family: var(--fuenteTextoCuerpo);
 }
 
+.form-user {
+  max-width: 90%;
+}
+
 .alert{
   display: none;
 }
@@ -568,4 +578,34 @@ a{
 }
 .form-iniciarSesion {
   max-width: 90%;
+}
+
+.btn-ham {
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.img-historial-compras{
+  height: 30px;
+}
+
+.card-tarjeta-credito{
+  background-color: var(--colorNaranjaFooterYBotones);
+  border-radius: 5px;
+}
+
+label {
+  font-family: var(--fuenteTextoCuerpo);
+}
+
+.tabla-historial{
+  background-color: var(--colorNaranjaFondoTextos); 
+  border-radius: 10px;
+  margin: 4px 0px;
+  padding: 4px 0px;
+}
+
+.tabla-historial:hover{
+  background-color: var(  --colorNaranjaFooterYBotones); 
+
 }
