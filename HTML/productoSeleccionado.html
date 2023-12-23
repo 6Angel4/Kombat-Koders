@@ -57,67 +57,62 @@
         <title>Producto seleccionado</title>
     </head>
 <body>
-      <!--Inicia header-->
-      <header class="m-0 p-0 text-center">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-custom">
-          <div class="container-fluid d-flex justify-content-center">
-            <!-- Logo -->
-            <div class="col-md-2 col-6 text-center">
-              <a class="navbar-brand" href="../index.html">
-                <img class="imgLogo" src="../SRC/img/logo.png" alt="Logo de la pagina" />
-              </a>
-            </div>
-    
-            <!--Boton-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <!-- Enlaces de navegación -->
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link nav-hover enlaces" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-hover enlaces" href="./productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-hover enlaces" href="./paginadecontacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-hover enlaces" href="./acercaDeNosotros.html">Nosotros</a>
-                </li>
-              </ul>
-    
-              <form class="d-flex" role="search">
-                <input class="form-control ms-3 me-1" type="search" placeholder="Buscar" aria-label="Search" />
-                <button class="btn button-localCustom" type="submit">
-                  Buscar
-                </button>
-              </form>
-    
-              <!-- Iconos de carrito y usuario en divs separados -->
-              <div
-                class="col-sm-12 col-md-1 col-6 d-md-flex justify-content-md-around justify-content-center align-items-center mt-md-0 icons-mobile mx-auto">
-                <!-- Icono de bolsa de compras -->
-                <div>
-                  <a href="">
-                    <img src="../SRC/img/shopping-bag.png" alt="#" width="auto" height="30px" />
-                  </a>
-                </div>
-                <!-- Icono de usuario -->
-                <div>
-                  <a href="./InicioSesion.html">
-                    <img src="../SRC/img/user.png" alt="#" width="auto" height="30px" />
-                  </a>
-                </div>
-              </div>
-            </div>
+        <!--Inicia header-->
+  <header class="m-0 p-0 text-center">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-custom">
+      <div class="d-flex flex-wrap justify-content-around d-lg-flex flex-lg-nowrap flex-lg-row mx-5 w-100">
+        <!-- Logo -->
+        <div class="order-1">
+          <a class="navbar-brand m-0" href="../index.html">
+            <img class="imgLogo" src="../SRC/img/logo.png" alt="Logo de la pagina" />
+          </a>
+        </div>
+        <!--Boton-->
+        <div class="order-2 align-self-center mx-3">
+          <button class=" btn btn-primary btn-ham navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation" ;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="order-3 collapse navbar-collapse d-lg-flex justify-content-lg-around align-items-lg-center"
+          id="navbarTogglerDemo01">
+          <div class="d-flex flex-column d-lg-flex flex-lg-row justify-content-lg-around align-items-lg-center w-100">
+            <!-- Enlaces de navegación -->
+            <ul class="navbar-nav order-1 order-lg-0">
+              <li class="nav-item me-lg-4 "><a class="nav-link enlaces" href="../index.html">Inicio</a></li>
+              <li class="nav-item mx-lg-4 "><a class="nav-link nav-hover enlaces" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item mx-lg-4 "><a class="nav-link nav-hover enlaces"
+                  href="./paginadecontacto.html">Contacto</a></li>
+              <li class="nav-item ms-lg-4 "><a class="nav-link nav-hover enlaces"
+                  href="./acercaDeNosotros.html">Nosotros</a></li>
+            </ul>
+            <!--Barra de bsuwqueda-->
+            <form class="order-0 order-lg-1 d-flex flex-row d-lg-flex justify-content-center" role="search">
+              <input class="form-control ms-5 ms-lg-2 me-lg-2 rounded-pill customSearch" type="search"
+                placeholder="Buscar" aria-label="Search" rounded />
+              <button class="btn button-localCustom" type="submit">
+                <img class="lupa" width="auto" height="20px" src="../SRC/img/lupa.png" />
+              </button>
+            </form>
           </div>
-        </nav>
-      </header>
+        </div>
+        <!-- Iconos de carrito y usuario en divs separados -->
+        <div
+          class="d-flex flex-row align-items-center order-0  d-lg-flex flex-lg-row align-items-lg-center order-lg-3 mx-2">
+          <!-- Icono de bolsa de compras -->
+          <div class="mx-3"><a href=""><img src="../SRC/img/shopping-bag.png" alt="#" width="auto" height="30px" /></a>
+          </div>
+          <!-- Icono de usuario -->
+          <div class="ms-3"><a href="./InicioSesion.html"><img src="../SRC/img/user.png" alt="#" width="auto"
+                height="30px" /></a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <!--Fin header-->
+  
   <div class="container mt-4">
     <div class="row">
       <div class="col-lg-6">
