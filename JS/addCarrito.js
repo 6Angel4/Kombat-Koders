@@ -1,15 +1,25 @@
 // === Referencias === //
-const refTabla = document.getElementById("tableCarrito");
-// const refBotonProcederPagar = document.getElementById("botonProcederPago");
-const refBotonProcederPagar = document.getElementById("botonAnadirProducto");
-const refTablaProductos = document.getElementById("tbody");
+const tabla = document.getElementById("table");
+const tableRow = document.getElementById("tr");
+const tableBody = document.getElementById("tbody");
+const botonProcederPago = document.getElementById("botonProcederPago");
+const imagen = document.createElement("img"); // Crea un elemento, una imagen en este caso
 // === Referencias === //
 
-//  === Muestra en DOM  === //
+//  === Esconder Tabla si el carro está vacío   === //
+if (tableBody.childElementCount === 0) {
+  // Ocultar la tabla
+  tabla.style.display = "none";
+  // Ocultar el botón de proceder al pago
+  botonProcederPago.style.display = "none";
+  // Añadir la imagen al body
+} else {
+  // Mostrar la tabla si hay elementos en el tbody
+  tabla.style.display = "table";
+}
+//  === Esconder Tabla si el carro está vacío   === //
 
-/**
- *  Voy a requerir usar el local storage 
- */
+//  === Muestra en DOM  === //
 
 //  === Muestra en DOM  === //
 
