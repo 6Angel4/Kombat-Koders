@@ -566,3 +566,6 @@ a{
   background-color: var(--colorVerdeFondo);
   border-color: var(--colorVerdeFondo);
 }
+.form-iniciarSesion {
+  max-width: 90%;
+}

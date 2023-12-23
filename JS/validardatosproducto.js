@@ -55,7 +55,7 @@ const producto = {
 
 });
 
-const datosVerificados = (producto) => {
+const datosVerificados = (producto) => {   
     let esValido = true;
     const contenidoRegex = /^[0-9]*\.[0-9]{2}$/;
     const precioRegex = /^[0-9]*\.[0-9]{2}$/;

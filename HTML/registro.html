@@ -108,71 +108,76 @@
   </header>
 <!--Fin header-->
 
-<main class="container mt-5">
-  <section class="row">
-     
-         
-              <div class="col-12 col-md-10 col-lg-8 col-xl-6 offset-3 mx-auto">
+<main class="container">
+  <section>               
+    <!-- Formulario de Registro -->
+    <div class="p-5">
+      <div class="form-container mx-auto col-xl-7" id="formulario-registro">
+        <h2 class="mb-4">Regístrate</h2>
+          <div id="registro-completado-exitosamente" class="alert alert-success" role="alert">¡Registro completado exitosamente!</div>
 
-                  <!-- Formulario de Inicio de Sesión y Recuperación de Contraseña -->
-                  <div id="formulario-inicio-sesion">
-                  <div class="form-container mx-auto form-iniciarSesion">
-                      <h2 class="text-center mb-4">Iniciar sesión</h2>
+          <form novalidate>
+            <div class="form-group">
+              <label for="registerName">Nombre:</label>
+              <input type="text" class="form-control" id="registerName" placeholder="Ingresa tu nombre"> 
+              <div id="error-nombre" class="alert alert-danger" role="alert">Por favor ingresa un nombre valido</div>
+            </div>
+            <div class="form-group">
+              <label for="registerPhoneNumber">Número de télefono</label>
+              <input type="text" class="form-control" id="registerPhoneNumber" placeholder="Ingresa tu número de teléfono">
+              <div id="error-telefono" class="alert alert-danger" role="alert">Por favor ingresa un número de teléfono valido</div>
+            </div>
+            <div class="form-group">
+              <label for="registerEmail">Correo electrónico:</label>
+              <input type="email" class="form-control" id="registerEmail" placeholder="Ingresa tu correo electrónico">
+              <div id="error-email" class="alert alert-danger" role="alert">Por favor ingresa una dirección de correo electrónico valida</div>
+            </div>
+            <div class="form-group">
+              <label for="registerPassword">Contraseña:</label>
+              <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña">
+              <div id="error-password" class="alert alert-danger" role="alert">Tu contraseña es incorrecta</div>
+            </div>
+            <div class="form-group">
+              <label for="registerPasswordConfir">Confirmar Contraseña:</label>
+              <input type="password" class="form-control" id="registerPassword2" placeholder="Confirmar contraseña">
+              <div id="error-password2" class="alert alert-danger" role="alert">Las contraseñas no coinciden</div>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="acceptTerms">
+              <label class="form-check-label" for="acceptTerms">Acepto los términos y condiciones</label>
+              <div id="error-termsConditions" class="alert alert-danger" role="alert">No has aceptado los terminos y condiciones</div>
+            </div>
+            <div class="mt-3">
+              <button type="submit" id="register" class="btn btn-primary btn-block">Registrarse</button>
+            </div>                          
+          </form>   
 
-                      <div id="inicio-sesion-exitoso" class="alert alert-success" role="alert">¡Inicio de sesión exitoso!</div>
-                      <div id="completa-campos" class="alert alert-danger" role="alert">Por favor, completa todos los campos.</div>
-                      <div id="no-registrado" class="alert alert-danger" role="alert">No estas registrado.</div>
-                      
-                      <form novalidate>
-                          <div class="form-group">
-                              <label for="email"> Usuario:</label>
-                              <input type="email" class="form-control" id="loginEmail" placeholder="Ingresa tu correo electrónico">
-                              <div id="error-login-email" class="alert alert-danger" role="alert">Por favor ingresa una dirección de correo electrónico valida</div>
-                            </div>
-                            <div class="form-group">
-                              <label for="password">Contraseña:</label>
-                              <input type="password" class="form-control" id="loginPassword" placeholder="Ingresa tu contraseña">
-                              <div id="error-login-password" class="alert alert-danger" role="alert">Tu contraseña es incorrecta, debe tener 8 carácteres, una letra mayúscula y un número</div>
-                            </div>
-                          <button type="submit" id="login" class="btn btn-primary btn-block mt-3">Iniciar Sesión</button>
-                      </form>
-                      <p class="text-start mt-3" class="regsitrate" onclick="mostrar();"><a href="./registro.html">¿Aún no te has registrado?</a></p>
-                      <p class="text-start mt-3" class="mostrar-recuperar-contrasena" onclick="mostrar();"><a href="./recuperarContrasena.html">¿Has olvidado tu contraseña?</a></p>                      
-                  </div>
-                </div> 
-
-         
       </div>
+    </div>
   </section>
 </main>
+
     
    <!-- footer-->
-   <footer class="footer position-absolute bottom-0 w-100">
+   <footer class="footer">
     <div class="divNavLogo">
       <a href="../index.html" class="enlaces enlaceImagen">
-        <img
-          src="../SRC/img/logo.png"
-          class="imgLogo"
-          alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras"
-        />
+        <img src="../SRC/img/logo.png" class="imgLogo"
+          alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras" />
       </a>
     </div>
 
     <!--Barra de iconos de redes *Mario-->
     <div class="footerDivNavBar">
       <nav class="navNavBar">
-        <a href="#" class="iconos-redes enlaces"
-          ><i class="fi fi-brands-facebook"></i
-        ></a>
-        <a href="#" class="iconos-redes enlaces"
-          ><i class="fi fi-brands-instagram"></i
-        ></a>
-        <a href="#" class="iconos-redes enlaces"
-          ><i class="fi fi-brands-twitter-alt-circle"></i
-        ></a>
-        <a href="" class="iconos-redes enlaces"
-          ><i class="fi fi-brands-tik-tok"></i
-        ></a>
+        <a href="https://www.facebook.com/profile.php?id=61554222387300" class="iconos-redes enlaces"><i
+            class="fi fi-brands-facebook"></i></a>
+        <a href="https://www.instagram.com/petsupermarket.contactanos/" class="iconos-redes enlaces"><i
+            class="fi fi-brands-instagram"></i></a>
+        <a href="https://twitter.com/SupermarketPet" class="iconos-redes enlaces"><i
+            class="fi fi-brands-twitter-alt-circle"></i></a>
+        <a href="https://www.tiktok.com/@petsupermarket.contacten?lang=es" class="iconos-redes enlaces"><i
+            class="fi fi-brands-tik-tok"></i></a>
       </nav>
     </div>
     <div>
@@ -180,13 +185,13 @@
         <!--Intercambie de lugar los botones dee redes con los de enlaces, creo que se ve más estético - Alex-->
         <a href="../index.html" class="enlaces">Inicio</a>
         <a href="./productos.html" class="enlaces">Productos</a>
-        <a href="./paginadecontacto.html" class="enlaces">Contacto</a>        
+        <a href="./paginadecontacto.html" class="enlaces">Contacto</a>
         <a href="./acercaDeNosotros.html" class="enlaces">Nosotros</a>
       </nav>
     </div>
     <p class="direccion">
       Av. San José CP. 304950 Teléfono:55-34-23-45-56 <br />Email:
-      example@gmail.com
+      petsupermarket.contactanos@gmail.com
     </p>
     <br />
     <p class="derechosReservados">
@@ -197,10 +202,8 @@
 
   <!-- Incluye el enlace al archivo JS de Bootstrap y a la biblioteca de Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="../JS/validarInicioSesion.js"></script>
-  <script type="module"  src="../JS/controladorRegistro.js"></script>
-  <script type ="module" src="../JS/cargadorRegistroDemo.js"></script>
-
+  <script type="module" src="../JS/validarRegistro.js"></script>
+  <script type="module" src="../JS/controladorRegistro.js"></script>
 </body>
 
-</html> 
+</html>
