@@ -226,19 +226,20 @@ p {
 /* ajustar el tamaño de la imagen del carrusel -cynthia*/
 .carousel-inner img {
   margin: auto;
-  max-height: 300px;
+  max-height: 400px;
   border-radius: 20px;
+  height: 400px;
 }
 
 /* ajusta el tamaño del carrusel, se agrego para evitar que al momento de cambiar de imagen se sobrepongan dos imagenes ina sobre otra -cynthia */
 .carousel-inner {
-  max-height: 300px;
+  max-height: 500px;
 }
 
 /* se agrega backgroud de la caption para que no se pierda el color de las letras -cynthia*/
 .carousel-caption {
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 1px;
+  padding: 1px;  
 }
 
 .sectionMisionVision {
