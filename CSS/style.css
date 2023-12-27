@@ -613,3 +613,12 @@ label {
   background-color: var(  --colorNaranjaFooterYBotones); 
 
 }
+#contador-carrito{
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 1px; 
+}
+.sin-subrayado {
+  text-decoration: none;
+}

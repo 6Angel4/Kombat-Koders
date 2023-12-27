@@ -32,8 +32,8 @@ const imprimirDOMFromLocalStorage = (Controlador) => {
                   : `$${producto.precioProducto.toFixed(2)}`}
               </p>
             </div>
-            <a href="#" id="botonAnadirProducto" onclick="agregarAlCarrito()" class="btn btn-primary">Añadir a carrito</a>
-          </div>
+            <a href="#" id="botonAnadirProducto_${producto.id}" onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Añadir a carrito</a>
+            </div>
         </div>
       </div>`;
   });

@@ -282,24 +282,16 @@ function filtradoPorCategoria(jsonDeLocalStorage, animalCategoria, tipoProducto)
   console.log("Después del filtrado:", jsonModificado);
   return jsonModificado;
 }
-
-
-
-//=================================================================================================================================
-//contador de carrito
+//=======================================
+// Contador de carrito
 let contador = 0;
 
-// Función para agregar un artículo al carrito
-function agregarAlCarrito() {
-    // Incrementar el contador
-    contador++;
-
-    // Actualizar el valor mostrado en el elemento HTML
-    document.getElementById('botonAnadirProducto').textContent = contador;
+// Función para agregar al carrito y actualizar el contador
+function agregarAlCarrito(idProducto) {
+  contador++;
+  document.getElementById('contador-carrito').innerText = contador;
+  console.log("Producto añadido al carrito con ID:", idProducto);
 }
-
-
-
 //=======================================================================================================
 
 const imprimirDOMFiltros = (productosFiltrados) => {
@@ -333,7 +325,7 @@ const imprimirDOMFiltros = (productosFiltrados) => {
                   : `$${producto.precioProducto.toFixed(2)}`}
               </p>
             </div>
-            <a href="#" id="botonAnadirProducto" onclick="agregarAlCarrito()" class="btn btn-primary">Añadir a carrito</a>
+            <a href="#" id="botonAnadirProducto_${producto.id}" onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Añadir a carrito</a>
           </div>
         </div>
       </div>`;
@@ -344,5 +336,4 @@ const imprimirDOMFiltros = (productosFiltrados) => {
 
 
 }
-
 
