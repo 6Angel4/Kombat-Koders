@@ -103,57 +103,79 @@
   <!--Fin header-->
 
   <!-- Compra finalizada -->
-  <div class="finalizarCompra mt-5 mb-5">
+  <div class="finalizarCompra mt-5 mb-5 container">
 
-    <h1>Finalizar compra</h1>
+    <h1 class="p-5">Finalizar compra</h1>
 
     <!-- Detalles del envío -->
     <div class="shipping-details">
-      <h3>Detalles del Envío</h3>
-      <p>Nombre:</p>
-      <p>Nombre de prueba</p>
-      <p>Dirección:</p>
-      <p>Dirección de prueba, Ciudad</p>
-      <p>Método de Pago:</p>
-      <p>Tarjeta de crédito</p>
-
-      <p>Indicaciones:</p>
-      <p>Dejar en la puerta principal</p>
-      </p>
-      <button class="btn btn-primary">Editar Dirección</button>
+      <h3 class="d-inline pagoFinal">Detalles del Envío</h3>
+      <div class="p-5">
+        <div>
+          <p class="d-inline">Nombre:</p>
+          <p class="d-inline">Nombre de prueba</p>
+        </div>
+        <div>
+          <p class="d-inline">Dirección:</p>
+          <p class="d-inline">Dirección de prueba, Ciudad</p>
+        </div>
+        <div>
+          <p class="d-inline">Método de Pago:</p>
+          <p class="d-inline">Tarjeta de crédito</p>
+        </div>
+        <div>
+          <p class="d-inline">Indicaciones:</p>
+          <p class="d-inline">Dejar en la puerta principal</p>
+          </p>
+        </div>
+        <button class="btn btn-primary">Editar Dirección</button>
+      </div>
     </div>
-
     <!-- Opciones de envío -->
-    <h2>Elige tu Método de Envío</h2>
-    <p>
-      <input type="radio" name="shipping-option" id="free-shipping" checked>
-      <label for="free-shipping">Envío gratis en compras mayores a $500.00</label>
-    </p>
-    <p>
-      <input type="radio" name="shipping-option" id="standard-shipping">
-      <label for="standard-shipping">Envío estándar en la compra mínima de $500, el precio del envío sería
-        $89</label>
-    </p>
-
+    <h3 class="d-inline pagoFinal">Elige tu Método de Envío</h3>
+    <div class="p-5">
+      <div>
+        <p class="d-inline">
+          <input type="radio" name="shipping-option" id="free-shipping" checked>
+          <label for="free-shipping">Envío gratis en compras mayores a $500.00</label>
+        </p>
+      </div>
+      <div>
+        <p class="d-inline">
+          <input type="radio" name="shipping-option" id="standard-shipping">
+          <label for="standard-shipping">Envío estándar en la compra mínima de $500, el precio del envío sería
+            $89</label>
+        </p>
+      </div>
+    </div>
     <!-- Detalles del pedido -->
+    <h3 class="d-inline pagoFinal">Detalles del Pedido</h3>
     <main class="container">
       <section class="detallesPedido">
         <div class="container">
           <div class="row">
             <div class="orderDetails">
-              <h3>Detalles del Pedido</h3>
-              <div class="col-12 col-md-6">
-                Producto:
+
+              <div class="col-12 col-md-6 p-5">
+                <p class="d-inline"> Producto:</p>
                 <div>
                   <img src="https://acuariolomas.com.mx/IMAGENES/FANCY%20PETS/1000x1000_72_png/FL3922/FL3922.png" alt=""
                     class="imgCompra">
                 </div>
               </div>
               <div class="col-12 col-md-6">
-                <p class="subtotal">Subtotal: $65.3</p>
-                <p class="shipping">Envío: $89.00</p>
-                <p class="iva">IVA (16%): $4.37</p>
-                <p class="total">TOTAL: $159.00</p>
+                <div>
+                  <p class="subtotal d-inline">Subtotal: $65.3</p>
+                </div>
+                <div>
+                  <p class="shipping d-inline">Envío: $89.00</p>
+                </div>
+                <div>
+                  <p class="iva d-inline">IVA (16%): $4.37</p>
+                </div>
+                <div>
+                  <p class="total d-inline">TOTAL: $159.00</p>
+                </div>
               </div>
             </div>
           </div>
@@ -167,7 +189,7 @@
       </div>
   </div>
   </main>
-  
+
   <!-- footer-->
   <footer class="footer">
     <div class="divNavLogo">
