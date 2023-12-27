@@ -4,7 +4,7 @@ const miControladorProductos = new ControladorProductos();
 const storageProductos = localStorage.getItem("productos")
 // cada vez que hagamos cambiosen los datos de cambio de producto , borrar local storage, para que se refleje el cambio
 if (!storageProductos) {
-    miControladorProductos.agregarProducto("Chicken & Pea Recipe","Whole Hearted", "Croquetas Science Diet para perros adultos. Nutrición balanceada para una vida saludable.", "Gato", "alimento", "", 640.00, "10", "https://assets.petco.com/petco/image/upload/f_auto,q_auto/3275114-center-1");
+    miControladorProductos.agregarProducto("Chicken & Pea Recipe","Whole Hearted", "Croquetas Science Diet para perros adultos. Nutrición balanceada para una vida saludable.", "Gato", "alimento", "", 640.00, "0", "https://assets.petco.com/petco/image/upload/f_auto,q_auto/3275114-center-1");
 
     miControladorProductos.agregarProducto("Medium Adult", "Royal Cannin", "Croquetas Medium Adult de Royal Cannin para perros adultos. Fórmula especial para razas medianas.", "Gato", "accesorio", "", 2648.50, "15", "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/e3dbe58a-e198-4e28-8900-1555c1ed14a9.49a40064f4cceb74b3a053399e30f301.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF");
     
