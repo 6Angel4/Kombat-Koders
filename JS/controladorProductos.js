@@ -164,7 +164,26 @@ export class ControladorProductos {
 
 
   }
+
+  //====================================contador carrito=========================
+  // Función para contador al carrito y actualizar el contador al imprimirse el dom
+  agregarAlCarrito(evento) {
+    var productoID = evento.currentTarget.getAttribute("data-productoID")
+    var contadorCarrito = document.getElementById('contador-carrito')
+    contador++;//Esto se reemplazara por el length elemento del local storage del carrito
+    contadorCarrito.innerText = contador;
+    console.log("Producto añadido al carrito con ID:", productoID);
+  }
 };
+//=============================================contador carrito=====================
+//funcion que actualiza el contador aun con filtros aplicables
+function agregarAlCarrito(evento) {
+  var productoID = evento.currentTarget.getAttribute("data-productoID")
+  var contadorCarrito = document.getElementById('contador-carrito')
+  contador++;//Esto se reemplazara por el length elemento del local storage del carrito
+  contadorCarrito.innerText = contador;
+  console.log("Producto añadido al carrito con ID:", productoID);
+}
 
 function quitarSeleccion(checkBoxes, checkboxSeleccionado) { //quita seleccion de otros checkboxes del mismo grupo
   for (var i = 0; i < checkBoxes.length; i++) {
@@ -282,16 +301,10 @@ function filtradoPorCategoria(jsonDeLocalStorage, animalCategoria, tipoProducto)
   console.log("Después del filtrado:", jsonModificado);
   return jsonModificado;
 }
-//=======================================
-// Contador de carrito
-let contador = 0;
+//==================contador carrito=====================
+// Contador de bolsa
+let contador = 0;// provisional hasta que se reemplazara por el length elemento del local storage del carrito
 
-// Función para agregar al carrito y actualizar el contador
-function agregarAlCarrito(idProducto) {
-  contador++;
-  document.getElementById('contador-carrito').innerText = contador;
-  console.log("Producto añadido al carrito con ID:", idProducto);
-}
 //=======================================================================================================
 
 const imprimirDOMFiltros = (productosFiltrados) => {
@@ -325,13 +338,16 @@ const imprimirDOMFiltros = (productosFiltrados) => {
                   : `$${producto.precioProducto.toFixed(2)}`}
               </p>
             </div>
-            <a href="#" id="botonAnadirProducto_${producto.id}" onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Añadir a carrito</a>
+            <a href="#" data-productoID="${producto.id}" class="btn btn-primary botonAnadirProducto">Añadir a carrito</a>
           </div>
         </div>
       </div>`;
   });
   document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
-
+  var addButtons = Array.from(document.getElementsByClassName("botonAnadirProducto"))
+  addButtons.forEach((item) =>{
+    item.addEventListener('click', agregarAlCarrito);// contador carrito
+  })
   console.log("Imprimiendo DOM con productos:", productosFiltrados);
 
 

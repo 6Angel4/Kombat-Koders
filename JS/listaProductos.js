@@ -32,13 +32,17 @@ const imprimirDOMFromLocalStorage = (Controlador) => {
                   : `$${producto.precioProducto.toFixed(2)}`}
               </p>
             </div>
-            <a href="#" id="botonAnadirProducto_${producto.id}" onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Añadir a carrito</a>
+            <a href="#" data-productoID="${producto.id}" class="btn btn-primary botonAnadirProducto">Añadir a carrito</a>
             </div>
         </div>
       </div>`;
   });
 
   document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
+  var addButtons = Array.from(document.getElementsByClassName("botonAnadirProducto"))
+  addButtons.forEach((item) =>{
+    item.addEventListener('click', Controlador.agregarAlCarrito);
+  })
 };
 
 const miControladorProductos = new ControladorProductos();
