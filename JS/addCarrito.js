@@ -26,3 +26,4 @@ if (tableBody.childElementCount === 0) {
 // === BOTON === //
 //Creo que esto es de Livi
 // === BOTON === //
+tabla.style.display = "table";
