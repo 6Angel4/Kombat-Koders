@@ -79,6 +79,7 @@ p {
 .customSearch{
   width: 200px;
   height: 30px;
+  display: block;
 }
 /* .divNav { */
   /*Esconde el nav*/

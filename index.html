@@ -116,18 +116,21 @@
                 >
               </li>
             </ul>
-
-            <form class="d-flex" role="search">
+            <!-- Buscador -->
+            <form class="d-flex" id="formBusqueda" role="search">
               <input
-                class="form-control ms-2 me-2 rounded-pill customSearch"
+                class="form-control ms-2 me-2 rounded-pill"
+                id="customSearch"
                 type="search"
                 placeholder="Buscar"
                 aria-label="Search"
                 rounded
               />
-              <button class="btn button-localCustom" type="submit">
+              <button class="btn button-localCustom" id="btnSearch" type="submit">
                 <img class="lupa" width="auto" height="20px" src="./SRC/img/lupa.png"/>             
               </button>
+              <div id="boxSearch">
+            </div>
             </form>
 
             <!-- Iconos de carrito y usuario en divs separados -->
@@ -404,6 +407,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../JS/app.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/buscador.js"></script>
   </body>
 </html>
