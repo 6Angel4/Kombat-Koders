@@ -2,7 +2,7 @@ import {ControladorProductos} from "../JS/controladorProductos.js";
 const miControladorProductos = new ControladorProductos();
 
 const storageProductos = localStorage.getItem("productos")
-// cada vez que hagamos cambiosen los datos de cambio de producto , borrar local storage, para que se refleje el cambio
+// cada vez que hagamos cambios en los datos de cambio de producto , borrar local storage, para que se refleje el cambio
 if (!storageProductos) {
     miControladorProductos.agregarProducto("Chicken & Pea Recipe","Whole Hearted", "Croquetas Science Diet para perros adultos. Nutrición balanceada para una vida saludable.", "Gato", "alimento", "", 640.00, "10", "https://assets.petco.com/petco/image/upload/f_auto,q_auto/3275114-center-1");
 

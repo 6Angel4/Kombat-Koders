@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="../CSS/normalize.css" />
   <link rel="stylesheet" href="../CSS/style.css" />
   <link rel="icon" type="image.png" href="../SRC/img/iconpets.png">
-  <title>Productos</title>
+  <title>Pedido confirmado</title>
   <!--agregar huellita estilos-->
 </head>
 
@@ -53,7 +53,7 @@
           <div class="order-2 align-self-center mx-3">
             <button class=" btn btn-primary btn-ham navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-              aria-label="Toggle navigation" ;">
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
@@ -95,68 +95,65 @@
     </header>
     <!--Fin header-->
 
-  <style>
-
-  </style>
-
-<main class="d-flex justify-content-center">
-<div class="container-pedido-confirmado">
-    <h3>Finalizar compra</h3>
-
-    <div class="row">
-        <div class="d-flex justify-content-start pt-3">
-        <p class="p-2">Detalles del envío:</p>
+    <main class="d-flex justify-content-center">
+      <div class="container-pedido-confirmado" id="detallesCompra">
+    
+        <div>
+          <h1>Pedido confirmado</h1>      
         </div>
-        <div class="col-8">
-            <p class="text-start">Nombre: Ernesto de la Cruz</p>
-            <p class="text-start">Calle: Neza, Ciudad de México</p>
-            <p class="text-start">C.P: 56412</p>
-            <p class="text-start">Método de pago: tarjeta que termina en 5541</p>
-            <p class="text-start">Incicaciones:</p> 
+    
+        <div class="row d-flex justify-content-start" id="numeroPedido">
+          <div class="col-9 p-4">
+            <p class="d-flex justify-content-start p-2"><strong>Resumen el pedido</strong></p>
+            <p class="d-flex justify-content-start p-2"><strong>Número del pedido:&nbsp;</strong>30404056</p>
+          </div>
+          <div class="col-3 pt-3">
+            <img width="60px" src="../SRC/img/pets.png" alt="">
+          </div>
+          <div>
+            <img src="#" alt="">
+          </div>       
         </div>
-        <div class="col-4">
-            <img src="" alt="">
-            <div class="d-flex justify-content-end align-items-end">
-              <a href="#" class="btn btn-primary">Editar</a>
+    
+        <div class="d-flex justify-content-start">
+          <div class="p-4"> 
+             
+            <p class="d-flex justify-content-start p-2"><strong>Producto comprado:&nbsp;</strong> Hill's Science Diet 6.8kg</p>
+            <p class="d-flex justify-content-start p-2"><strong>Nombre:&nbsp;</strong> Ernesto de la Cruz</p>
+            <p class="d-flex justify-content-start p-2"><strong>Dirección de envió:&nbsp;</strong> Av. Palomas CP. 504956</p>
+            <p class="d-flex justify-content-start p-2"><strong>Método de pago:&nbsp;</strong> Tarjeta que termina en **** 5541</p>
+            <p class="d-flex justify-content-start p-2"><strong>Indicaciones:</strong></p>       
+          </div>        
+        </div>
+    
+        <div>  
+    
+          <div class="row d-flex justify-content-start" id="costo">
+            <div class="d-flex p-4 col-6 justify-content-center">
+              <div class="p-4">
+                <img width="100px" src="https://m.media-amazon.com/images/I/71VRDgQCSRL._AC_SL1500_.jpg" alt="">
+              </div>            
             </div>
-            
-        </div>
-    </div>
-
-    <div class="pt-3 justify-content-start pt-3">        
-        <p class="p-3 text-start">Elige tu método de pago:</p>
-        <label><input type="radio" name="account-type" checked />Envió GRATIS en compras mayores a $500.00</label><br>
-        <label><input type="radio" name="account-type" /> Envió estándar $89.00</label>        
-    </div>
-
-    <div class="row">
-        <div class="d-flex justify-content-start pt-3">
-            <p class="p-2">Detalles del pedido:</p>
-        </div>
-        <div class=" col-5">
-            <p class="text-start">Producto:</p>
-            <img src="" alt="">
-            <p>Fancy Pets Canip para gato o hierba gatera con 28g</p>           
-        </div>
-        <div class="col-2">
-            <a href="#" class="btn btn-primary">Finalizar compra</a>
-        </div>
-        <div class=" col-5">
-            <p class="text-end">Subtotal: $65.63</p>
-            <p class="text-end">Envío: $89.00</p>
-            <p class="text-end">IVA(16%): $4.37</p>
-            <p class="text-end">TOTAL: $159.00</p>
-            
-        </div>
+            <div class="d-flex col-6 justify-content-start align-items-center">
+              <div>
+                <p class="d-flex justify-content-start p-2"><strong>Subtotal:&nbsp;</strong> $551.72</p>
+                <p class="d-flex justify-content-start p-2"><strong>Envió:&nbsp;</strong> $89.00</p>
+                <p class="d-flex justify-content-start p-2"><strong>IVA(6%):&nbsp;</strong> $88.28</p>
+                <p class="d-flex justify-content-start p-2"><strong>TOTAL:&nbsp;</strong> $730.00</p>
+              </div>                    
+            </div>
+          </div>
+    
+          <div class="d-flex justify-content-center">
+            <div class="p-4">
+               <a href="#" class="btn btn-primary">Seguir comprando</a>
+            </div>       
+          </div>
+    
+        </div>   
         
-
-
-    </div>    
-</div>
-
-
-
-</main>
+      </div>
+    </main>
 
   <footer class="footer">
     <div class="divNavLogo">

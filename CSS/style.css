@@ -609,3 +609,14 @@ label {
   background-color: var(  --colorNaranjaFooterYBotones); 
 
 }
+
+.container-pedido-confirmado {
+  
+  background-color: #F5B27F;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 70%;
+  font-family: var(--fuenteTextoCuerpo);
+}
