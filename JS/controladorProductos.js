@@ -164,7 +164,26 @@ export class ControladorProductos {
 
 
   }
+
+  //====================================contador bolsa=========================
+  // Función para contador al carrito y actualizar el contador al imprimirse el dom
+  agregarAlaBolsa(evento) {
+    var productoID = evento.currentTarget.getAttribute("data-productoID")
+    var contadorBolsa = document.getElementById('contador-carrito')
+    contador++;//Esto se reemplazara por el length elemento del local storage del carrito/bolsa
+    contadorBolsa.innerText = contador;
+    console.log("Producto añadido a la bolsa con ID:", productoID);
+  }
 };
+//=============================================contador bolsa=====================
+//funcion que actualiza el contador aun con filtros aplicables
+function agregarAlaBolsa(evento) {
+  var productoID = evento.currentTarget.getAttribute("data-productoID")
+  var contadorBolsa = document.getElementById('contador-carrito')
+  contador++;//Esto se reemplazara por el length elemento del local storage del carrito/bolsa
+  contadorBolsa.innerText = contador;
+  console.log("Producto añadido a la bolsa con ID:", productoID);
+}
 
 function quitarSeleccion(checkBoxes, checkboxSeleccionado) { //quita seleccion de otros checkboxes del mismo grupo
   for (var i = 0; i < checkBoxes.length; i++) {
@@ -189,16 +208,13 @@ function filtradoPorCheckboxes(jsonDeLocalStorage) {
     if (checkBoxesPrecio[i].checked == true) {
       console.log(checkBoxesPrecio[i].value)
       switch (checkBoxesPrecio[i].value) {
-        case "0 a 300": {
-          jsonModificado = jsonModificado.filter((producto) => producto.precioProducto < 300);
+       
+        case "150 a 500": {
+          jsonModificado = jsonModificado.filter((producto) => producto.precioProducto > 150 && producto.precioProducto < 500);
           break;
         }
-        case "300 a 700": {
-          jsonModificado = jsonModificado.filter((producto) => producto.precioProducto > 300 && producto.precioProducto < 700);
-          break;
-        }
-        case "700 a 1000": {
-          jsonModificado = jsonModificado.filter((producto) => producto.precioProducto > 700 && producto.precioProducto < 1000);
+        case "500 a 1000": {
+          jsonModificado = jsonModificado.filter((producto) => producto.precioProducto > 500 && producto.precioProducto < 1000);
           break;
         }
         case "1000 o mas": {
@@ -285,35 +301,55 @@ function filtradoPorCategoria(jsonDeLocalStorage, animalCategoria, tipoProducto)
   console.log("Después del filtrado:", jsonModificado);
   return jsonModificado;
 }
+//==================contador carrito=====================
+// Contador de bolsa
+let contador = 0;// provisional hasta que se reemplazara por el length elemento del local storage del carrito
 
-
-
-
-
-
+//=======================================================================================================
 
 const imprimirDOMFiltros = (productosFiltrados) => {
-  const productosGrid = productosFiltrados.map((producto) => `  
-    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-3">
-      <div class="card border-0 mb-5"><!--Aqui esta la primera tarjeta de producto-->
-        <img src="${producto.imagenProducto}" class="card-img-top" alt="..." />
+  const productosGrid = productosFiltrados.map((producto) => {
+    // Verificar si el producto tiene descuento
+    const tieneDescuento = producto.descuentoProducto > 0;
+
+    // Calcular el precio con descuento si es aplicable
+    const precioConDescuento = tieneDescuento
+      ? producto.precioProducto - (producto.precioProducto * producto.descuentoProducto) / 100
+      : null;
+
+    return `
+      <div class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-3">
+        <div class="card border-0 mb-5">
+          <img src="${producto.imagenProducto}" class="card-img-top" alt="..." />
           <div class="card-body text-center d-flex align-items-center justify-content-between flex-column">
             <div>
               <h5 class="card-title">${producto.marcaProducto}<br>${producto.nombreProducto}</h5>
-              
               <p class="card-text">${producto.descripcionProducto}</p>
-              <p>$${producto.precioProducto.toFixed(2)}</p>
-            </div>
-            <a href="#" class="btn btn-primary">Añadir a carrito</a>
-        </div>
-      </div> 
-    </div>         
-  `);
-  document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
+              
+              ${tieneDescuento
+                ? `<p class="descuento">Descuento: ${producto.descuentoProducto}%</p>`
+                : ''}
 
+              <p class="precio">
+                ${tieneDescuento
+                  ? `<span class="precio-original"><strike>$${producto.precioProducto.toFixed(2)}</strike></span> 
+                    <br>
+                     <span class="precio-descuento">$${precioConDescuento.toFixed(2)}</span>`
+                  : `$${producto.precioProducto.toFixed(2)}`}
+              </p>
+            </div>
+            <a href="#" data-productoID="${producto.id}" class="btn btn-primary botonAnadirProducto">Añadir a carrito</a>
+          </div>
+        </div>
+      </div>`;
+  });
+  document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
+  var addButtons = Array.from(document.getElementsByClassName("botonAnadirProducto"))
+  addButtons.forEach((item) =>{
+    item.addEventListener('click', agregarAlaBolsa);// contador bolsa
+  })
   console.log("Imprimiendo DOM con productos:", productosFiltrados);
 
 
 }
-
 

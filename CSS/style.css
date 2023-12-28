@@ -547,6 +547,10 @@ a{
   color: var(--colorVerdeFondo);
   font-weight: 500;
 }
+a:hover{
+  color:#017f6c;
+  font-weight: 500;
+}
 .btn-secondary{
  font-size: 1.5rem;
  font-family: var(--fuenteTextoTitulos);
@@ -619,4 +623,14 @@ label {
   margin-top: 20px;
   max-width: 70%;
   font-family: var(--fuenteTextoCuerpo);
+}
+
+#contador-carrito{
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 1px; 
+}
+.sin-subrayado {
+  text-decoration: none;
 }
