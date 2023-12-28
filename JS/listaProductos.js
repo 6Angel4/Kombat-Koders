@@ -41,7 +41,7 @@ const imprimirDOMFromLocalStorage = (Controlador) => {
   document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
   var addButtons = Array.from(document.getElementsByClassName("botonAnadirProducto"))
   addButtons.forEach((item) =>{
-    item.addEventListener('click', Controlador.agregarAlCarrito);
+    item.addEventListener('click', Controlador.agregarAlaBolsa);
   })
 };
 

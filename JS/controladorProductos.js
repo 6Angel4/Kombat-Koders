@@ -165,24 +165,24 @@ export class ControladorProductos {
 
   }
 
-  //====================================contador carrito=========================
+  //====================================contador bolsa=========================
   // Función para contador al carrito y actualizar el contador al imprimirse el dom
-  agregarAlCarrito(evento) {
+  agregarAlaBolsa(evento) {
     var productoID = evento.currentTarget.getAttribute("data-productoID")
-    var contadorCarrito = document.getElementById('contador-carrito')
-    contador++;//Esto se reemplazara por el length elemento del local storage del carrito
-    contadorCarrito.innerText = contador;
-    console.log("Producto añadido al carrito con ID:", productoID);
+    var contadorBolsa = document.getElementById('contador-carrito')
+    contador++;//Esto se reemplazara por el length elemento del local storage del carrito/bolsa
+    contadorBolsa.innerText = contador;
+    console.log("Producto añadido a la bolsa con ID:", productoID);
   }
 };
-//=============================================contador carrito=====================
+//=============================================contador bolsa=====================
 //funcion que actualiza el contador aun con filtros aplicables
-function agregarAlCarrito(evento) {
+function agregarAlaBolsa(evento) {
   var productoID = evento.currentTarget.getAttribute("data-productoID")
-  var contadorCarrito = document.getElementById('contador-carrito')
-  contador++;//Esto se reemplazara por el length elemento del local storage del carrito
-  contadorCarrito.innerText = contador;
-  console.log("Producto añadido al carrito con ID:", productoID);
+  var contadorBolsa = document.getElementById('contador-carrito')
+  contador++;//Esto se reemplazara por el length elemento del local storage del carrito/bolsa
+  contadorBolsa.innerText = contador;
+  console.log("Producto añadido a la bolsa con ID:", productoID);
 }
 
 function quitarSeleccion(checkBoxes, checkboxSeleccionado) { //quita seleccion de otros checkboxes del mismo grupo
@@ -346,7 +346,7 @@ const imprimirDOMFiltros = (productosFiltrados) => {
   document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
   var addButtons = Array.from(document.getElementsByClassName("botonAnadirProducto"))
   addButtons.forEach((item) =>{
-    item.addEventListener('click', agregarAlCarrito);// contador carrito
+    item.addEventListener('click', agregarAlaBolsa);// contador bolsa
   })
   console.log("Imprimiendo DOM con productos:", productosFiltrados);
 
