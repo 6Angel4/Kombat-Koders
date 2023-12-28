@@ -12,6 +12,7 @@ document.getElementById("formulario-nuevo-producto").addEventListener("submit", 
     document.getElementById("error-precio").style.display="none";
     document.getElementById("error-imagen-producto").style.display="none";
     document.getElementById("error-oferta").style.display="none";
+    document.getElementById("error-existencia").style.display="none";
     document.getElementById("producto-creado-exitosamente").style.display="none";
 
     
@@ -25,7 +26,8 @@ const producto = {
     imagen : document.getElementById("imagenProducto").value,
     esPara : document.getElementById("productoPara").value,
     tipo : document.getElementById("tipoProducto").value,
-    oferta : document.getElementById("ofertaProducto").value
+    oferta : document.getElementById("ofertaProducto").value,
+    existencia : document.getElementById("existenciaProducto").value
     }   
 
     if(datosVerificados(producto)){
@@ -39,6 +41,7 @@ const producto = {
             producto.contenido,
             producto.precio,
             producto.oferta,
+            producto.existencia,
             producto.imagen);
         document.getElementById("producto-creado-exitosamente").style.display="block";
         document.getElementById("nombreProducto").value = "";
@@ -48,6 +51,7 @@ const producto = {
         document.getElementById("marcaProducto").value = "";
         document.getElementById("imagenProducto").value = "";
         document.getElementById("ofertaProducto").value = "";
+        document.getElementById("existenciaProducto").value = "";
         setTimeout(function() {
             document.getElementById("producto-creado-exitosamente").style.display = 'none';
           }, 2000);
@@ -57,9 +61,8 @@ const producto = {
 
 const datosVerificados = (producto) => {   
     let esValido = true;
-    const contenidoRegex = /^[0-9]*\.[0-9]{2}$/;
     const precioRegex = /^[0-9]*\.[0-9]{2}$/;
-    const ofertaRegex = /^[0-9,$]*$/;
+    const numerosRegex = /^[0-9]+$/;
 
     if (producto.nombre === "") {
         document.getElementById("error-nombre-producto").style.display="block";
@@ -76,19 +79,22 @@ const datosVerificados = (producto) => {
     } else if (!(producto.tipo === "juguete" || producto.tipo === "comida" || producto.tipo === "accesorios")) {
         document.getElementById("error-tipoProducto").style.display="block";
         esValido = false;
-    } else if (!contenidoRegex.test(producto.contenido)) {
+    } else if (producto.contenido === "") {
         document.getElementById("error-contenidoProducto").style.display="block";
         esValido = false;
     } else if (!precioRegex.test(producto.precio)) {
         document.getElementById("error-precio").style.display="block";
         esValido = false;
-    }  else if (producto.imagen === "") {
-        document.getElementById("error-imagen-producto").style.display="block";
-        esValido = false;
-    }  else if (!ofertaRegex.test(producto.oferta) || !(producto.oferta<=95) || !(producto.oferta >=0)) {
+    } else if (!numerosRegex.test(producto.oferta) || !(producto.oferta<=95) || !(producto.oferta >=0)) {
         document.getElementById("error-oferta").style.display="block";
         esValido = false;
-    }
+    } else if (!numerosRegex.test(producto.existencia) || !(producto.existencia >=0)) {
+        document.getElementById("error-existencia").style.display="block";
+        esValido = false;
+    } else if (producto.imagen === "") {
+        document.getElementById("error-imagen-producto").style.display="block";
+        esValido = false;
+    } 
 
     return esValido;
 }
