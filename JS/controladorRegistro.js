@@ -5,7 +5,7 @@ export class ControladorRegistro {
     }
 
     // Función registrar usuarios
-    agregarRegistro(name, phoneNumber, email, password, password2) {
+    agregarRegistro(name, phoneNumber, email, password, address, city, cp, b_date) {
         let idUltimoUsuarioRegistrado;
         this.registros = this.cargarRegistrosFromLocalStorage();
         if (this.registros.length === 0) {
@@ -19,6 +19,10 @@ export class ControladorRegistro {
             telefonoRegistro: phoneNumber,
             emailRegistro: email,
             passwordRegistro: password,
+            addressRegistro: address,
+            cityRegistro: city,
+            cpRegistro: cp,
+            bDateRegistro: b_date
         };
         this.registros.push(registro);
         this.pushRegistrosFromLocalStorage();

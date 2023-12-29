@@ -2,12 +2,12 @@
 //Instanciar controlador de usuarios
 //obtener los datos del usuario logeado
 //Mostrando los valores
-document.getElementById("nombre").value = "ernesto";
-document.getElementById("direccion").value = "lol";
-document.getElementById("telefono").value = "lol";
-document.getElementById("ciudad").value = "lol";
-document.getElementById("cp").value = "lol";
-document.getElementById("email").value = "lol@gmail.com";
+document.getElementById("nombre").value = "Carlos Cárdenas";
+document.getElementById("direccion").value = "Av Juan Aldama";
+document.getElementById("telefono").value = "5524116371";
+document.getElementById("ciudad").value = "CDMX";
+document.getElementById("cp").value = "55298";
+document.getElementById("email").value = "Carlos123@gmail.com";
 
 //Presionar editar en form datos personales
 document.getElementById("form-datos-personales").addEventListener("submit", (event) => {
@@ -84,7 +84,7 @@ const datosVerificadosinfoUsuario = (infoUsuario) => {
 ////////////////////////////////////////////////////////////////////////////////////////
 
 //Mostrando los valores
-document.getElementById("nombreTitular").value = "ernesto";
+document.getElementById("nombreTitular").value = "Carlos Cárdenas";
 document.getElementById("numeroTarjeta").value = "XXXX-XXXX-XXXX-X"+"999";
 document.getElementById("fechaExpiracion").value = "09-26";
 //Presionar editar en form datos personales

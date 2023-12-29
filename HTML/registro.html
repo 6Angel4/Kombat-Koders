@@ -111,14 +111,14 @@
               <div id="error-nombre" class="alert alert-danger" role="alert">Por favor ingresa un nombre valido</div>
             </div>
             <div class="form-group">
-              <label for="registerPhoneNumber">Número de télefono</label>
-              <input type="text" class="form-control" id="registerPhoneNumber" placeholder="Ingresa tu número de teléfono">
-              <div id="error-telefono" class="alert alert-danger" role="alert">Por favor ingresa un número de teléfono valido</div>
-            </div>
-            <div class="form-group">
               <label for="registerEmail">Correo electrónico:</label>
               <input type="email" class="form-control" id="registerEmail" placeholder="Ingresa tu correo electrónico">
               <div id="error-email" class="alert alert-danger" role="alert">Por favor ingresa una dirección de correo electrónico valida</div>
+            </div>
+            <div class="form-group">
+              <label for="registerPhoneNumber">Número de teléfono</label>
+              <input type="text" class="form-control" id="registerPhoneNumber" placeholder="Ingresa tu número de teléfono">
+              <div id="error-telefono" class="alert alert-danger" role="alert">Por favor ingresa un número de teléfono valido</div>
             </div>
             <div class="form-group">
               <label for="registerPassword">Contraseña:</label>
@@ -130,6 +130,34 @@
               <input type="password" class="form-control" id="registerPassword2" placeholder="Confirmar contraseña">
               <div id="error-password2" class="alert alert-danger" role="alert">Las contraseñas no coinciden</div>
             </div>
+
+            <div class="form-group">
+              <label for="registerDirection">Dirección:</label>
+              <input type="text" class="form-control" id="registerDirection" placeholder="Ingresa tu dirección">
+              <div id="error-direccion" class="alert alert-danger" role="alert">Por favor ingresa tu dirección</div>
+            </div>
+            <div class="form-group">
+              <label for="registerCity">Ciudad:</label>
+              <input type="text" class="form-control" id="registerCity" placeholder="Ingresa tu ciudad">
+              <div id="error-ciudad" class="alert alert-danger" role="alert">Por favor ingresa tu ciudad</div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-12 col-md-6">
+                <label for="registerCP">Código postal:</label>
+                <input type="text" class="form-control" id="registerCP" placeholder="Ingresa tu código postal">
+                <div id="error-cp" class="alert alert-danger" role="alert">Ingresa un código postal válido</div>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="registerFechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" class="form-control" id="registerFechaNacimiento" placeholder="Fecha de nacimiento">
+                <div id="error-nacimiento" class="alert alert-danger" role="alert">Ingresa una fecha de nacimiento válida</div>
+              </div>
+            </div>
+
+
+
+
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="acceptTerms">
               <label class="form-check-label" for="acceptTerms">Acepto los términos y condiciones</label>

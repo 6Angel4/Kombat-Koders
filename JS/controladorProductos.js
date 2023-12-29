@@ -6,7 +6,7 @@ export class ControladorProductos {
   }
 
   // Función agregar productos
-  agregarProducto(name, brand, description, animal, category, quantity, price, discount, image) {
+  agregarProducto(name, brand, description, animal, category, quantity, price, discount, stock, image) {
     let idUltimoProducto;
     this.productos = this.cargarProductosFromLocalStorage();
     if (this.productos.length === 0) {
@@ -25,6 +25,7 @@ export class ControladorProductos {
       cantidadProducto: quantity,
       precioProducto: Number(price),
       descuentoProducto: discount,
+      existenciaProducto: stock,
       fechaProducto: new Date().getTime()
     };
     this.productos.push(producto);
@@ -43,7 +44,7 @@ export class ControladorProductos {
   }
 
   // Función para modificar un producto
-  modificarProducto(id, nuevoNombreProducto, nuevoDescripcionProducto, nuevoMarcaProducto, nuevoAnimalProducto, nuevoCategoriaProducto, nuevoCantidadProducto, nuevoPrecioProducto, nuevoDescuentoProducto, nuevoImagenProducto) {
+  modificarProducto(id, nuevoNombreProducto, nuevoDescripcionProducto, nuevoMarcaProducto, nuevoAnimalProducto, nuevoCategoriaProducto, nuevoCantidadProducto, nuevoPrecioProducto, nuevoDescuentoProducto, nuevoExistenciaProducto, nuevoImagenProducto) {
     this.productos = this.cargarProductosFromLocalStorage();
     const index = this.productos.findIndex((producto) => producto.id == id);
     console.log("Indice encontrado: ", index);
@@ -58,6 +59,7 @@ export class ControladorProductos {
       this.productos[index].precioProducto = nuevoPrecioProducto;
       this.productos[index].descuentoProducto = nuevoDescuentoProducto;
       this.productos[index].imagenProducto = nuevoImagenProducto;
+      this.productos[index].existenciaProducto = nuevoExistenciaProducto;
       this.productos[index].fechaProducto = new Date().getTime();
       this.pushProductosLocalStorage();
     } else {
