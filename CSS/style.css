@@ -581,7 +581,7 @@ a:hover{
   border-color: var(--colorVerdeFondo);
 }
 .form-iniciarSesion {
-  max-width: 90%;
+  max-width: 330px;
 }
 
 .btn-ham {
@@ -633,4 +633,20 @@ label {
 }
 .sin-subrayado {
   text-decoration: none;
+}
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+.img-registro{
+width: 150px;
 }
