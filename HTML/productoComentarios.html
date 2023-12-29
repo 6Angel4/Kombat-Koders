@@ -7,7 +7,7 @@
   <meta name="description"
     content="Esta es una e-commerce enfocada a la venta de productos para mascotas (perros y gatos)" />
   <!--Link-Propio (preload)-->
-  <link rel="preload" as="style" href="../CSS/normalize.css" />
+  <!-- <link rel="preload" as="style" href="../CSS/normalize.css" /> -->
   <link rel="preload" as="style" href="../CSS/style.css" />
   <!--Link-Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,10 +30,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
   <!--Link-Propio-->
-  <link rel="stylesheet" href="../CSS/normalize.css" />
+  <!-- <link rel="stylesheet" href="../CSS/normalize.css" /> -->
   <link rel="stylesheet" href="../CSS/style.css" />
   <link rel="icon" type="image.png" href="../SRC/img/iconpets.png">
-  <title>Pedido confirmado</title>
+  <title>Productos</title>
   <!--agregar huellita estilos-->
 </head>
 
@@ -93,15 +93,123 @@
         </div>
       </nav>
     </header>
-    <!--Fin header-->
+    <!--Fin header--> 
 
-    <main class="d-flex justify-content-center">
-      <div class="container-pedido-confirmado" id="detallesCompra">
-    
-      <!-- DOM -->
-        
-      </div>
-    </main>
+<main class="container-fluid px-0">
+
+    <section class="row me-0 filtros">
+        <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">            
+            <a href="#" class="btn btn-primary">Volver</a>             
+        </div>
+        <div class="col-4 col-md-5">
+          <div class="dropdown mt-4 mb-4">
+            <button
+              class="btn-categoria dropdown-toggle w-100 d-flex flex-column flex-md-row justify-content-between align-items-center"
+              type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="text-wrap texto-filtros">
+                <h4 class="categoria-mascota">Todo para tu gato</h4>
+              </div>
+              <img src="../SRC/img/gato-categoria.png" alt="" class="img-btn-categoria mt-2 mb-2">
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a id="gato-alimento" class="dropdown-item text-end gato-alimento" href="#">Alimento</a></li>
+              <li><a id="gato-juguete" class="dropdown-item text-end gato-juguete" href="#">Juguetes</a></li>
+              <li><a id="gato-accesorio" class="dropdown-item text-end " href="#">Accesorios</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4 col-md-5">
+          <div class="dropdown mt-4 mb-4">
+            <button
+              class="btn-categoria dropdown-toggle w-100 d-flex flex-column flex-md-row justify-content-between align-items-center"
+              type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="text-wrap texto-filtros">
+                <h4 class="categoria-mascota">Todo para tu perro</h4>
+              </div>
+              <img src="../SRC/img/perro-categoria.png" alt="" class="img-btn-categoria mt-2 mb-2">
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a id="perro-alimento" class="dropdown-item text-end " href="#">Alimento</a></li>
+              <li><a id="perro-juguete" class="dropdown-item text-end " href="#">Juguetes</a></li>
+              <li><a id="perro-accesorio" class="dropdown-item text-end " href="#">Accesorios</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+
+        <div id="productoComentarios">
+
+            <div>
+                <div>
+                    <div>
+                        <img height="500px" src="https://m.media-amazon.com/images/I/71VRDgQCSRL._AC_SL1500_.jpg" alt="">
+                    </div>
+                    <div>
+                        <ul class="imagenes prueba">
+                            <li><img height="80px" src="https://m.media-amazon.com/images/I/71VRDgQCSRL._AC_SL1500_.jpg" alt=""></li>
+                            <li><img height="80px" src="https://www.amazon.com.mx/Hills-Science-Diet-Alimento-Peque%C3%B1os/dp/B07L5FF4W3/ref=sr_1_1?crid=3GVR4HYRVUKIM&keywords=hills%2Bscience%2Bdiet%2Bperro&qid=1703839903&s=pet-supplies&sprefix=hills%2Bscience%2Bdiet%2B%2Cpets%2C123&sr=1-1&th=1" alt=""></li>
+                            <li><img height="80px" src="https://m.media-amazon.com/images/I/81R1VHhONSL._AC_SL1500_.jpg" alt=""></li>
+                            <li><img height="80px" src="https://m.media-amazon.com/images/I/814pF7bxZqL._AC_SL1500_.jpg" alt=""></li>
+                            <li><img height="80px" src="https://m.media-amazon.com/images/I/71uy2vO-XgL._AC_SL1500_.jpg" alt=""></li>
+                            <li><img height="80px" src="https://m.media-amazon.com/images/I/71CDWh3VorL._AC_SL1500_.jpg" alt=""></li>
+                        </ul>                    
+                    </div>
+                    <div>
+                        <p>Hill's Science Diet, Alimento para Perro Adulto Small Bites, Seco (bulto) 6.8kg</p>
+                        <p><strong>Costo:&nbsp;</strong></p>
+                    </div>
+                    <div>
+                        <p>Cantidad:</p>
+                        <p>1 pz</p>                        
+                    </div>
+                    <div>            
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>             
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>Nutrición para mejorar la piel y pelaje en 30 días</li>
+                    <li>Con antioxidantes clínicamente comprobados</li>
+                    <li>Sin colores, sabores o conservadores artificiales</li>
+                    <li>Croqueta más pequeña para perros que prefieren un bocado más pequeño</li>
+                    <li>A los 7 años de edad, cambie su mascota a un alimento Science Diet Adult +7, haga la transición en un periodo de 7-10 días</li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <p>Opiniones y calificaciones</p>                    
+                </div>
+                <div class="comentario1">
+                    <p>José Luis Gómez</p>
+                    <p>Mi perro lo acepta muy bien, sólo espero que en las siguientes compras no me aparezca como agotado, he tenido que estar usando sustitutos</p>
+                </div>
+                <div class="comentario2">
+                    <p>Horacio Camacho Medina</p>
+                    <p>Este alimento lo ha preferido mi perro desde hace 2 años y lo ha mantenido sano</p>
+                </div>
+                <div>            
+                    <a href="#" class="btn btn-primary">Ver más</a>             
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Escriba su opinión:</p>
+                </div>
+                <div>
+                    <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+                </div>
+                <div>            
+                    <a href="#" class="btn btn-primary">Enviar</a>             
+                </div>
+            </div>      
+            
+        </div>
+      </section>
+  
+</main>
 
   <footer class="footer">
     <div class="divNavLogo">
@@ -144,11 +252,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="../JS/productoComentarios.js"></script>
 
-    <script type="module" src="../JS/controladorProductos.js"></script>
-    <script type="module" src="../JS/cargadorProductosDemo.js"></script>
-    <script type="module" src="../JS/listaProductos.js"></script>
-    <script src="../JS/pedidoConfirmadoDemo.js"></script>
+   
 </body>
 
 </html>
