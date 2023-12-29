@@ -1,7 +1,6 @@
 const formBusqueda = document.getElementById('formBusqueda');
 const inputBusqueda = document.getElementById('customSearch');
 const resultadoBusqueda = document.getElementById('boxSearch');
-const btnSearch = document.getElementById('btnSearch');
 
 formBusqueda.addEventListener('submit', (event) => {
     event.preventDefault();
