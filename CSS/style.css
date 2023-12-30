@@ -243,68 +243,7 @@ h4, p {
 }
 
 .sectionMisionVision {
-  /*Agregue esto . Miguel*/
-
-  margin: 2rem 0;
   background-color: var(--colorNaranjaFondoTextos);
-  text-align: center;
-  max-height: 35rem;
-  padding: 2rem;
-  /*Agregue esto . Miguel*/
-}
-
-@media (min-width: 768px) {
-  .sectionMisionVision {
-    /*Agregue esto . Miguel*/
-    margin: 2rem 0;
-    background-color: var(--colorNaranjaFondoTextos);
-    text-align: center;
-    max-height: 35rem;
-    padding: 2rem;
-    /*Agregue esto . Miguel*/
-  }
-}
-
-@media (min-width: 992px) {
-  .sectionMisionVision {
-    /*Agregue esto . Miguel*/
-    margin: 2rem 0;
-    background-color: var(--colorNaranjaFondoTextos);
-    text-align: center;
-    max-height: 25rem;
-    padding: 2rem;
-    /*Agregue esto . Miguel*/
-  }
-}
-
-.divMision,
-.divVision {
-  padding: 2rem 0;
-}
-.sectionMisionVision h2 {
-  padding: 2rem;
-}
-
-.sectionValores h2 {
-  text-align: center;
-  padding: 2rem;
-}
-.contenedorValores {
-  margin: 2rem 0;
-}
-.sectionValores {
-  text-align: center;
-  margin: 2rem;
-}
-.sectionValores h3 {
-  font-size: 2rem;
-  padding: 1.5rem;
-  border: 2rem;
-}
-.sectionValores p {
-  font-size: 1.5rem;
-  padding: 0.8rem;
-  border: 2rem;
 }
 
 /*Agregue esto . Miguel*/
