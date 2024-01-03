@@ -47,8 +47,11 @@ p {
   font-size: 1.5rem;
   padding: 0;
   margin: 0;
-  text-align: center;
+  text-align: left;
+  width: 100%;
 }
+
+
 
 .enlaces {
   /*Agregue esto . Miguel*/
@@ -650,10 +653,6 @@ label {
   font-family: var(--fuenteTextoCuerpo);
 }
 
-.resp{
-  text-align: left;
-}
-
 @media only screen and (max-width: 425px) {
   .col-6 {
     width: 100%;
@@ -669,8 +668,8 @@ label {
 }
 
 @media only screen and (min-width: 768px) {
-   .resp{
+  .resp{
     display: inline;
-    text-align: left;
   }
 }
+

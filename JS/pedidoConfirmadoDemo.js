@@ -45,7 +45,10 @@ const detallesCompraContainer = document.getElementById("detallesCompra");
     <div class="row d-flex justify-content-start" id="numeroPedido">
       <div class="col-9 p-4">
         <p class="d-flex justify-content-start p-2"><strong>Resumen el pedido</strong></p>
-        <p class="d-flex justify-content-start p-2"><strong>Número del pedido:&nbsp;</strong>${pedido.numeroDelPedido}</p>
+        <p class="d-flex justify-content-start p-2">
+        <strong>Número del pedido:&nbsp;</strong>
+        ${pedido.numeroDelPedido}
+        </p>
       </div>
       <div class="col-3 pt-3">
         <img width="60px" src="../SRC/img/pets.png" alt="">
@@ -55,11 +58,18 @@ const detallesCompraContainer = document.getElementById("detallesCompra");
     <div class="row d-flex justify-content-start">
       <div class="p-4"> 
         <p class="d-flex justify-content-start p-2"><strong>Detalles de compra</strong></p>
-        <p class="d-flex justify-content-start p-2"><strong>Producto comprado:&nbsp;</strong> ${pedido.producto}</p>
-        <p class="d-flex justify-content-start p-2"><strong>Nombre:&nbsp;</strong> ${pedido.nombre}</p>
-        <p class="d-flex justify-content-start p-2"><strong>Dirección de envió:&nbsp;</strong> ${pedido.direccion}</p>
-        <p class="d-flex justify-content-start p-2"><strong>Método de pago:&nbsp;</strong> ${pedido.metodoDePago}</p>
-        <p class="d-flex justify-content-start p-2"><strong>Indicaciones:&nbsp;</strong>${pedido.indicaciones}</p>       
+        <p class="justify-content-start p-2 resp" ><strong>Producto comprado:&nbsp;</strong> </p>
+        <p class="justify-content-start p-2 resp" >${pedido.producto}</p> <br>
+        <p class="justify-content-start p-2 resp" ><strong>Nombre:&nbsp;</strong> </p>
+        <p class="justify-content-start p-2 resp" >${pedido.nombre}</p><br>
+        <p class="justify-content-start p-2 resp" ><strong>Dirección de envío:&nbsp;</strong> </p>
+        <p class="justify-content-start p-2 resp" >${pedido.direccion}</p><br>
+
+        <p class="justify-content-start p-2 resp" ><strong>Método de pago:&nbsp;</strong></p>
+        <p class="justify-content-start p-2 resp" >${pedido.metodoDePago}</p><br>
+
+        <p class="justify-content-start p-2 resp" ><strong>Indicaciones:&nbsp;</strong></p>
+        <p class="justify-content-start p-2 resp" >${pedido.indicaciones}</p><br>     
       </div>        
     </div>
 
@@ -73,10 +83,14 @@ const detallesCompraContainer = document.getElementById("detallesCompra");
         </div>
         <div class="d-flex col-6 justify-content-start align-items-center">
           <div>
-            <p class="d-flex justify-content-start p-2"><strong>Subtotal:&nbsp;</strong> $${pedido.subtotal}</p>
-            <p class="d-flex justify-content-start p-2"><strong>Envió:&nbsp;</strong> $${pedido.envio}</p>
-            <p class="d-flex justify-content-start p-2"><strong>IVA(6%):&nbsp;</strong> $${pedido.iva}</p>
-            <p class="d-flex justify-content-start p-2"><strong>TOTAL: $${pedido.total}</strong></p>
+          <p class="justify-content-start p-2 resp" ><strong>Subtotal:&nbsp;</strong> </p>
+            <p class="justify-content-start p-2 resp" > $${pedido.subtotal}</p><br>
+            <p class="justify-content-start p-2 resp" ><strong>Envió:&nbsp;</strong> </p>
+            <p class="justify-content-start p-2 resp" > $${pedido.envio}</p><br>
+            <p class="justify-content-start p-2 resp" ><strong>IVA(6%):&nbsp;</strong> </p>
+            <p class="justify-content-start p-2 resp" > $${pedido.iva}</p><br>
+            <p class="justify-content-start p-2 resp" ><strong>TOTAL: </p>
+            <p class="justify-content-start p-2 resp" > $${pedido.total}</strong></p><br>
           </div>                    
         </div>
       </div>
