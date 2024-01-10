@@ -620,3 +620,21 @@ label {
   max-width: 70%;
   font-family: var(--fuenteTextoCuerpo);
 }
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.descripcion_producto, .comentario, .escribir_comentario {
+  margin-top: 50px;
+  background-color: #ffd486;
+  padding: 30px;
+  border-radius: 10px;
+}
