@@ -1,0 +1,15 @@
+[
+    {
+    "numeroDelPedido": 30404056,
+    "producto": "Hill's Science Diet 6.8kg",
+    "nombre": "Ernesto de la Cruz",
+    "direccion": "Av. Palomas CP. 504956",
+    "metodoDePago": "tarjeta que termina en **** 5541", 
+    "indicaciones": "",
+    "subtotal": 551.72,
+    "envio": 89,
+    "iva": 88.28,
+    "total":730,
+    "imagen": "https://m.media-amazon.com/images/I/71VRDgQCSRL._AC_SL1500_.jpg"
+}
+]
