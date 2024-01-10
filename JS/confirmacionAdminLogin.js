@@ -2,7 +2,7 @@
 const email = document.getElementById("loginEmail");
 const contraseña = document.getElementById("loginPassword");
 const loginBoton = document.getElementById("login");
-const emailAdmin = "alejandro.flores@gmail.com";
+const emailAdmin = "alejandro.floesc@gmail.com";
 const contraseñaAdmin = "Admin123"; // Contraseña solo de prueba
 
 // Zona de Pruebas
