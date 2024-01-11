@@ -63,16 +63,34 @@ document.addEventListener("DOMContentLoaded", function () {
   // === BOTON === //
 
   // === EVENTO PARA AJUSTAR LA CANTIDAD === //
-  tableBody.addEventListener("input", function (event) {
-    if (event.target.tagName === "INPUT" && event.target.classList.contains("input-cantidad")) {
-      const inputCantidad = event.target;
-      const cantidad = parseInt(inputCantidad.value);
-      const row = inputCantidad.closest("tr");
-      const precio = parseFloat(row.querySelector("td:nth-child(3)").textContent);
+tableBody.addEventListener("input", function (event) {
+  if (event.target.tagName === "INPUT" && event.target.classList.contains("input-cantidad")) {
+    const inputCantidad = event.target;
+    let cantidad = parseInt(inputCantidad.value);
+
+    // Evitar que la cantidad sea menor que 0
+    if (cantidad < 0) {
+      cantidad = 0;
+      inputCantidad.value = cantidad; // Actualizar el valor en el input
+    }
+
+    const row = inputCantidad.closest("tr");
+    const precio = parseFloat(row.querySelector("td:nth-child(3)").textContent);
+
+    // Si la cantidad es 0, eliminar la fila
+    if (cantidad === 0) {
+      row.remove();
+    } else {
+      // Actualizar el subtotal solo si la cantidad es mayor que 0
       actualizarSubtotal(row, precio);
     }
-  });
-  // === EVENTO PARA AJUSTAR LA CANTIDAD === //
+
+    // Actualizar el total después de ajustar la cantidad
+    actualizarTotal();
+  }
+});
+// === EVENTO PARA AJUSTAR LA CANTIDAD === //
+
 
   // Función para actualizar el subtotal
   function actualizarSubtotal(row, precio) {
