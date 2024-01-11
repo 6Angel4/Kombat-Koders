@@ -1,3 +1,4 @@
+import {ControladorCarrito} from "../JS/controladorCarrito.js";
 // Create a ItemsController class
 export class ControladorProductos {
   // Set up the items and currentId property in the contructor
@@ -169,23 +170,11 @@ export class ControladorProductos {
 
   //====================================contador bolsa=========================
   // Función para contador al carrito y actualizar el contador al imprimirse el dom
-  agregarAlaBolsa(evento) {
-    var productoID = evento.currentTarget.getAttribute("data-productoID")
-    var contadorBolsa = document.getElementById('contador-carrito')
-    contador++;//Esto se reemplazara por el length elemento del local storage del carrito/bolsa
-    contadorBolsa.innerText = contador;
-    console.log("Producto añadido a la bolsa con ID:", productoID);
-  }
+
 };
 //=============================================contador bolsa=====================
 //funcion que actualiza el contador aun con filtros aplicables
-function agregarAlaBolsa(evento) {
-  var productoID = evento.currentTarget.getAttribute("data-productoID")
-  var contadorBolsa = document.getElementById('contador-carrito')
-  contador++;//Esto se reemplazara por el length elemento del local storage del carrito/bolsa
-  contadorBolsa.innerText = contador;
-  console.log("Producto añadido a la bolsa con ID:", productoID);
-}
+
 
 function quitarSeleccion(checkBoxes, checkboxSeleccionado) { //quita seleccion de otros checkboxes del mismo grupo
   for (var i = 0; i < checkBoxes.length; i++) {
@@ -305,8 +294,7 @@ function filtradoPorCategoria(jsonDeLocalStorage, animalCategoria, tipoProducto)
 }
 //==================contador carrito=====================
 // Contador de bolsa
-let contador = 0;// provisional hasta que se reemplazara por el length elemento del local storage del carrito
-
+// provisional hasta que se reemplazara por el length elemento del local storage del carrito
 //=======================================================================================================
 
 const imprimirDOMFiltros = (productosFiltrados) => {
@@ -346,9 +334,25 @@ const imprimirDOMFiltros = (productosFiltrados) => {
       </div>`;
   });
   document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
-  var addButtons = Array.from(document.getElementsByClassName("botonAnadirProducto"))
+  const addButtons = Array.from(document.getElementsByClassName("botonAnadirProducto"))
   addButtons.forEach((item) =>{
-    item.addEventListener('click', agregarAlaBolsa);// contador bolsa
+    item.addEventListener('click', (evento) => {
+      const miControladorCarrito = new ControladorCarrito();
+      let contador = miControladorCarrito.contadorCarrito();
+      const productoID = evento.currentTarget.getAttribute("data-productoID");
+      const contadorBolsa = document.getElementById('contador-carrito');
+      contador++;//Esto se reemplazara por el length elemento del local storage del carrito/bolsa
+      contadorBolsa.innerText = contador;
+      console.log("Producto añadido a la bolsa con ID:", productoID);
+      const productoCarrito = productosFiltrados.find(producto => producto.id == productoID);
+      console.log(productoCarrito);
+      miControladorCarrito.agregarProducto(
+        productoCarrito.id,
+        productoCarrito.nombreProducto,
+        productoCarrito.precioProducto,
+        1);
+      
+    });
   })
   console.log("Imprimiendo DOM con productos:", productosFiltrados);
 

@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
         nombreProducto.textContent = producto.nombreProducto;
         row.appendChild(nombreProducto);
 
-<<<<<<< HEAD
         let precio = document.createElement("td");
         precio.textContent = producto.precio;
         row.appendChild(precio);
@@ -48,9 +47,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   // === Leer el objeto JSON desde el archivo === //
 });
-=======
-// === BOTON === //
-//Creo que esto es de Livi
-// === BOTON === //
-tabla.style.display = "table";
->>>>>>> 09159a9ae6337a352a7a552182cde2f66fa576fa

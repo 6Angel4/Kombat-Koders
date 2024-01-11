@@ -1,4 +1,5 @@
 import {ControladorProductos} from "../JS/controladorProductos.js";
+import {ControladorCarrito} from "../JS/controladorCarrito.js";
 
 const imprimirDOMFromLocalStorage = (Controlador) => {
   const productosLS = Controlador.cargarProductosFromLocalStorage();
@@ -39,12 +40,32 @@ const imprimirDOMFromLocalStorage = (Controlador) => {
   });
 
   document.getElementById("productos-contenedor").innerHTML = productosGrid.join("");
-  var addButtons = Array.from(document.getElementsByClassName("botonAnadirProducto"))
+
+  const addButtons = Array.from(document.getElementsByClassName("botonAnadirProducto"))
   addButtons.forEach((item) =>{
-    item.addEventListener('click', Controlador.agregarAlaBolsa);
+    item.addEventListener('click', (evento) => {
+      const productoID = evento.currentTarget.getAttribute("data-productoID")
+      const contadorBolsa = document.getElementById('contador-carrito')
+      contador++;//Esto se reemplazara por el length elemento del local storage del carrito/bolsa
+      contadorBolsa.innerText = contador;
+      console.log("Producto añadido a la bolsa con ID:", productoID);
+      const miControladorCarrito = new ControladorCarrito();
+      const productoCarrito = Controlador.cargarProductosFromLocalStorage().find(producto => producto.id == productoID);
+      console.log(productoCarrito);
+      miControladorCarrito.agregarProducto(
+        productoCarrito.id,
+        productoCarrito.nombreProducto,
+        productoCarrito.precioProducto,
+        1);
+      
+    });
   })
 };
 
 const miControladorProductos = new ControladorProductos();
+const miControladorCarrito = new ControladorCarrito();
+let contador = miControladorCarrito.contadorCarrito();
+document.getElementById('contador-carrito').innerText = contador;
 imprimirDOMFromLocalStorage(miControladorProductos);
 miControladorProductos.inicializarFiltros();
+ 
