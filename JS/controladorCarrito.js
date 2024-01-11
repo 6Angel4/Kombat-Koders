@@ -25,11 +25,19 @@ export class ControladorCarrito {
     pushProductosLocalStorage() {
       localStorage.setItem("bolsa", JSON.stringify(this.productos));
     }
+
+    actualizarCantidadProducto(id,cantidad){
+      this.productos = this.cargarProductosFromLocalStorage();
+      const index = this.productos.findIndex(producto => producto.id === id);
+      this.productos[index].cantidadProducto = cantidad;
+      this.pushProductosLocalStorage();
+    }
   
     // Función para borrar un producto por su índice
     borrarProducto(id) {
       this.productos = this.cargarProductosFromLocalStorage();
-      this.productos.splice(id, 1);
+      const index = this.productos.findIndex(producto => producto.id === id)
+      this.productos.splice(index, 1);
       this.pushProductosLocalStorage();
     }
       

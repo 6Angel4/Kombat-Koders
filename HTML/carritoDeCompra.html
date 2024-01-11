@@ -40,7 +40,6 @@
     <!-- Link-Propio -->
     <link rel="stylesheet" href="../CSS/normalize.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/carrito.css" />
     <link rel="icon" type="image.png" href="../SRC/img/iconpets.png" />
     <!-- Link-Propio -->
     <title>Carrito de Compras</title>
@@ -171,7 +170,7 @@
                 style="background-color: #f5b27f"
                 scope="col"
               >
-                Eliminar
+               
               </th>
               <th
                 class="fw-bold fs-3"
@@ -204,12 +203,18 @@
             </tr>
           </thead>
 
-          <tbody id="tbody">
+
+
+          <tbody id="tbody" class="TablaCarrito">
             <!--Aqui van los productos-->
             
             <!--Aqui van los productos-->
           </tbody>
-
+            
+          <tr>
+            <td colspan="4" class="fw-bold fs-3 text-end" style="background-color: #f5b27f">Total:</td>
+            <td id="totalCompra" class="fw-bold fs-3" style="background-color: #f5b27f">$0.00</td>
+          </tr>
           <tfoot id="tfoot">
             <!--Aqui va el total-->
 
@@ -294,6 +299,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="../JS/addCarrito.js"></script>
+    <script type="module" src="../JS/addCarrito.js"></script>
   </body>
 </html>

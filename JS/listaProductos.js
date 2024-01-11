@@ -51,7 +51,6 @@ const imprimirDOMFromLocalStorage = (Controlador) => {
       console.log("Producto añadido a la bolsa con ID:", productoID);
       const miControladorCarrito = new ControladorCarrito();
       const productoCarrito = Controlador.cargarProductosFromLocalStorage().find(producto => producto.id == productoID);
-      console.log(productoCarrito);
       miControladorCarrito.agregarProducto(
         productoCarrito.id,
         productoCarrito.nombreProducto,
