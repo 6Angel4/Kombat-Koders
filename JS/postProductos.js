@@ -12,7 +12,7 @@ postProducto.addEventListener("submit", (event) => {
     nombreProducto: postProducto.elements["nombreProducto"].value,
     marcaProducto: postProducto.elements["marcaProducto"].value,
     descripcionProducto: postProducto.elements["descripcionProducto"].value,
-    productoPara: postProducto.elements["precioProducto"].value,
+    productoPara: postProducto.elements["productoPara"].value,
     tipoProdcuto: postProducto.elements["tipoProducto"].value,
     contenidoProducto: postProducto.elements["contenidoProducto"].value,
     precioProducto: postProducto.elements["precioProducto"].value,
