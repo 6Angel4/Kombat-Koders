@@ -1,5 +1,5 @@
 // ================================ Validar Formulario Registro =========================================
-import { ControladorRegistro } from "./controladorRegistro.js";
+// import { ControladorRegistro } from "./controladorRegistro.js";
 
 document.getElementById("formulario-registro").addEventListener("submit", (event) =>  {
 
@@ -19,32 +19,32 @@ document.getElementById("error-termsConditions").style.display="none";
 // Obtener valores del formmulario
 const registro = {
     nombre :  document.getElementById("registerName").value,
+    direccion : document.getElementById("registerDirection").value,
     telefono: document.getElementById("registerPhoneNumber").value,
     email: document.getElementById("registerEmail").value,         
-    registroPassword : document.getElementById("registerPassword").value,
-    contrasena : document.getElementById("registerPassword2").value,
-    direccion : document.getElementById("registerDirection").value,
+    nacimiento: document.getElementById("registerFechaNacimiento").value,
     ciudad : document.getElementById("registerCity").value,
     cp: document.getElementById("registerCP").value,
-    nacimiento: document.getElementById("registerFechaNacimiento").value,
+    contrasena : document.getElementById("registerPassword2").value,
+    registroPassword : document.getElementById("registerPassword").value,
     terminos : document.getElementById("acceptTerms").checked     
 }
 
 // Verificar datos del formulario son validos antes de enviar
     if(validarRegistro(registro)){
-        const miControladorRegistro = new ControladorRegistro();
-        
-        miControladorRegistro.agregarRegistro(
-            registro.nombre,
-            registro.telefono,
-            registro.email,
-            registro.contrasena,
-            registro.direccion,
-            registro.ciudad,
-            registro.cp,
-            registro.nacimiento);
+        // const miControladorRegistro = new ControladorRegistro();
+        registrarUsuario(registro);
+        // miControladorRegistro.agregarRegistro(
+        //     registro.nombre,
+        //     registro.telefono,
+        //     registro.email,
+        //     registro.contrasena,
+        //     registro.direccion,
+        //     registro.ciudad,
+        //     registro.cp,
+        //     registro.nacimiento);
 
-// Limpiar los campos del formmulario       
+// Limpiar los campos del formulario       
         document.getElementById("registro-completado-exitosamente").style.display="block";
         document.getElementById("registerName").value = "";
         document.getElementById("registerPhoneNumber").value = "";
@@ -107,3 +107,42 @@ const registro = {
         }
     return esValido;    
 };
+
+
+     const registrarUsuario = (usuario) => {
+        const postUser = 
+        {
+            nombre: usuario.nombre,
+            direccion: usuario.direccion,
+            telefono: usuario.telefono,
+            email: usuario.email,
+            birthdate: usuario.nacimiento,
+            ciudad: usuario.ciudad,
+            cp: usuario.cp,
+            contraseña: usuario.contrasena,
+            active: true,
+            rol: {
+                id: 2,
+                nombre: "usuario",
+                descripcion: "cliente"
+                }
+     }
+
+     fetch('http://localhost:8080/api/v1/usuarios', {
+        method: 'POST', // or 'PUT'
+        headers: {
+         'Content-Type': 'application/json',
+        },
+         body: JSON.stringify(postUser),
+         })
+         .then(response => response.json())
+         .then(data => {
+         console.log('Success:', data);
+         })
+         .catch((error) => {
+         console.error('Error:', error);
+         });    
+ }
+
+
+   
