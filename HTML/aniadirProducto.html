@@ -1,261 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta es una e-commerce enfocada a la venta de productos para mascotas (perros y gatos)"
+    />
+    <!--Link-Propio (preload)-->
+    <link rel="preload" as="style" href="../CSS/normalize.css" />
+    <link rel="preload" as="style" href="../CSS/style.css" />
+    <!--Link-Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--Link-Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- Iconos flaticon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <!--Font - Hind-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font - Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Link-Propio-->
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="icon" type="image.png" href="../SRC/img/iconpets.png" />
+    <title>Añadir Producto</title>
+    <!--agregar huellita estilos-->
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Esta es una e-commerce enfocada a la venta de productos para mascotas (perros y gatos)" />
-  <!--Link-Propio (preload)-->
-  <link rel="preload" as="style" href="../CSS/normalize.css" />
-  <link rel="preload" as="style" href="../CSS/style.css" />
-  <!--Link-Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <!--Link-Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
-  <!-- Iconos flaticon-->
-  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css" />
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <link rel="stylesheet"
-    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
-  <!--Font - Hind-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet" />
-  <!--Font - Montserrat-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-  <!--Link-Propio-->
-  <link rel="stylesheet" href="../CSS/normalize.css" />
-  <link rel="stylesheet" href="../CSS/style.css" />
-  <link rel="icon" type="image.png" href="../SRC/img/iconpets.png">
-  <title>Añadir Producto</title>
-  <!--agregar huellita estilos-->
-</head>
-
-<body>
-
-   <!--Inicia header-->
-   <header class="m-0 p-0 text-center">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-custom">
-      <div class="d-flex flex-wrap justify-content-around d-lg-flex flex-lg-nowrap flex-lg-row mx-5 w-100">
-        <!-- Logo -->
-        <div class="order-1">
-          <a class="navbar-brand m-0" href="../index.html">
-            <img class="imgLogo" src="../SRC/img/logo.png" alt="Logo de la pagina" />
-          </a>
+  <body>
+    <!--Inicia header-->
+    <header class="m-0 p-0 text-center">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary nav-custom">
+        <div
+          class="d-flex flex-wrap justify-content-around d-lg-flex flex-lg-nowrap flex-lg-row mx-5 w-100"
+        >
+          <!-- Logo -->
+          <div class="order-1">
+            <a class="navbar-brand m-0" href="../index.html">
+              <img
+                class="imgLogo"
+                src="../SRC/img/logo.png"
+                alt="Logo de la pagina"
+              />
+            </a>
+          </div>
+          <!--Boton-->
+          <div class="order-2 align-self-center mx-3">
+            <button
+              class="btn btn-primary btn-ham navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="order-3 collapse navbar-collapse d-lg-flex justify-content-lg-around align-items-lg-center"
+            id="navbarTogglerDemo01"
+          >
+            <div
+              class="d-flex flex-column d-lg-flex flex-lg-row justify-content-lg-around align-items-lg-center w-100"
+            >
+              <!-- Enlaces de navegación -->
+              <ul class="navbar-nav order-1 order-lg-0">
+                <li class="nav-item me-lg-4">
+                  <a class="nav-link enlaces" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item mx-lg-4">
+                  <a class="nav-link nav-hover enlaces" href="./productos.html"
+                    >Productos</a
+                  >
+                </li>
+                <li class="nav-item mx-lg-4">
+                  <a
+                    class="nav-link nav-hover enlaces"
+                    href="./paginadecontacto.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item ms-lg-4">
+                  <a
+                    class="nav-link nav-hover enlaces"
+                    href="./acercaDeNosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+              </ul>
+              <!--Barra de bsuwqueda-->
+              <form
+                class="order-0 order-lg-1 d-flex flex-row d-lg-flex justify-content-center"
+                role="search"
+              >
+                <input
+                  class="form-control ms-5 ms-lg-2 me-lg-2 rounded-pill customSearch"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                  rounded
+                />
+                <button class="btn button-localCustom" type="submit">
+                  <img
+                    class="lupa"
+                    width="auto"
+                    height="20px"
+                    src="../SRC/img/lupa.png"
+                  />
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- Iconos de carrito y usuario en divs separados -->
+          <div
+            class="d-flex flex-row align-items-center order-0 d-lg-flex flex-lg-row align-items-lg-center order-lg-3 mx-2"
+          >
+            <!-- Icono de bolsa de compras -->
+            <div class="mx-3">
+              <a href=""
+                ><img
+                  src="../SRC/img/shopping-bag.png"
+                  alt="#"
+                  width="auto"
+                  height="30px"
+              /></a>
+            </div>
+            <!-- Icono de usuario -->
+            <div class="ms-3">
+              <a href="./InicioSesion.html"
+                ><img
+                  src="../SRC/img/user.png"
+                  alt="#"
+                  width="auto"
+                  height="30px"
+              /></a>
+            </div>
+          </div>
         </div>
-        <!--Boton-->
-        <div class="order-2 align-self-center mx-3">
-          <button class=" btn btn-primary btn-ham navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-            aria-label="Toggle navigation" ;">
-            <span class="navbar-toggler-icon"></span>
+      </nav>
+    </header>
+    <!--Fin header-->
+
+    <main class="container-fluid px-0">
+      <section class="row me-0">
+        <div
+          class="col-4 col-md-2 d-flex flex-column filtros align-items-start"
+        >
+          <button
+            class="btn btn-primary mb-3 w-100 mt-3"
+            onclick="editarProductos()"
+          >
+            <img
+              src="../SRC/svg/editing.svg"
+              alt="Editar productos"
+              width="30"
+              height="30"
+            />
+            Editar productos
+          </button>
+          <hr class="w-100 border-bottom" />
+          <button
+            class="btn btn-primary mb-3 w-100"
+            onclick="anadirProductos()"
+          >
+            <img
+              src="../SRC/svg/more.svg"
+              alt="Añadir productos"
+              width="30"
+              height="30"
+            />
+            Añadir productos
+          </button>
+          <hr class="w-100 border-bottom" />
+          <button class="btn btn-primary mb-3 w-100" onclick="editarPerfil()">
+            <img
+              src="../SRC/svg/user.svg"
+              alt="Editar perfil"
+              width="30"
+              height="30"
+            />
+            Editar perfil
           </button>
         </div>
-        <div class="order-3 collapse navbar-collapse d-lg-flex justify-content-lg-around align-items-lg-center"
-          id="navbarTogglerDemo01">
-          <div class="d-flex flex-column d-lg-flex flex-lg-row justify-content-lg-around align-items-lg-center w-100">
-            <!-- Enlaces de navegación -->
-            <ul class="navbar-nav order-1 order-lg-0">
-              <li class="nav-item me-lg-4 "><a class="nav-link enlaces" href="../index.html">Inicio</a></li>
-              <li class="nav-item mx-lg-4 "><a class="nav-link nav-hover enlaces" href="./productos.html">Productos</a>
-              </li>
-              <li class="nav-item mx-lg-4 "><a class="nav-link nav-hover enlaces"
-                  href="./paginadecontacto.html">Contacto</a></li>
-              <li class="nav-item ms-lg-4 "><a class="nav-link nav-hover enlaces"
-                  href="./acercaDeNosotros.html">Nosotros</a></li>
-            </ul>
-            <!--Barra de bsuwqueda-->
-            <form class="order-0 order-lg-1 d-flex flex-row d-lg-flex justify-content-center" role="search">
-              <input class="form-control ms-5 ms-lg-2 me-lg-2 rounded-pill customSearch" type="search"
-                placeholder="Buscar" aria-label="Search" rounded />
-              <button class="btn button-localCustom" type="submit">
-                <img class="lupa" width="auto" height="20px" src="../SRC/img/lupa.png" />
+
+        <!--Grid Productos-->
+        <div class="col-8 col-md-10 d-flex justify-content-center">
+          <!--Row de prodcutos-->
+          <!-- Formulario de Añadir producto -->
+          <div id="formulario-nuevo-producto" class="form-container">
+            <h2 class="text-center mb-4">Ingresar nuevo producto</h2>
+            <div
+              id="producto-creado-exitosamente"
+              class="alert alert-success"
+              role="alert"
+            >
+              ¡Producto añadido exitosamente!
+            </div>
+
+            <form id="formProductos">
+              <div class="form-group mt-2">
+                <label for="nombreProducto">Nombre del producto:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombreProducto"
+                  placeholder="Ingresa el nombre del producto"
+                />
+                <div
+                  id="error-nombre-producto"
+                  class="alert alert-danger"
+                  role="alert"
+                >
+                  Por favor ingresa un nombre valido
+                </div>
+              </div>
+              <div class="form-group mt-2">
+                <label for="marcaProducto"> Marca:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="marcaProducto"
+                  placeholder="Ingresa la marca del producto"
+                />
+                <div id="error-marca" class="alert alert-danger" role="alert">
+                  Por favor ingresa una marca valida
+                </div>
+              </div>
+              <div class="form-group mt-2">
+                <label for="descripcionProducto">Descripción:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="descripcionProducto"
+                  placeholder="Ingresa la descripción del producto"
+                />
+                <div
+                  id="error-descripcion"
+                  class="alert alert-danger"
+                  role="alert"
+                >
+                  Por favor ingresa una descripción válida
+                </div>
+              </div>
+              <div class="form-group mt-2">
+                <label for="productoPara">¿Perrito o gatito?:</label>
+                <select name="precioProducto" id="productoPara">
+                  <option value="perro">Perrito</option>
+                  <option value="gato">Gatito</option>
+                </select>
+                <div
+                  id="error-productoPara"
+                  class="alert alert-danger"
+                  role="alert"
+                >
+                  Sólo vendemos productos para perritos y gatitos
+                </div>
+              </div>
+              <div class="form-group mt-2">
+                <label for="tipoProducto">Categoría:</label>
+                <select name="tipoProducto" id="tipoProducto">
+                  <option value="juguete">Juguetes</option>
+                  <option value="comida">Comida</option>
+                  <option value="accesorios">Acessorios</option>
+                </select>
+                <div
+                  id="error-tipoProducto"
+                  class="alert alert-danger"
+                  role="alert"
+                >
+                  Sólo vendemos productos como jueguetes, comida y accesorios
+                </div>
+              </div>
+              <div class="form-group mt-2">
+                <label for="contenidoProducto">
+                  Contenido (en Kg/piezas/Litros):</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contenidoProducto"
+                  placeholder="Ingresa el contenido del producto"
+                />
+                <div
+                  id="error-contenidoProducto"
+                  class="alert alert-danger"
+                  role="alert"
+                >
+                  Por favor ingrese el contenido
+                </div>
+              </div>
+              <div class="form-group mt-2">
+                <label for="precioProducto">Precio (en MXN):</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="precioProducto"
+                  placeholder="Ingresa el precio del producto"
+                />
+                <div id="error-precio" class="alert alert-danger" role="alert">
+                  El precio debe tener formato xxxxx.xx
+                </div>
+              </div>
+              <div class="form-group mt-2">
+                <label for="ofertaProducto"> Descuento del producto %:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ofertaProducto"
+                  placeholder="Ingresa el porcentaje de descuento"
+                />
+                <div id="error-oferta" class="alert alert-danger" role="alert">
+                  Por favor ingresa un entero, este se tomará como el porcentaje
+                  de descuento
+                </div>
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="existenciaProducto"> Existencias:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="existenciaProducto"
+                  placeholder="Ingresa cuantos productos tiene"
+                />
+                <div
+                  id="error-existencia"
+                  class="alert alert-danger"
+                  role="alert"
+                >
+                  Por favor ingresa un entero
+                </div>
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="imagenProducto"> Imagen (URL):</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="imagenProducto"
+                  placeholder="Ingresa el URL de la imagen"
+                />
+                <div
+                  id="error-imagen-producto"
+                  class="alert alert-danger"
+                  role="alert"
+                >
+                  Por favor ingresa una imagen valida
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-3">
+                Añadir producto
               </button>
             </form>
+            <!-- Fin del formulario -->
+          </div>
+          <!-- error message -->
+          <div id="error-message-container" class="bg-warning mt-3 rounded">
+            <p id="error-message" class="m-2"></p>
           </div>
         </div>
-        <!-- Iconos de carrito y usuario en divs separados -->
-        <div
-          class="d-flex flex-row align-items-center order-0  d-lg-flex flex-lg-row align-items-lg-center order-lg-3 mx-2">
-          <!-- Icono de bolsa de compras -->
-          <div class="mx-3"><a href=""><img src="../SRC/img/shopping-bag.png" alt="#" width="auto" height="30px" /></a>
-          </div>
-          <!-- Icono de usuario -->
-          <div class="ms-3"><a href="./InicioSesion.html"><img src="../SRC/img/user.png" alt="#" width="auto"
-                height="30px" /></a></div>
-        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="divNavLogo">
+        <a href="../index.html" class="enlaces enlaceImagen">
+          <img
+            src="../SRC/img/logo.png"
+            class="imgLogo"
+            alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras"
+          />
+        </a>
       </div>
-    </nav>
-  </header>
-  <!--Fin header-->
 
-  <main class="container-fluid px-0">
-
-    <section class="row me-0 ">
-      <div class="col-4 col-md-2 d-flex flex-column filtros align-items-start">
-        <button class="btn btn-primary mb-3 w-100 mt-3" onclick="editarProductos()">
-          <img src="../SRC/svg/editing.svg" alt="Editar productos" width="30" height="30">
-          Editar productos
-        </button>
-        <hr class="w-100 border-bottom">
-        <button class="btn btn-primary mb-3 w-100" onclick="anadirProductos()">
-          <img src="../SRC/svg/more.svg" alt="Añadir productos" width="30" height="30">
-          Añadir productos
-        </button>
-        <hr class="w-100 border-bottom">
-        <button class="btn btn-primary mb-3 w-100" onclick="editarPerfil()">
-          <img src="../SRC/svg/user.svg" alt="Editar perfil" width="30" height="30">
-          Editar perfil
-        </button>
+      <!--Barra de iconos de redes *Mario-->
+      <div class="footerDivNavBar">
+        <nav class="navNavBar">
+          <a
+            href="https://www.facebook.com/profile.php?id=61554222387300"
+            class="iconos-redes enlaces"
+            ><i class="fi fi-brands-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/petsupermarket.contactanos/"
+            class="iconos-redes enlaces"
+            ><i class="fi fi-brands-instagram"></i
+          ></a>
+          <a
+            href="https://twitter.com/SupermarketPet"
+            class="iconos-redes enlaces"
+            ><i class="fi fi-brands-twitter-alt-circle"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@petsupermarket.contacten?lang=es"
+            class="iconos-redes enlaces"
+            ><i class="fi fi-brands-tik-tok"></i
+          ></a>
+        </nav>
       </div>
-      
-      
-
-      <!--Grid Productos-->
-      <div class="col-8 col-md-10 d-flex justify-content-center" >
-        <!--Row de prodcutos-->
-        <!-- Formulario de Añadir producto -->
-        <div id="formulario-nuevo-producto" class="form-container">
-          <h2 class="text-center mb-4">Ingresar nuevo producto</h2>
-          <div id="producto-creado-exitosamente" class="alert alert-success" role="alert">
-            ¡Producto añadido exitosamente!
-          </div>
-          
-          <form id="formProductos">
-            <div class="form-group mt-2">
-              <label for="nombreProducto">Nombre del producto:</label>
-              <input type="text" class="form-control" id="nombreProducto" placeholder="Ingresa el nombre del producto">
-              <div id="error-nombre-producto" class="alert alert-danger" role="alert">
-                Por favor ingresa un nombre valido
-              </div>
-            </div>
-            <div class="form-group mt-2">
-              <label for="marcaProducto"> Marca:</label>
-              <input type="text" class="form-control" id="marcaProducto" placeholder="Ingresa la marca del producto">
-              <div id="error-marca" class="alert alert-danger" role="alert">
-                Por favor ingresa una marca valida
-              </div>
-            </div>
-            <div class="form-group mt-2">
-              <label for="descripcionProducto">Descripción:</label>
-              <input type="text" class="form-control" id="descripcionProducto" placeholder="Ingresa la descripción del producto">
-              <div id="error-descripcion" class="alert alert-danger" role="alert">
-                Por favor ingresa una descripción válida
-              </div>
-            </div>
-            <div class="form-group mt-2">
-              <label for="productoPara">¿Perrito o gatito?:</label>
-              <select name="precioProducto" id="productoPara">
-                <option value="perro">Perrito</option>
-                <option value="gato">Gatito</option>
-              </select>
-              <div id="error-productoPara" class="alert alert-danger" role="alert">
-                Sólo vendemos productos para perritos y gatitos
-              </div>
-            </div>
-            <div class="form-group mt-2">
-              <label for="tipoProducto">Categoría:</label>
-              <select name="tipoProducto" id="tipoProducto">
-                <option value="juguete">Juguetes</option>
-                <option value="comida">Comida</option>
-                <option value="accesorios">Acessorios</option>
-              </select>
-              <div id="error-tipoProducto" class="alert alert-danger" role="alert">
-                Sólo vendemos productos como jueguetes, comida y accesorios
-              </div>
-            </div>
-            <div class="form-group mt-2">
-              <label for="contenidoProducto"> Contenido (en Kg/piezas/Litros):</label>
-              <input type="text" class="form-control" id="contenidoProducto" placeholder="Ingresa el contenido del producto">
-              <div id="error-contenidoProducto" class="alert alert-danger" role="alert">
-                Por favor ingrese el contenido
-              </div>
-            </div>
-            <div class="form-group mt-2">
-              <label for="precioProducto">Precio (en MXN):</label>
-              <input type="text" class="form-control" id="precioProducto" placeholder="Ingresa el precio del producto">
-              <div id="error-precio" class="alert alert-danger" role="alert">
-                El precio debe tener formato xxxxx.xx
-              </div>
-            </div>
-            <div class="form-group mt-2">
-              <label for="ofertaProducto"> Descuento del producto %:</label>
-              <input type="text" class="form-control" id="ofertaProducto" placeholder="Ingresa el porcentaje de descuento">
-              <div id="error-oferta" class="alert alert-danger" role="alert">
-                Por favor ingresa un entero, este se tomará como el porcentaje de descuento
-              </div>
-            </div>
-
-            <div class="form-group mt-2">
-              <label for="existenciaProducto"> Existencias:</label>
-              <input type="text" class="form-control" id="existenciaProducto" placeholder="Ingresa cuantos productos tiene">
-              <div id="error-existencia" class="alert alert-danger" role="alert">
-                Por favor ingresa un entero
-              </div>
-            </div>
-
-            <div class="form-group mt-2">
-              <label for="imagenProducto"> Imagen (URL):</label>
-              <input type="text" class="form-control" id="imagenProducto" placeholder="Ingresa el URL de la imagen">
-              <div id="error-imagen-producto" class="alert alert-danger" role="alert">
-                Por favor ingresa una imagen valida
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary mt-3">Añadir producto</button>
-          </form>
-          <!-- Fin del formulario -->
-        </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="divNavLogo">
-      <a href="../index.html" class="enlaces enlaceImagen">
-        <img src="../SRC/img/logo.png" class="imgLogo"
-          alt="Logotipo de la pagina, un perrito al lado de un gatito que esta dentro de una carrito de compras" />
-      </a>
-    </div>
-
-    <!--Barra de iconos de redes *Mario-->
-    <div class="footerDivNavBar">
-      <nav class="navNavBar">
-        <a href="https://www.facebook.com/profile.php?id=61554222387300" class="iconos-redes enlaces"><i class="fi fi-brands-facebook"></i></a>
-        <a href="https://www.instagram.com/petsupermarket.contactanos/" class="iconos-redes enlaces"><i class="fi fi-brands-instagram"></i></a>
-        <a href="https://twitter.com/SupermarketPet" class="iconos-redes enlaces"><i class="fi fi-brands-twitter-alt-circle"></i></a>
-        <a href="https://www.tiktok.com/@petsupermarket.contacten?lang=es" class="iconos-redes enlaces"><i class="fi fi-brands-tik-tok"></i></a>
-      </nav>
-    </div>
-    <div>
-      <nav>
-        <!--Intercambie de lugar los botones dee redes con los de enlaces, creo que se ve más estético - Alex-->
-        <a href="../index.html" class="enlaces">Inicio</a>
-        <a href="./productos.html" class="enlaces">Productos</a>
-        <a href="./paginadecontacto.html" class="enlaces">Contacto</a>          
-        <a href="./acercaDeNosotros.html" class="enlaces">Nosotros</a>
-      </nav>
-    </div>
-    <p class="direccion">
-      Av. San José CP. 304950 Teléfono:55-34-23-45-56 <br />Email:
-      petsupermarket.contactanos@gmail.com
-    </p>
-    <br />
-    <p class="derechosReservados">
-      Pet Supermarket. Todos los derechos reservados.
-    </p>
-  </footer>
-  <script type="module" src="../JS/controladorProductos.js"></script>
-  <script type="module" src="../JS/validardatosproducto.js"></script>
-  <script type="module" src="../JS/postProductos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+      <div>
+        <nav>
+          <!--Intercambie de lugar los botones dee redes con los de enlaces, creo que se ve más estético - Alex-->
+          <a href="../index.html" class="enlaces">Inicio</a>
+          <a href="./productos.html" class="enlaces">Productos</a>
+          <a href="./paginadecontacto.html" class="enlaces">Contacto</a>
+          <a href="./acercaDeNosotros.html" class="enlaces">Nosotros</a>
+        </nav>
+      </div>
+      <p class="direccion">
+        Av. San José CP. 304950 Teléfono:55-34-23-45-56 <br />Email:
+        petsupermarket.contactanos@gmail.com
+      </p>
+      <br />
+      <p class="derechosReservados">
+        Pet Supermarket. Todos los derechos reservados.
+      </p>
+    </footer>
+    <script type="module" src="../JS/controladorProductos.js"></script>
+    <script type="module" src="../JS/validardatosproducto.js"></script>
+    <script type="module" src="../JS/postProductos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
