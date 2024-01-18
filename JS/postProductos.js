@@ -1,10 +1,10 @@
 console.log("JS-POST-Productos");
 
-//Ref al formulario de aniadirProducto.html
+// Ref al formulario de aniadirProducto.html
 const postProducto = document.forms["formProductos"];
 
 postProducto.addEventListener("submit", (event) => {
-  // Evita el comportamiento predeterminado asociadoa un evento.
+  // Evita el comportamiento predeterminado asociado a un evento.
   event.preventDefault();
   console.log(event);
 
@@ -39,10 +39,10 @@ const datosVerificados = (producto) => {
     mensajeError("Falta introducir la descripcion del producto");
     response = false;
   } else if (producto.productoPara === "") {
-    mensajeError("Falta especificar para quein va dirijido el producto");
+    mensajeError("Falta especificar para quién va dirigido el producto");
     response = false;
   } else if (producto.tipoProdcuto === "") {
-    mensajeError("Falta introducir que tipo de producto es");
+    mensajeError("Falta introducir qué tipo de producto es");
     response = false;
   } else if (producto.contenidoProducto === "") {
     mensajeError("Falta introducir el contenido neto del producto");
@@ -51,7 +51,7 @@ const datosVerificados = (producto) => {
     mensajeError("Falta introducir el precio del producto");
     response = false;
   } else if (producto.ofertaProducto === "") {
-    mensajeError("Falta introducir la oferta del producto (esta puede ser 0)");
+    mensajeError("Falta introducir la oferta del producto (puede ser 0)");
     response = false;
   } else if (producto.existenciaProducto === "") {
     mensajeError("Falta introducir el stock del producto");
@@ -66,13 +66,13 @@ const datosVerificados = (producto) => {
   return response;
 };
 
-/*
-const mensajeError = (message) => {
-    console.log(message);
-    const errorMessage = document.getElementById("error-message");
-    const errorMessageContainer = document.getElementById("error-message-container");
 
-    errorMessage.innerHTML = message;
+const mensajeError = (message) => {
+  console.log(message);
+  const errorMessage = document.getElementById("error-message");
+  const errorMessageContainer = document.getElementById("error-message-container");
+
+  errorMessage.innerHTML = message;
     if (message === "") {
         // displaty: none: quita el elemento del DOM
         // visibility: hidden : ocultar visualmente el elemento
@@ -81,7 +81,6 @@ const mensajeError = (message) => {
         errorMessageContainer.style.display = "block";
     }
 }
-*/
 
 const enviarDatosAlServidor = async (producto) => {
   const productoPost = {
