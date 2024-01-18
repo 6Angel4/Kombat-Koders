@@ -33,6 +33,13 @@ export class ControladorProductos {
     this.pushProductosLocalStorage();
   }
 
+  reemplazarListaProductos(listaProductos) {
+    console.log("lista de productos agregados");
+    console.log(listaProductos)
+    localStorage.setItem("productos", listaProductos);
+
+  }
+
   pushProductosLocalStorage() {
     localStorage.setItem("productos", JSON.stringify(this.productos));
   }
@@ -105,8 +112,8 @@ export class ControladorProductos {
       checkBoxesPrecio[i].addEventListener("change", function () {
         //quitar seleccion de otras checkboxes de precio
         quitarSeleccion(checkBoxesPrecio, this);
-        this.productos = filtradoPorCheckboxes(jsonAModificar)
-        imprimirDOMFiltros(this.productos)
+        miControladorProductos.productos = filtradoPorCheckboxes(jsonAModificar)
+        imprimirDOMFiltros(miControladorProductos.productos)
 
       });
 
@@ -115,16 +122,16 @@ export class ControladorProductos {
       checkBoxesDescuento[i].addEventListener("change", function () {
         //quitar seleccion de otras checkboxes de descuento
         quitarSeleccion(checkBoxesDescuento, this);
-        this.productos = filtradoPorCheckboxes(jsonAModificar)
-        imprimirDOMFiltros(this.productos)
+        miControladorProductos.productos = filtradoPorCheckboxes(jsonAModificar)
+        imprimirDOMFiltros(miControladorProductos.productos)
       });
 
     }
     for (var i = 0; i < checkBoxesMarcas.length; i++) {
       checkBoxesMarcas[i].addEventListener("change", function () {
         quitarSeleccion(checkBoxesMarcas, this);
-        this.productos = filtradoPorCheckboxes(jsonAModificar)
-        imprimirDOMFiltros(this.productos)
+        miControladorProductos.productos = filtradoPorCheckboxes(jsonAModificar)
+        imprimirDOMFiltros(miControladorProductos.productos)
       });
 
     }
@@ -140,12 +147,12 @@ export class ControladorProductos {
 
 
      categoriaGatoJueguete.addEventListener("click", function () {
-      this.productos = filtradoPorCategoria(jsonAModificar, "gato","juguete");
+      this.productos = filtradoPorCategoria(jsonAModificar, "gato","juguetes");
       imprimirDOMFiltros(this.productos)
      });
 
      categoriaGatoAccesorio.addEventListener("click", function () {
-      this.productos = filtradoPorCategoria(jsonAModificar, "gato","accesorio");
+      this.productos = filtradoPorCategoria(jsonAModificar, "gato","accesorios");
       imprimirDOMFiltros(this.productos)
      });
 
@@ -155,12 +162,12 @@ export class ControladorProductos {
      });
 
      categoriaPerroJuguete.addEventListener("click", function () {
-      this.productos = filtradoPorCategoria(jsonAModificar,"perro","juguete");
+      this.productos = filtradoPorCategoria(jsonAModificar,"perro","juguetes");
       imprimirDOMFiltros(this.productos)
      });
 
      categoriaPerroAccesorio.addEventListener("click", function () {
-      this.productos = filtradoPorCategoria(jsonAModificar,"perro","accesorio");
+      this.productos = filtradoPorCategoria(jsonAModificar,"perro","accesorios");
       imprimirDOMFiltros(this.productos)
      });
 
@@ -168,12 +175,8 @@ export class ControladorProductos {
 
   }
 
-  //====================================contador bolsa=========================
-  // Función para contador al carrito y actualizar el contador al imprimirse el dom
-
 };
-//=============================================contador bolsa=====================
-//funcion que actualiza el contador aun con filtros aplicables
+
 
 
 function quitarSeleccion(checkBoxes, checkboxSeleccionado) { //quita seleccion de otros checkboxes del mismo grupo
@@ -277,27 +280,21 @@ function filtradoPorCategoria(jsonDeLocalStorage, animalCategoria, tipoProducto)
   let jsonModificado = jsonDeLocalStorage;
  // ===============filtrado gato y perro===========================
  jsonModificado = jsonModificado.filter((producto) => {
-  const esGato = producto.animalProducto.toLowerCase() === "gato";
-  const esPerro = producto.animalProducto.toLowerCase() === "perro";
-  const esCategoriaCorrecta = producto.categoriaProducto.toLowerCase() === tipoProducto.toLowerCase();
-  
+  const esCategoriaCorrecta = producto.categoriaProducto.toLowerCase() == tipoProducto.toLowerCase();
+  const esAnimalCorrecto = producto.animalProducto.toLowerCase() == animalCategoria.toLowerCase()
   // Condiciones de filtrado combinadas
-  return (esGato && animalCategoria.toLowerCase() === "gato" && esCategoriaCorrecta) ||
-         (esPerro && animalCategoria.toLowerCase() === "perro" && esCategoriaCorrecta);
+  
+  return esCategoriaCorrecta && esAnimalCorrecto;
 });
 
-
-  console.log(JSON.stringify(jsonModificado, undefined, 4));
-
-  console.log("Después del filtrado:", jsonModificado);
   return jsonModificado;
 }
-//==================contador carrito=====================
-// Contador de bolsa
-// provisional hasta que se reemplazara por el length elemento del local storage del carrito
-//=======================================================================================================
 
-const imprimirDOMFiltros = (productosFiltrados) => {
+const miControladorProductos = new ControladorProductos();
+
+const imprimirDOMFiltros =  (listaProductos) => {
+  const jsonAModificar = listaProductos;
+  const productosFiltrados = filtradoPorCheckboxes(jsonAModificar);
   const productosGrid = productosFiltrados.map((producto) => {
     // Verificar si el producto tiene descuento
     const tieneDescuento = producto.descuentoProducto > 0;
