@@ -12,8 +12,8 @@ postProducto.addEventListener("submit", (event) => {
     nombreProducto: postProducto.elements["nombreProducto"].value,
     marcaProducto: postProducto.elements["marcaProducto"].value,
     descripcionProducto: postProducto.elements["descripcionProducto"].value,
-    productoPara: postProducto.elements["productoPara"].value,
-    tipoProdcuto: postProducto.elements["tipoProducto"].value,
+    productoPara: parseInt(postProducto.elements["productoPara"].value),
+    tipoProducto: parseInt(postProducto.elements["tipoProducto"].value),
     contenidoProducto: postProducto.elements["contenidoProducto"].value,
     precioProducto: postProducto.elements["precioProducto"].value,
     ofertaProducto: postProducto.elements["ofertaProducto"].value,
@@ -41,7 +41,7 @@ const datosVerificados = (producto) => {
   } else if (producto.productoPara === "") {
     mensajeError("Falta especificar para quién va dirigido el producto");
     response = false;
-  } else if (producto.tipoProdcuto === "") {
+  } else if (producto.tipoProducto === "") {
     mensajeError("Falta introducir qué tipo de producto es");
     response = false;
   } else if (producto.contenidoProducto === "") {
@@ -74,7 +74,7 @@ const mensajeError = (message) => {
 
   errorMessage.innerHTML = message;
     if (message === "") {
-        // displaty: none: quita el elemento del DOM
+        // display: none: quita el elemento del DOM
         // visibility: hidden : ocultar visualmente el elemento
         errorMessageContainer.style.display = "none";
     } else {
@@ -93,12 +93,10 @@ const enviarDatosAlServidor = async (producto) => {
     imagen: producto.imagenProducto,
     marca: producto.marcaProducto,
     tipoProducto: {
-      id: producto.idTipoProducto,
-      tipoProducto: producto.tipoProducto,
+      id: producto.tipoProducto,
     },
     categoria: {
-      id: producto.idCategoriaProducto,
-      nombre: producto.categoriaProducto,
+      id: producto.productoPara,
     },
   };
 

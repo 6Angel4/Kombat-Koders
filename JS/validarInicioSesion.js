@@ -77,7 +77,11 @@ const url =  "http://localhost:8080/api/v1/usuarios/query?email=" + usuario.user
   console.log(usuarioLogeado.status)
   if (usuarioLogeado.status === undefined) {
     document.getElementById("inicio-sesion-exitoso").style.display = "block";
-    document.location.href = "../index.html";
+    if (usuarioLogeado.rol.id === 1 ) {
+      window.location.href = "../HTML/aniadirProducto.html"; // si es admin
+    } else {
+      window.location.href = "../index.html"; // si no es admin (en caso de que exista el usuario)
+    }
     document.getElementById("loginEmail").value = "";
     document.getElementById("loginPassword").value ="";
  } else {      

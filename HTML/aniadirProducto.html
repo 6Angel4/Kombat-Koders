@@ -182,7 +182,7 @@
     <main class="container-fluid px-0">
       <section class="row me-0">
         <div
-          class="col-4 col-md-2 d-flex flex-column filtros align-items-start"
+          class="col-4 col-md-2 d-flex flex-column filtros align-items-start d-none"
         >
           <button
             class="btn btn-primary mb-3 w-100 mt-3"
@@ -221,8 +221,14 @@
           </button>
         </div>
 
+
+        
+        <div class="col-2 col-md-2 d-flex justify-content-center align-items-center">
+          <img src="../SRC/img/perrito.png" alt="" class="d-none d-md-block img-registro floating">
+        </div>
+        
         <!--Grid Productos-->
-        <div class="col-8 col-md-10 d-flex justify-content-center">
+        <div class="col-8 col-md-8 d-flex justify-content-center">
           <!--Row de prodcutos-->
           <!-- Formulario de Añadir producto -->
           <div id="formulario-nuevo-producto" class="form-container">
@@ -283,8 +289,8 @@
               <div class="form-group mt-2">
                 <label for="productoPara">¿Perrito o gatito?:</label>
                 <select name="productoPara" id="productoPara">
-                  <option value="perro">Perrito</option>
-                  <option value="gato">Gatito</option>
+                  <option value="1">Perrito</option>
+                  <option value="2">Gatito</option>
                 </select>
                 <div
                   id="error-productoPara"
@@ -297,9 +303,9 @@
               <div class="form-group mt-2">
                 <label for="tipoProducto">Categoría:</label>
                 <select name="tipoProducto" id="tipoProducto">
-                  <option value="juguete">Juguetes</option>
-                  <option value="comida">Comida</option>
-                  <option value="accesorios">Acessorios</option>
+                  <option value="3">Juguetes</option>
+                  <option value="1">Comida</option>
+                  <option value="2">Acessorios</option>
                 </select>
                 <div
                   id="error-tipoProducto"
@@ -391,11 +397,19 @@
               </button>
             </form>
             <!-- Fin del formulario -->
-          </div>
-          <!-- error message -->
-          <div id="error-message-container" class="bg-warning mt-3 rounded">
-            <p id="error-message" class="m-2"></p>
-          </div>
+          </div> 
+        </div>  
+        
+        <div class="col-2 col-md-2 d-flex justify-content-center align-items-center">
+          <img src="../SRC/img/gatito.png" alt="" class="d-none d-md-block img-registro floating">
+        </div> 
+        
+       
+
+       
+        <!-- error message -->
+        <div id="error-message-container" class="bg-warning mt-3 rounded">
+          <p id="error-message" class="m-2"></p>
         </div>
       </section>
     </main>
@@ -455,7 +469,7 @@
       </p>
     </footer>
     <script type="module" src="../JS/controladorProductos.js"></script>
-    <script type="module" src="../JS/validardatosproducto.js"></script>
+    <!--<script type="module" src="../JS/validardatosproducto.js"></script>-->
     <script type="module" src="../JS/postProductos.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
