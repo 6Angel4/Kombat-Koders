@@ -1,8 +1,12 @@
-## Logo del Equipo
-![Logo del Equipo](https://github.com/alefecad/Kombat-Koders-BE/blob/main/KombatKodersLogo.png)
+<p align="center">
+  <img src="https://github.com/alefecad/Kombat-Koders-BE/blob/main/KombatKodersLogo.png" alt="Logo del Equipo">
+</p>
+
+<p align="center">
+  <img src="https://github.com/alefecad/Kombat-Koders-BE/blob/main/Petsupermarket.png" alt="Logo de PetSupermarket">
+</p>
 
 # PetSupermarket - Backend
-![Logo de PetSupermarket](https://github.com/alefecad/Kombat-Koders-BE/blob/main/Petsupermarket.png)
 
 Bienvenido al repositorio del backend de PetSupermarket, un proyecto desarrollado por el equipo Kombat-Koders.
 
@@ -24,8 +28,8 @@ PetSupermarket es una plataforma integral para la gestión de una tienda de masc
 - Java
 - Spring Boot
 
-## Presentacion del Proyecto
-- Visita la [Presentacion del Proyecto](https://www.canva.com/design/DAF0rRaw0yY/SAYPQp_8mrHJETvRyKLiZQ/edit?utm_content=DAF0rRaw0yY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+## Presentación del Proyecto
+- Visita la [Presentación del Proyecto](https://www.canva.com/design/DAF0rRaw0yY/SAYPQp_8mrHJETvRyKLiZQ/edit?utm_content=DAF0rRaw0yY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## MockUp (Figma)
 - Visita nuestro [MockUp-Figma](https://www.figma.com/file/izBXfIFqpsYvN5sFegRE9A/PS-Wireframe?type=design&node-id=0-1&mode=design)
