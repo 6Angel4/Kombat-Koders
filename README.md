@@ -28,4 +28,4 @@ PetSupermarket es una plataforma integral para la gestión de una tienda de masc
 - Visita la [Presentacion del Proyecto](https://www.canva.com/design/DAF0rRaw0yY/SAYPQp_8mrHJETvRyKLiZQ/edit?utm_content=DAF0rRaw0yY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## MockUp (Figma)
-- Visita nuestro MockUp [MockUp-Figma](https://www.figma.com/file/izBXfIFqpsYvN5sFegRE9A/PS-Wireframe?type=design&node-id=0-1&mode=design)
+- Visita nuestro [MockUp-Figma](https://www.figma.com/file/izBXfIFqpsYvN5sFegRE9A/PS-Wireframe?type=design&node-id=0-1&mode=design)
