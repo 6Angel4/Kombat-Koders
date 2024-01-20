@@ -20,5 +20,8 @@ PetSupermarket es una plataforma integral para la gestión de una tienda de masc
 - Java
 - Spring Boot
 
+## Presentacion del Proyecto
+(https://www.canva.com/design/DAF0rRaw0yY/SAYPQp_8mrHJETvRyKLiZQ/edit?utm_content=DAF0rRaw0yY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton el link de la primera presentación)
+
 ## Logo del Proyecto
 ![Logo del Proyecto]([https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP](https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay)https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay)
