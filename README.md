@@ -1,5 +1,5 @@
 ## Logo del Equipo
-![Logo del Equipo]([[https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP](https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay)https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay](https://github.com/alefecad/Kombat-Koders-BE/blob/main/KombatKodersLogo.png))
+![Logo del Equipo](https://github.com/alefecad/Kombat-Koders-BE/blob/main/KombatKodersLogo.png)
 
 # PetSupermarket - Backend
 ![Logo de PetSupermarket]()
