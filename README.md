@@ -1,12 +1,13 @@
+## Kombat-Koders
 <p align="center">
   <img src="https://github.com/alefecad/Kombat-Koders-BE/blob/main/KombatKodersLogo.png" alt="Logo del Equipo">
 </p>
 
+# PetSupermarket - Backend
+
 <p align="center">
   <img src="https://github.com/alefecad/Kombat-Koders-BE/blob/main/Petsupermarket.png" alt="Logo de PetSupermarket">
 </p>
-
-# PetSupermarket - Backend
 
 Bienvenido al repositorio del backend de PetSupermarket, un proyecto desarrollado por el equipo Kombat-Koders.
 
