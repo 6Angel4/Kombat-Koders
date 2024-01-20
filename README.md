@@ -2,7 +2,7 @@
 ![Logo del Equipo](https://github.com/alefecad/Kombat-Koders-BE/blob/main/KombatKodersLogo.png)
 
 # PetSupermarket - Backend
-![Logo de PetSupermarket]()
+![Logo de PetSupermarket](https://github.com/alefecad/Kombat-Koders-BE/blob/main/Petsupermarket.png)
 
 Bienvenido al repositorio del backend de PetSupermarket, un proyecto desarrollado por el equipo Kombat-Koders.
 
