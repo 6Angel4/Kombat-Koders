@@ -25,7 +25,7 @@ PetSupermarket es una plataforma integral para la gestión de una tienda de masc
 - Spring Boot
 
 ## Presentacion del Proyecto
-Visita la [Presentacion del Proyecto](https://www.canva.com/design/DAF0rRaw0yY/SAYPQp_8mrHJETvRyKLiZQ/edit?utm_content=DAF0rRaw0yY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton){: style="color: blue; font-weight: bold;"}
+Visita la [Presentacion del Proyecto](https://www.canva.com/design/DAF0rRaw0yY/SAYPQp_8mrHJETvRyKLiZQ/edit?utm_content=DAF0rRaw0yY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## MockUp (Figma)
 - https://www.figma.com/file/izBXfIFqpsYvN5sFegRE9A/PS-Wireframe?type=design&node-id=0-1&mode=design
