@@ -1,4 +1,8 @@
+## Logo del Equipo
+![Logo del Equipo]([https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP](https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay)https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay)
+
 # PetSupermarket - Backend
+![Logo de PetSupermarket]()
 
 Bienvenido al repositorio del backend de PetSupermarket, un proyecto desarrollado por el equipo Kombat-Koders.
 
@@ -25,6 +29,3 @@ PetSupermarket es una plataforma integral para la gestión de una tienda de masc
 
 ## MockUp (Figma)
 - https://www.figma.com/file/izBXfIFqpsYvN5sFegRE9A/PS-Wireframe?type=design&node-id=0-1&mode=design
-
-## Logo del Proyecto
-![Logo del Proyecto]([https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP](https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay)https://www.bing.com/images/create/crea-un-logo-que-diga-kombat-koders/1-65ab1eaebe154f049917cbe94f5475cc?id=JHioXYC4Fkr1WzTO%2bgF0sg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay)
